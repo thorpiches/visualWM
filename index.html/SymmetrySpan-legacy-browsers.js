@@ -836,9 +836,7 @@ async function experimentInit() {
   // Initialize components for Routine "prac_sym"
   prac_symClock = new util.Clock();
   // Run 'Begin Experiment' code from code_prac_sym
-  import * as os from 'os';
-  import * as random from 'random';
-  import {core} from 'psychopy';
+  
   var correct_answers, correct_total_text, countDownText, image_name, image_path, non_sym_images, pracSymmTrialNumber, resources_path, selected_images, sym_images, timerPracSym, total_trials;
   resources_path = "resources/";
   pracSymmTrialNumber = 10;
