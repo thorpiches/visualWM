@@ -1,4 +1,4 @@
-/********************* 
+﻿/********************* 
  * Symmetryspan Test *
  *********************/
 
@@ -96,8 +96,8 @@ psychoJS.start({
   expInfo: expInfo,
   resources: [
     {'name': 'resources/grid.png', 'path': 'resources/grid.png'},
-    {'name': 'resources/example2.JPG', 'path': 'resources/example2.JPG'},
-    {'name': 'resources/example1.JPG', 'path': 'resources/example1.JPG'}
+    {'name': 'resources/example1.JPG', 'path': 'resources/example1.JPG'},
+    {'name': 'resources/example2.JPG', 'path': 'resources/example2.JPG'}
   ]
 });
 

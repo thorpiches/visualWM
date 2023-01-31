@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on január 31, 2023, at 16:56
+    on január 31, 2023, at 18:51
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -54,7 +54,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\Kristof\\Documents\\egyetem\\3 félév\\szakdoga\\program\\saját\\SymmetrySpan\\SymmetrySpan_lastrun.py',
+    originPath='C:\\Users\\Kristof\\Desktop\\SymmetrySpan\\SymmetrySpan_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -749,65 +749,7 @@ square_rand_both = visual.Rect(
 
 # --- Initialize components for Routine "both_sym" ---
 # Run 'Begin Experiment' code from code_prac_sym_both
-import os
-import random
-from psychopy import core
-
-# Define the path to the resources folder
-resources_path = 'resources/'
-# Define how many trials I want for the symmetry practice
-pracSymmTrialNumber = 10
-# Define the array for the images to be shown
 selected_images_both = []
-# Setting total trials, correct answers and countdown text
-total_trials = 0
-correct_answers = 0
-countDownText = ""
-correct_total_text = ""
-# Setting timer for live countdown (2000 ms plus 500 fixation)
-timerPracSym = core.CountdownTimer(2.5)
-
-
-# Create the first array for the non-symmetric images
-non_sym_images = []
-for i in range(1, 80):
-    image_name = 'nsym' + str(i) + '.JPG'
-    image_path = os.path.join(resources_path, image_name)
-    non_sym_images.append(image_path)
-    
-# Create the second array for the symmetric images
-sym_images = []
-for i in range(1, 80):
-    image_name = 'sym' + str(i) + '.JPG'
-    image_path = os.path.join(resources_path, image_name)
-    sym_images.append(image_path)
-    
-    
-#creating function that chooses x amount of sym and nsym images
-
-def select_images(non_sym_images, sym_images, pracSymmTrialNumber):
-    if pracSymmTrialNumber % 2 == 0:
-        half_trials = int(pracSymmTrialNumber / 2)
-        # Select random samples from sym and nsym images
-        selected_non_sym_images = random.sample(non_sym_images, half_trials)
-        selected_sym_images = random.sample(sym_images, half_trials)
-        selected_images = selected_non_sym_images + selected_sym_images
-
-        random.shuffle(selected_images)
-    else:
-        half_trials = int(pracSymmTrialNumber + 1 / 2)
-        #same here
-        selected_non_sym_images = random.sample(non_sym_images, half_trials)
-        selected_sym_images = random.sample(sym_images, half_trials)
-        selected_images = selected_non_sym_images + selected_sym_images
-        #but we delete one
-        random.shuffle(selected_images)
-        selected_images.pop()
-    return selected_images
-    
-selected_images = select_images(non_sym_images, sym_images, pracSymmTrialNumber)
-    
-
 
 fixation_both_2 = visual.TextStim(win=win, name='fixation_both_2',
     text='+',
