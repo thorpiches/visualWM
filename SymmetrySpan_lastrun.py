@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on január 31, 2023, at 16:08
+    on január 31, 2023, at 16:56
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -54,7 +54,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\Kristof\\Documents\\egyetem\\3 félév\\szakdoga\\program\\saját\\Symmetry Span\\SymmetrySpan_lastrun.py',
+    originPath='C:\\Users\\Kristof\\Documents\\egyetem\\3 félév\\szakdoga\\program\\saját\\SymmetrySpan\\SymmetrySpan_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -703,6 +703,10 @@ text_12 = visual.TextStim(win=win, name='text_12',
 key_resp_10 = keyboard.Keyboard()
 
 # --- Initialize components for Routine "both_helper" ---
+# Run 'Begin Experiment' code from code_both_helper
+# setting variables for overall symmetry accuracy
+overall_symm = 0
+overall_symm_corr = 0
 
 # --- Initialize components for Routine "both_level" ---
 text_both_level_1 = visual.TextStim(win=win, name='text_both_level_1',
@@ -4087,9 +4091,7 @@ for thisTrials_both in trials_both:
     recall_counter = 0
     corr_square_cliqued = 0
     
-    # setting variables for overall symmetry accuracy
-    overall_symm = 0
-    overall_symm_corr = 0
+    
     
     #creating function that chooses x amount of sym and nsym images
     

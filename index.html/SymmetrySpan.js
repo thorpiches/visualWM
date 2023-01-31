@@ -1,4 +1,4 @@
-﻿/********************* 
+ /********************* 
  * Symmetryspan Test *
  *********************/
 
@@ -173,7 +173,7 @@ async function experimentInit() {
   // Initialize components for Routine "square_helper"
   square_helperClock = new util.Clock();
   // Run 'Begin Experiment' code from code_square_helper
-  import * as random from 'random';
+  
   var counter, how_many_prac_loops, loop_breaker, prac_loop_lengths, square_coordinates, square_dict, square_dict_both, square_names, square_names_both, thisloop_item_number;
   loop_breaker = 0;
   square_names = function () {
