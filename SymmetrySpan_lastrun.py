@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on január 31, 2023, at 21:27
+    on február 01, 2023, at 20:14
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,7 +35,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '2022.2.5'
-expName = 'Symmetry_Span'  # from the Builder filename that created this script
+expName = 'Symmetry_Span_1'  # from the Builder filename that created this script
 expInfo = {
     'participant': f"{randint(0, 999999):06.0f}",
     'session': '001',
@@ -694,7 +694,7 @@ key_resp_7 = keyboard.Keyboard()
 
 # --- Initialize components for Routine "ins_both" ---
 text_12 = visual.TextStim(win=win, name='text_12',
-    text='Most nézzük meg, hogyan fog a négyzetemlékezeti és a szimmetriadöntéses feladat egyszerre kinézni.\n\nEgyrészt igyekezz megjegyezni, hol jelennek meg a négyzetek, másrészt ne felejtsd el, hogy minden négyzet között helyesen kell döntened 2mp-en belül az ábrák függőleges szimmetrikusságáról!\n\nElőször lesz egy pár gyakorlókör.\n\nKészítsd az ujjaidat a BAL és JOBB gombokra.\nSPACE',
+    text='Most nézzük meg, hogyan fog a négyzetemlékezeti és a szimmetriadöntéses feladat egyszerre kinézni!\n\nMinden bemutatott piros négyzet után döntened kell egy kép szimetrikusságáról!\n\nEgyrészt igyekezz megjegyezni, hol jelennek meg a négyzetek, másrészt ne felejtsd el, hogy minden négyzet között helyesen kell döntened 2mp-en belül az ábrák függőleges szimmetrikusságáról!\n\nElőször lesz egy pár gyakorlókör.\n\nKészítsd az ujjaidat a BAL és JOBB gombokra.\nSPACE',
     font='Open Sans',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -796,10 +796,6 @@ key_resp_6_both = keyboard.Keyboard()
 usedTime = 0
 
 
-# Import the green and red mask images
-maskColor = ""
-greenMask = os.path.join(resources_path, '1green.JPG')
-redMask = os.path.join(resources_path, '1red.JPG')
 
 image_3_both = visual.ImageStim(
     win=win,
@@ -5681,7 +5677,7 @@ if accuracyPercent >= 85:
 else:
     text_accuracy_both.color = "#800000"
     
-    text_if_less_accuracy = "A kísérlet szempontjából akkor nem számít sikeresnek a feladat elvégzése, ha az összesített (azaz minden alkalom arányának átlaga) nem éri el a 85%-ot. Ezért ettől még sikeresen teljesítheted a feladatot, de legközelebb jobban figyel a függőleges döntési feladatra!"
+    text_if_less_accuracy = "A kutatás szempontjából akkor nem számít sikeresnek a kísérlet elvégzése, ha az összesített arány (azaz minden alkalom arányának átlaga) nem éri el a 85%-ot. Ezért ettől még sikeresen teljesítheted a kísérletet, de legközelebb jobban figyel a függőleges döntési feladatra!"
 
 accuracyText = "%.1f" %(accuracyPercent) + "%"
 
