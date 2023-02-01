@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on január 31, 2023, at 18:44
+    on február 01, 2023, at 18:41
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,7 +35,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '2022.2.5'
-expName = 'SymmetrySpan'  # from the Builder filename that created this script
+expName = 'Symmetry_Span'  # from the Builder filename that created this script
 expInfo = {
     'participant': f"{randint(0, 999999):06.0f}",
     'session': '001',
@@ -68,12 +68,12 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # --- Setup the Window ---
 win = visual.Window(
-    size=[1536, 864], fullscr=False, screen=0, 
+    size=[1536, 864], fullscr=True, screen=0, 
     winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
     units='height')
-win.mouseVisible = True
+win.mouseVisible = False
 # store frame rate of monitor if we can measure it
 expInfo['frameRate'] = win.getActualFrameRate()
 if expInfo['frameRate'] != None:
@@ -143,7 +143,7 @@ square_dict = dict(zip(square_names, square_coordinates))
 square_dict_both = dict(zip(square_names_both, square_coordinates))
 
 # here i can give how many sequences I want (and what length) 
-prac_loop_lengths = [3, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11, 11, 11, 12, 12, 12]
+prac_loop_lengths = [2, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11, 11, 11, 12, 12, 12]
 # defining how many practice loops there are
 how_many_prac_loops = len(prac_loop_lengths)
 
@@ -694,7 +694,7 @@ key_resp_7 = keyboard.Keyboard()
 
 # --- Initialize components for Routine "ins_both" ---
 text_12 = visual.TextStim(win=win, name='text_12',
-    text='Most nézzük meg, hogyan fog a négyzetemlékezeti és a szimmetriadöntéses feladat egyszerre kinézni.\n\nEgyrészt igyekezz megjegyezni, hol jelennek meg a négyzetek, másrészt ne felejtsd el, hogy minden négyzet között helyesen kell döntened 2mp-en belül az ábrák függőleges szimmetrikusságáról!\n\nElőször lesz egy pár gyakorlókör.\n\nKészítsd az ujjaidat a BAL és JOBB gombokra.\nSPACE',
+    text='Most nézzük meg, hogyan fog a négyzetemlékezeti és a szimmetriadöntéses feladat egyszerre kinézni!\n\nMinden bemutatott piros négyzet után döntened kell egy kép szimetrikusságáról!\n\nEgyrészt igyekezz megjegyezni, hol jelennek meg a négyzetek, másrészt ne felejtsd el, hogy minden négyzet között helyesen kell döntened 2mp-en belül az ábrák függőleges szimmetrikusságáról!\n\nElőször lesz egy pár gyakorlókör.\n\nKészítsd az ujjaidat a BAL és JOBB gombokra.\nSPACE',
     font='Open Sans',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -5681,7 +5681,7 @@ if accuracyPercent >= 85:
 else:
     text_accuracy_both.color = "#800000"
     
-    text_if_less_accuracy = "A kísérlet szempontjából akkor nem számít sikeresnek a feladat elvégzése, ha az összesített (azaz minden alkalom arányának átlaga) nem éri el a 85%-ot. Ezért ettől még sikeresen teljesítheted a feladatot, de legközelebb jobban figyel a függőleges döntési feladatra!"
+    text_if_less_accuracy = "A kutatás szempontjából akkor nem számít sikeresnek a kísérlet elvégzése, ha az összesített arány (azaz minden alkalom arányának átlaga) nem éri el a 85%-ot. Ezért ettől még sikeresen teljesítheted a kísérletet, de legközelebb jobban figyel a függőleges döntési feladatra!"
 
 accuracyText = "%.1f" %(accuracyPercent) + "%"
 
