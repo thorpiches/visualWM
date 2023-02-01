@@ -1077,40 +1077,56 @@ async function experimentInit() {
   correct_answers = 0;
   countDownText = "";
   correct_total_text = "";
-  timerPracSym = new core.CountdownTimer(2.5);
+  timerPracSym = new util.CountdownTimer(2.5);
   non_sym_images = [];
   for (var i, _pj_c = 0, _pj_a = util.range(1, 80), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
       i = _pj_a[_pj_c];
       image_name = (("nsym" + i.toString()) + ".JPG");
-      image_path = os.path.join(resources_path, image_name);
+      image_path = `${resources_path}/${image_name}`;
       non_sym_images.push(image_path);
   }
   sym_images = [];
   for (var i, _pj_c = 0, _pj_a = util.range(1, 80), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
       i = _pj_a[_pj_c];
       image_name = (("sym" + i.toString()) + ".JPG");
-      image_path = os.path.join(resources_path, image_name);
+      image_path = `${resources_path}/${image_name}`;;
       sym_images.push(image_path);
   }
-  function select_images(non_sym_images, sym_images, pracSymmTrialNumber) {
-      var half_trials, selected_non_sym_images, selected_sym_images;
-      if (((pracSymmTrialNumber % 2) === 0)) {
-          half_trials = Number.parseInt((pracSymmTrialNumber / 2));
-          selected_non_sym_images = random.sample(non_sym_images, half_trials);
-          selected_sym_images = random.sample(sym_images, half_trials);
-          selected_images = (selected_non_sym_images + selected_sym_images);
-          random.shuffle(selected_images);
-      } else {
-          half_trials = Number.parseInt(((pracSymmTrialNumber + 1) / 2));
-          selected_non_sym_images = random.sample(non_sym_images, half_trials);
-          selected_sym_images = random.sample(sym_images, half_trials);
-          selected_images = (selected_non_sym_images + selected_sym_images);
-          random.shuffle(selected_images);
-          selected_images.pop();
-      }
-      return selected_images;
+  
+  function selectImages(nonSymImages, symImages, pracSymmTrialNumber) {
+    var selectedImages = [];
+  
+    // If the trial number is even
+    if (pracSymmTrialNumber % 2 === 0) {
+      var halfTrials = Math.floor(pracSymmTrialNumber / 2);
+  
+      // Select random samples from sym and nsym images
+      var selectedNonSymImages = nonSymImages.sort(() => Math.random() - 0.5).slice(0, halfTrials);
+      var selectedSymImages = symImages.sort(() => Math.random() - 0.5).slice(0, halfTrials);
+      selectedImages = selectedNonSymImages.concat(selectedSymImages);
+  
+      // Shuffle the selected images
+      selectedImages.sort(() => Math.random() - 0.5);
+    } else {
+      var halfTrials = Math.floor((pracSymmTrialNumber + 1) / 2);
+  
+      // Select random samples from sym and nsym images
+      var selectedNonSymImages = nonSymImages.sort(() => Math.random() - 0.5).slice(0, halfTrials);
+      var selectedSymImages = symImages.sort(() => Math.random() - 0.5).slice(0, halfTrials);
+      selectedImages = selectedNonSymImages.concat(selectedSymImages);
+  
+      // Shuffle the selected images
+      selectedImages.sort(() => Math.random() - 0.5);
+  
+      // Remove one element from the selected images
+      selectedImages.pop();
+    }
+  
+    return selectedImages;
   }
-  selected_images = select_images(non_sym_images, sym_images, pracSymmTrialNumber);
+  
+  // Call the function to get the selected images
+  var selectedImages = selectImages(nonSymImages, symImages, pracSymmTrialNumber);
   
   fixation = new visual.TextStim({
     win: psychoJS.window,
