@@ -880,7 +880,7 @@ async function experimentInit() {
   const selected_non_sym_images = non_sym_images.slice(0, half_trials);
   const selected_sym_images = sym_images.slice(0, half_trials);
   selected_images = selected_non_sym_images.concat(selected_sym_images);
-  selected_images.sort(() => Math.random() - 0.5);
+  selected_images.sort(() => Math.random() - 0.5); }
    else {
   const half_trials = Math.floor((pracSymmTrialNumber + 1) / 2);
   //same here
