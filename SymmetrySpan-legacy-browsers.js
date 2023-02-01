@@ -18,7 +18,7 @@ const psychoJS = new PsychoJS({
 
 // open window:
 psychoJS.openWindow({
-  fullscr: false,
+  fullscr: true,
   color: new util.Color([0,0,0]),
   units: 'height',
   waitBlanking: true
@@ -87,9 +87,9 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
+    {'name': 'resources/example1.JPG', 'path': 'resources/example1.JPG'},
     {'name': 'resources/example2.JPG', 'path': 'resources/example2.JPG'},
-    {'name': 'resources/grid.png', 'path': 'resources/grid.png'},
-    {'name': 'resources/example1.JPG', 'path': 'resources/example1.JPG'}
+    {'name': 'resources/grid.png', 'path': 'resources/grid.png'}
   ]
 });
 
@@ -396,8 +396,23 @@ async function experimentInit() {
   }
   .call(this);
   square_coordinates = [[(- 0.225), 0.225], [(- 0.075), 0.225], [0.075, 0.225], [0.225, 0.225], [(- 0.225), 0.075], [(- 0.075), 0.075], [0.075, 0.075], [0.225, 0.075], [(- 0.225), (- 0.075)], [(- 0.075), (- 0.075)], [0.075, (- 0.075)], [0.225, (- 0.075)], [(- 0.225), (- 0.225)], [(- 0.075), (- 0.225)], [0.075, (- 0.225)], [0.225, (- 0.225)]];
-  square_dict = dict(zip(square_names, square_coordinates));
-  square_dict_both = dict(zip(square_names_both, square_coordinates));
+  
+  square_dict = {}
+  for (let i = 0; i < square_names.length; i++) {
+      square_dict[square_names[i]] = square_coordinates[i];
+  }
+  
+  square_dict = {}
+  for (let i = 0; i < square_names.length; i++) {
+      square_dict[square_names[i]] = square_coordinates[i];
+  }
+  square_dict_both = {}
+  for (let i = 0; i < square_names_both.length; i++) {
+      square_dict[square_names_both[i]] = square_coordinates[i];
+  }
+  
+  // square_dict = dict(zip(square_names, square_coordinates));
+  // square_dict_both = dict(zip(square_names_both, square_coordinates));
   prac_loop_lengths = [3, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 8, 8, 8, 9, 9, 9, 10, 10, 10, 11, 11, 11, 12, 12, 12];
   how_many_prac_loops = prac_loop_lengths.length;
   thisloop_item_number = 0;
@@ -1225,7 +1240,7 @@ async function experimentInit() {
   text_12 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_12',
-    text: 'Most nézzük meg, hogyan fog a négyzetemlékezeti és a szimmetriadöntéses feladat egyszerre kinézni.\n\nEgyrészt igyekezz megjegyezni, hol jelennek meg a négyzetek, másrészt ne felejtsd el, hogy minden négyzet között helyesen kell döntened 2mp-en belül az ábrák függőleges szimmetrikusságáról!\n\nElőször lesz egy pár gyakorlókör.\n\nKészítsd az ujjaidat a BAL és JOBB gombokra.\nSPACE',
+    text: 'Most nézzük meg, hogyan fog a négyzetemlékezeti és a szimmetriadöntéses feladat egyszerre kinézni!\n\nMinden bemutatott piros négyzet után döntened kell egy kép szimetrikusságáról!\n\nEgyrészt igyekezz megjegyezni, hol jelennek meg a négyzetek, másrészt ne felejtsd el, hogy minden négyzet között helyesen kell döntened 2mp-en belül az ábrák függőleges szimmetrikusságáról!\n\nElőször lesz egy pár gyakorlókör.\n\nKészítsd az ujjaidat a BAL és JOBB gombokra.\nSPACE',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -7324,7 +7339,7 @@ function both_endRoutineBegin(snapshot) {
         text_if_less_accuracy = "";
     } else {
         text_accuracy_both.color = "#800000";
-        text_if_less_accuracy = "A k\u00eds\u00e9rlet szempontj\u00e1b\u00f3l akkor nem sz\u00e1m\u00edt sikeresnek a feladat elv\u00e9gz\u00e9se, ha az \u00f6sszes\u00edtett (azaz minden alkalom ar\u00e1ny\u00e1nak \u00e1tlaga) nem \u00e9ri el a 85%-ot. Ez\u00e9rt ett\u0151l m\u00e9g sikeresen teljes\u00edtheted a feladatot, de legk\u00f6zelebb jobban figyel a f\u00fcgg\u0151leges d\u00f6nt\u00e9si feladatra!";
+        text_if_less_accuracy = "A kutat\u00e1s szempontj\u00e1b\u00f3l akkor nem sz\u00e1m\u00edt sikeresnek a k\u00eds\u00e9rlet elv\u00e9gz\u00e9se, ha az \u00f6sszes\u00edtett ar\u00e1ny (azaz minden alkalom ar\u00e1ny\u00e1nak \u00e1tlaga) nem \u00e9ri el a 85%-ot. Ez\u00e9rt ett\u0151l m\u00e9g sikeresen teljes\u00edtheted a k\u00eds\u00e9rletet, de legk\u00f6zelebb jobban figyel a f\u00fcgg\u0151leges d\u00f6nt\u00e9si feladatra!";
     }
     accuracyText = (`${accuracyPercent}` + "%");
     
