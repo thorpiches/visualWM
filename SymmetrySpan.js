@@ -95,171 +95,171 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'resources/sym43.JPG', 'path': 'resources/sym43.JPG'},
-    {'name': 'resources/sym37.JPG', 'path': 'resources/sym37.JPG'},
-    {'name': 'resources/sym67.JPG', 'path': 'resources/sym67.JPG'},
-    {'name': 'resources/sym24.JPG', 'path': 'resources/sym24.JPG'},
-    {'name': 'resources/sym3.JPG', 'path': 'resources/sym3.JPG'},
-    {'name': 'resources/sym53.JPG', 'path': 'resources/sym53.JPG'},
-    {'name': 'resources/sym68.JPG', 'path': 'resources/sym68.JPG'},
-    {'name': 'resources/nsym9.JPG', 'path': 'resources/nsym9.JPG'},
-    {'name': 'resources/sym58.JPG', 'path': 'resources/sym58.JPG'},
-    {'name': 'resources/nsym80.JPG', 'path': 'resources/nsym80.JPG'},
-    {'name': 'resources/nsym35.JPG', 'path': 'resources/nsym35.JPG'},
-    {'name': 'resources/sym19.JPG', 'path': 'resources/sym19.JPG'},
-    {'name': 'resources/nsym61.JPG', 'path': 'resources/nsym61.JPG'},
-    {'name': 'resources/sym49.JPG', 'path': 'resources/sym49.JPG'},
-    {'name': 'resources/nsym63.JPG', 'path': 'resources/nsym63.JPG'},
-    {'name': 'resources/sym16.JPG', 'path': 'resources/sym16.JPG'},
-    {'name': 'resources/sym75.JPG', 'path': 'resources/sym75.JPG'},
-    {'name': 'resources/nsym55.JPG', 'path': 'resources/nsym55.JPG'},
-    {'name': 'resources/sym27.JPG', 'path': 'resources/sym27.JPG'},
-    {'name': 'resources/nsym76.JPG', 'path': 'resources/nsym76.JPG'},
-    {'name': 'resources/nsym24.JPG', 'path': 'resources/nsym24.JPG'},
-    {'name': 'resources/1red.JPG', 'path': 'resources/1red.JPG'},
-    {'name': 'resources/nsym11.JPG', 'path': 'resources/nsym11.JPG'},
-    {'name': 'resources/nsym23.JPG', 'path': 'resources/nsym23.JPG'},
-    {'name': 'resources/sym41.JPG', 'path': 'resources/sym41.JPG'},
-    {'name': 'resources/nsym75.JPG', 'path': 'resources/nsym75.JPG'},
-    {'name': 'resources/nsym37.JPG', 'path': 'resources/nsym37.JPG'},
-    {'name': 'resources/sym46.JPG', 'path': 'resources/sym46.JPG'},
-    {'name': 'resources/nsym59.JPG', 'path': 'resources/nsym59.JPG'},
-    {'name': 'resources/nsym49.JPG', 'path': 'resources/nsym49.JPG'},
-    {'name': 'resources/nsym79.JPG', 'path': 'resources/nsym79.JPG'},
-    {'name': 'resources/nsym47.JPG', 'path': 'resources/nsym47.JPG'},
-    {'name': 'resources/nsym21.JPG', 'path': 'resources/nsym21.JPG'},
+    {'name': 'resources/sym5.JPG', 'path': 'resources/sym5.JPG'},
+    {'name': 'resources/sym65.JPG', 'path': 'resources/sym65.JPG'},
+    {'name': 'resources/sym32.JPG', 'path': 'resources/sym32.JPG'},
+    {'name': 'resources/nsym15.JPG', 'path': 'resources/nsym15.JPG'},
     {'name': 'resources/sym72.JPG', 'path': 'resources/sym72.JPG'},
-    {'name': 'resources/nsym73.JPG', 'path': 'resources/nsym73.JPG'},
-    {'name': 'resources/nsym51.JPG', 'path': 'resources/nsym51.JPG'},
-    {'name': 'resources/nsym48.JPG', 'path': 'resources/nsym48.JPG'},
-    {'name': 'resources/nsym28.JPG', 'path': 'resources/nsym28.JPG'},
-    {'name': 'resources/sym61.JPG', 'path': 'resources/sym61.JPG'},
-    {'name': 'resources/sym21.JPG', 'path': 'resources/sym21.JPG'},
+    {'name': 'resources/sym33.JPG', 'path': 'resources/sym33.JPG'},
+    {'name': 'resources/nsym56.JPG', 'path': 'resources/nsym56.JPG'},
     {'name': 'resources/sym80.JPG', 'path': 'resources/sym80.JPG'},
-    {'name': 'resources/sym54.JPG', 'path': 'resources/sym54.JPG'},
-    {'name': 'resources/nsym32.JPG', 'path': 'resources/nsym32.JPG'},
-    {'name': 'resources/nsym68.JPG', 'path': 'resources/nsym68.JPG'},
+    {'name': 'resources/nsym60.JPG', 'path': 'resources/nsym60.JPG'},
+    {'name': 'resources/nsym63.JPG', 'path': 'resources/nsym63.JPG'},
+    {'name': 'resources/sym58.JPG', 'path': 'resources/sym58.JPG'},
+    {'name': 'resources/nsym36.JPG', 'path': 'resources/nsym36.JPG'},
+    {'name': 'resources/nsym75.JPG', 'path': 'resources/nsym75.JPG'},
+    {'name': 'resources/nsym43.JPG', 'path': 'resources/nsym43.JPG'},
+    {'name': 'resources/nsym23.JPG', 'path': 'resources/nsym23.JPG'},
+    {'name': 'resources/nsym48.JPG', 'path': 'resources/nsym48.JPG'},
+    {'name': 'resources/sym56.JPG', 'path': 'resources/sym56.JPG'},
+    {'name': 'resources/sym77.JPG', 'path': 'resources/sym77.JPG'},
+    {'name': 'resources/sym63.JPG', 'path': 'resources/sym63.JPG'},
+    {'name': 'resources/nsym53.JPG', 'path': 'resources/nsym53.JPG'},
+    {'name': 'resources/nsym59.JPG', 'path': 'resources/nsym59.JPG'},
+    {'name': 'resources/sym3.JPG', 'path': 'resources/sym3.JPG'},
+    {'name': 'resources/sym51.JPG', 'path': 'resources/sym51.JPG'},
+    {'name': 'resources/nsym79.JPG', 'path': 'resources/nsym79.JPG'},
+    {'name': 'resources/sym45.JPG', 'path': 'resources/sym45.JPG'},
+    {'name': 'resources/sym27.JPG', 'path': 'resources/sym27.JPG'},
+    {'name': 'resources/sym23.JPG', 'path': 'resources/sym23.JPG'},
+    {'name': 'resources/nsym2.JPG', 'path': 'resources/nsym2.JPG'},
+    {'name': 'resources/nsym6.JPG', 'path': 'resources/nsym6.JPG'},
+    {'name': 'resources/sym36.JPG', 'path': 'resources/sym36.JPG'},
+    {'name': 'resources/sym53.JPG', 'path': 'resources/sym53.JPG'},
+    {'name': 'resources/sym62.JPG', 'path': 'resources/sym62.JPG'},
+    {'name': 'resources/nsym27.JPG', 'path': 'resources/nsym27.JPG'},
+    {'name': 'resources/sym37.JPG', 'path': 'resources/sym37.JPG'},
+    {'name': 'resources/sym6.JPG', 'path': 'resources/sym6.JPG'},
+    {'name': 'resources/example2.JPG', 'path': 'resources/example2.JPG'},
+    {'name': 'resources/nsym10.JPG', 'path': 'resources/nsym10.JPG'},
+    {'name': 'resources/sym55.JPG', 'path': 'resources/sym55.JPG'},
+    {'name': 'resources/nsym71.JPG', 'path': 'resources/nsym71.JPG'},
+    {'name': 'resources/nsym12.JPG', 'path': 'resources/nsym12.JPG'},
+    {'name': 'resources/grid.png', 'path': 'resources/grid.png'},
+    {'name': 'resources/nsym62.JPG', 'path': 'resources/nsym62.JPG'},
+    {'name': 'resources/nsym13.JPG', 'path': 'resources/nsym13.JPG'},
+    {'name': 'resources/sym52.JPG', 'path': 'resources/sym52.JPG'},
+    {'name': 'resources/sym71.JPG', 'path': 'resources/sym71.JPG'},
+    {'name': 'resources/sym70.JPG', 'path': 'resources/sym70.JPG'},
+    {'name': 'resources/nsym14.JPG', 'path': 'resources/nsym14.JPG'},
+    {'name': 'resources/nsym44.JPG', 'path': 'resources/nsym44.JPG'},
+    {'name': 'resources/sym42.JPG', 'path': 'resources/sym42.JPG'},
+    {'name': 'resources/sym30.JPG', 'path': 'resources/sym30.JPG'},
+    {'name': 'resources/nsym73.JPG', 'path': 'resources/nsym73.JPG'},
+    {'name': 'resources/1green.JPG', 'path': 'resources/1green.JPG'},
+    {'name': 'resources/nsym38.JPG', 'path': 'resources/nsym38.JPG'},
+    {'name': 'resources/nsym4.JPG', 'path': 'resources/nsym4.JPG'},
+    {'name': 'resources/nsym52.JPG', 'path': 'resources/nsym52.JPG'},
+    {'name': 'resources/nsym31.JPG', 'path': 'resources/nsym31.JPG'},
+    {'name': 'resources/sym12.JPG', 'path': 'resources/sym12.JPG'},
+    {'name': 'resources/sym16.JPG', 'path': 'resources/sym16.JPG'},
+    {'name': 'resources/nsym19.JPG', 'path': 'resources/nsym19.JPG'},
+    {'name': 'resources/nsym61.JPG', 'path': 'resources/nsym61.JPG'},
+    {'name': 'resources/nsym39.JPG', 'path': 'resources/nsym39.JPG'},
+    {'name': 'resources/sym67.JPG', 'path': 'resources/sym67.JPG'},
     {'name': 'resources/sym13.JPG', 'path': 'resources/sym13.JPG'},
+    {'name': 'resources/sym68.JPG', 'path': 'resources/sym68.JPG'},
+    {'name': 'resources/sym39.JPG', 'path': 'resources/sym39.JPG'},
+    {'name': 'resources/nsym8.JPG', 'path': 'resources/nsym8.JPG'},
+    {'name': 'resources/sym64.JPG', 'path': 'resources/sym64.JPG'},
+    {'name': 'resources/sym73.JPG', 'path': 'resources/sym73.JPG'},
+    {'name': 'resources/nsym47.JPG', 'path': 'resources/nsym47.JPG'},
+    {'name': 'resources/nsym77.JPG', 'path': 'resources/nsym77.JPG'},
+    {'name': 'resources/nsym25.JPG', 'path': 'resources/nsym25.JPG'},
+    {'name': 'resources/sym17.JPG', 'path': 'resources/sym17.JPG'},
+    {'name': 'resources/nsym69.JPG', 'path': 'resources/nsym69.JPG'},
+    {'name': 'resources/nsym30.JPG', 'path': 'resources/nsym30.JPG'},
     {'name': 'resources/sym26.JPG', 'path': 'resources/sym26.JPG'},
     {'name': 'resources/sym76.JPG', 'path': 'resources/sym76.JPG'},
-    {'name': 'resources/sym40.JPG', 'path': 'resources/sym40.JPG'},
-    {'name': 'resources/sym63.JPG', 'path': 'resources/sym63.JPG'},
-    {'name': 'resources/sym59.JPG', 'path': 'resources/sym59.JPG'},
-    {'name': 'resources/nsym14.JPG', 'path': 'resources/nsym14.JPG'},
-    {'name': 'resources/nsym20.JPG', 'path': 'resources/nsym20.JPG'},
-    {'name': 'resources/sym60.JPG', 'path': 'resources/sym60.JPG'},
-    {'name': 'resources/sym6.JPG', 'path': 'resources/sym6.JPG'},
-    {'name': 'resources/nsym15.JPG', 'path': 'resources/nsym15.JPG'},
-    {'name': 'resources/nsym54.JPG', 'path': 'resources/nsym54.JPG'},
-    {'name': 'resources/nsym38.JPG', 'path': 'resources/nsym38.JPG'},
-    {'name': 'resources/sym79.JPG', 'path': 'resources/sym79.JPG'},
-    {'name': 'resources/sym55.JPG', 'path': 'resources/sym55.JPG'},
-    {'name': 'resources/sym65.JPG', 'path': 'resources/sym65.JPG'},
-    {'name': 'resources/nsym74.JPG', 'path': 'resources/nsym74.JPG'},
-    {'name': 'resources/sym7.JPG', 'path': 'resources/sym7.JPG'},
-    {'name': 'resources/nsym26.JPG', 'path': 'resources/nsym26.JPG'},
-    {'name': 'resources/nsym5.JPG', 'path': 'resources/nsym5.JPG'},
-    {'name': 'resources/sym9.JPG', 'path': 'resources/sym9.JPG'},
-    {'name': 'resources/nsym50.JPG', 'path': 'resources/nsym50.JPG'},
-    {'name': 'resources/nsym18.JPG', 'path': 'resources/nsym18.JPG'},
-    {'name': 'resources/sym66.JPG', 'path': 'resources/sym66.JPG'},
-    {'name': 'resources/nsym52.JPG', 'path': 'resources/nsym52.JPG'},
-    {'name': 'resources/sym1.JPG', 'path': 'resources/sym1.JPG'},
-    {'name': 'resources/nsym42.JPG', 'path': 'resources/nsym42.JPG'},
-    {'name': 'resources/sym47.JPG', 'path': 'resources/sym47.JPG'},
-    {'name': 'resources/sym74.JPG', 'path': 'resources/sym74.JPG'},
-    {'name': 'resources/nsym57.JPG', 'path': 'resources/nsym57.JPG'},
-    {'name': 'resources/nsym66.JPG', 'path': 'resources/nsym66.JPG'},
-    {'name': 'resources/nsym65.JPG', 'path': 'resources/nsym65.JPG'},
-    {'name': 'resources/sym17.JPG', 'path': 'resources/sym17.JPG'},
-    {'name': 'resources/sym70.JPG', 'path': 'resources/sym70.JPG'},
-    {'name': 'resources/sym34.JPG', 'path': 'resources/sym34.JPG'},
-    {'name': 'resources/nsym69.JPG', 'path': 'resources/nsym69.JPG'},
-    {'name': 'resources/sym2.JPG', 'path': 'resources/sym2.JPG'},
-    {'name': 'resources/nsym41.JPG', 'path': 'resources/nsym41.JPG'},
-    {'name': 'resources/nsym8.JPG', 'path': 'resources/nsym8.JPG'},
-    {'name': 'resources/sym35.JPG', 'path': 'resources/sym35.JPG'},
-    {'name': 'resources/nsym29.JPG', 'path': 'resources/nsym29.JPG'},
-    {'name': 'resources/nsym12.JPG', 'path': 'resources/nsym12.JPG'},
-    {'name': 'resources/nsym19.JPG', 'path': 'resources/nsym19.JPG'},
-    {'name': 'resources/nsym46.JPG', 'path': 'resources/nsym46.JPG'},
-    {'name': 'resources/nsym45.JPG', 'path': 'resources/nsym45.JPG'},
-    {'name': 'resources/nsym13.JPG', 'path': 'resources/nsym13.JPG'},
-    {'name': 'resources/sym15.JPG', 'path': 'resources/sym15.JPG'},
-    {'name': 'resources/sym8.JPG', 'path': 'resources/sym8.JPG'},
-    {'name': 'resources/sym51.JPG', 'path': 'resources/sym51.JPG'},
-    {'name': 'resources/sym39.JPG', 'path': 'resources/sym39.JPG'},
-    {'name': 'resources/nsym16.JPG', 'path': 'resources/nsym16.JPG'},
-    {'name': 'resources/nsym4.JPG', 'path': 'resources/nsym4.JPG'},
-    {'name': 'resources/nsym34.JPG', 'path': 'resources/nsym34.JPG'},
-    {'name': 'resources/1green.JPG', 'path': 'resources/1green.JPG'},
-    {'name': 'resources/sym25.JPG', 'path': 'resources/sym25.JPG'},
-    {'name': 'resources/sym5.JPG', 'path': 'resources/sym5.JPG'},
-    {'name': 'resources/nsym56.JPG', 'path': 'resources/nsym56.JPG'},
-    {'name': 'resources/sym30.JPG', 'path': 'resources/sym30.JPG'},
-    {'name': 'resources/sym38.JPG', 'path': 'resources/sym38.JPG'},
-    {'name': 'resources/nsym6.JPG', 'path': 'resources/nsym6.JPG'},
-    {'name': 'resources/sym73.JPG', 'path': 'resources/sym73.JPG'},
-    {'name': 'resources/sym78.JPG', 'path': 'resources/sym78.JPG'},
-    {'name': 'resources/nsym70.JPG', 'path': 'resources/nsym70.JPG'},
-    {'name': 'resources/nsym39.JPG', 'path': 'resources/nsym39.JPG'},
-    {'name': 'resources/nsym77.JPG', 'path': 'resources/nsym77.JPG'},
-    {'name': 'resources/nsym40.JPG', 'path': 'resources/nsym40.JPG'},
-    {'name': 'resources/nsym44.JPG', 'path': 'resources/nsym44.JPG'},
-    {'name': 'resources/sym23.JPG', 'path': 'resources/sym23.JPG'},
-    {'name': 'resources/nsym1.JPG', 'path': 'resources/nsym1.JPG'},
-    {'name': 'resources/nsym78.JPG', 'path': 'resources/nsym78.JPG'},
-    {'name': 'resources/sym32.JPG', 'path': 'resources/sym32.JPG'},
-    {'name': 'resources/nsym64.JPG', 'path': 'resources/nsym64.JPG'},
-    {'name': 'resources/sym33.JPG', 'path': 'resources/sym33.JPG'},
-    {'name': 'resources/sym57.JPG', 'path': 'resources/sym57.JPG'},
-    {'name': 'resources/sym77.JPG', 'path': 'resources/sym77.JPG'},
-    {'name': 'resources/example1.JPG', 'path': 'resources/example1.JPG'},
-    {'name': 'resources/nsym58.JPG', 'path': 'resources/nsym58.JPG'},
-    {'name': 'resources/nsym7.JPG', 'path': 'resources/nsym7.JPG'},
-    {'name': 'resources/nsym71.JPG', 'path': 'resources/nsym71.JPG'},
-    {'name': 'resources/nsym22.JPG', 'path': 'resources/nsym22.JPG'},
-    {'name': 'resources/sym4.JPG', 'path': 'resources/sym4.JPG'},
-    {'name': 'resources/nsym2.JPG', 'path': 'resources/nsym2.JPG'},
-    {'name': 'resources/sym12.JPG', 'path': 'resources/sym12.JPG'},
-    {'name': 'resources/sym44.JPG', 'path': 'resources/sym44.JPG'},
-    {'name': 'resources/nsym31.JPG', 'path': 'resources/nsym31.JPG'},
-    {'name': 'resources/sym50.JPG', 'path': 'resources/sym50.JPG'},
-    {'name': 'resources/sym71.JPG', 'path': 'resources/sym71.JPG'},
-    {'name': 'resources/nsym25.JPG', 'path': 'resources/nsym25.JPG'},
-    {'name': 'resources/sym64.JPG', 'path': 'resources/sym64.JPG'},
-    {'name': 'resources/sym18.JPG', 'path': 'resources/sym18.JPG'},
-    {'name': 'resources/sym45.JPG', 'path': 'resources/sym45.JPG'},
-    {'name': 'resources/sym10.JPG', 'path': 'resources/sym10.JPG'},
-    {'name': 'resources/sym42.JPG', 'path': 'resources/sym42.JPG'},
-    {'name': 'resources/example2.JPG', 'path': 'resources/example2.JPG'},
-    {'name': 'resources/nsym27.JPG', 'path': 'resources/nsym27.JPG'},
-    {'name': 'resources/nsym67.JPG', 'path': 'resources/nsym67.JPG'},
-    {'name': 'resources/sym11.JPG', 'path': 'resources/sym11.JPG'},
-    {'name': 'resources/sym62.JPG', 'path': 'resources/sym62.JPG'},
-    {'name': 'resources/sym31.JPG', 'path': 'resources/sym31.JPG'},
-    {'name': 'resources/nsym72.JPG', 'path': 'resources/nsym72.JPG'},
-    {'name': 'resources/nsym53.JPG', 'path': 'resources/nsym53.JPG'},
-    {'name': 'resources/nsym62.JPG', 'path': 'resources/nsym62.JPG'},
-    {'name': 'resources/sym29.JPG', 'path': 'resources/sym29.JPG'},
     {'name': 'resources/sym69.JPG', 'path': 'resources/sym69.JPG'},
-    {'name': 'resources/sym28.JPG', 'path': 'resources/sym28.JPG'},
-    {'name': 'resources/grid.png', 'path': 'resources/grid.png'},
-    {'name': 'resources/nsym30.JPG', 'path': 'resources/nsym30.JPG'},
-    {'name': 'resources/nsym36.JPG', 'path': 'resources/nsym36.JPG'},
-    {'name': 'resources/sym22.JPG', 'path': 'resources/sym22.JPG'},
+    {'name': 'resources/nsym54.JPG', 'path': 'resources/nsym54.JPG'},
+    {'name': 'resources/nsym29.JPG', 'path': 'resources/nsym29.JPG'},
+    {'name': 'resources/nsym11.JPG', 'path': 'resources/nsym11.JPG'},
+    {'name': 'resources/sym61.JPG', 'path': 'resources/sym61.JPG'},
+    {'name': 'resources/nsym24.JPG', 'path': 'resources/nsym24.JPG'},
+    {'name': 'resources/sym1.JPG', 'path': 'resources/sym1.JPG'},
     {'name': 'resources/sym14.JPG', 'path': 'resources/sym14.JPG'},
-    {'name': 'resources/nsym17.JPG', 'path': 'resources/nsym17.JPG'},
-    {'name': 'resources/nsym33.JPG', 'path': 'resources/nsym33.JPG'},
-    {'name': 'resources/sym20.JPG', 'path': 'resources/sym20.JPG'},
-    {'name': 'resources/sym52.JPG', 'path': 'resources/sym52.JPG'},
-    {'name': 'resources/sym56.JPG', 'path': 'resources/sym56.JPG'},
-    {'name': 'resources/nsym43.JPG', 'path': 'resources/nsym43.JPG'},
+    {'name': 'resources/sym41.JPG', 'path': 'resources/sym41.JPG'},
+    {'name': 'resources/sym60.JPG', 'path': 'resources/sym60.JPG'},
+    {'name': 'resources/sym10.JPG', 'path': 'resources/sym10.JPG'},
+    {'name': 'resources/sym29.JPG', 'path': 'resources/sym29.JPG'},
+    {'name': 'resources/nsym1.JPG', 'path': 'resources/nsym1.JPG'},
     {'name': 'resources/sym48.JPG', 'path': 'resources/sym48.JPG'},
-    {'name': 'resources/nsym10.JPG', 'path': 'resources/nsym10.JPG'},
-    {'name': 'resources/nsym60.JPG', 'path': 'resources/nsym60.JPG'},
-    {'name': 'resources/sym36.JPG', 'path': 'resources/sym36.JPG'},
-    {'name': 'resources/nsym3.JPG', 'path': 'resources/nsym3.JPG'}
+    {'name': 'resources/nsym42.JPG', 'path': 'resources/nsym42.JPG'},
+    {'name': 'resources/example1.JPG', 'path': 'resources/example1.JPG'},
+    {'name': 'resources/sym38.JPG', 'path': 'resources/sym38.JPG'},
+    {'name': 'resources/nsym45.JPG', 'path': 'resources/nsym45.JPG'},
+    {'name': 'resources/sym49.JPG', 'path': 'resources/sym49.JPG'},
+    {'name': 'resources/sym9.JPG', 'path': 'resources/sym9.JPG'},
+    {'name': 'resources/nsym67.JPG', 'path': 'resources/nsym67.JPG'},
+    {'name': 'resources/sym15.JPG', 'path': 'resources/sym15.JPG'},
+    {'name': 'resources/nsym17.JPG', 'path': 'resources/nsym17.JPG'},
+    {'name': 'resources/sym34.JPG', 'path': 'resources/sym34.JPG'},
+    {'name': 'resources/sym44.JPG', 'path': 'resources/sym44.JPG'},
+    {'name': 'resources/nsym50.JPG', 'path': 'resources/nsym50.JPG'},
+    {'name': 'resources/nsym32.JPG', 'path': 'resources/nsym32.JPG'},
+    {'name': 'resources/nsym74.JPG', 'path': 'resources/nsym74.JPG'},
+    {'name': 'resources/nsym28.JPG', 'path': 'resources/nsym28.JPG'},
+    {'name': 'resources/nsym33.JPG', 'path': 'resources/nsym33.JPG'},
+    {'name': 'resources/sym7.JPG', 'path': 'resources/sym7.JPG'},
+    {'name': 'resources/nsym34.JPG', 'path': 'resources/nsym34.JPG'},
+    {'name': 'resources/nsym46.JPG', 'path': 'resources/nsym46.JPG'},
+    {'name': 'resources/nsym51.JPG', 'path': 'resources/nsym51.JPG'},
+    {'name': 'resources/nsym70.JPG', 'path': 'resources/nsym70.JPG'},
+    {'name': 'resources/sym8.JPG', 'path': 'resources/sym8.JPG'},
+    {'name': 'resources/sym28.JPG', 'path': 'resources/sym28.JPG'},
+    {'name': 'resources/nsym78.JPG', 'path': 'resources/nsym78.JPG'},
+    {'name': 'resources/sym43.JPG', 'path': 'resources/sym43.JPG'},
+    {'name': 'resources/nsym20.JPG', 'path': 'resources/nsym20.JPG'},
+    {'name': 'resources/nsym65.JPG', 'path': 'resources/nsym65.JPG'},
+    {'name': 'resources/sym25.JPG', 'path': 'resources/sym25.JPG'},
+    {'name': 'resources/nsym40.JPG', 'path': 'resources/nsym40.JPG'},
+    {'name': 'resources/sym24.JPG', 'path': 'resources/sym24.JPG'},
+    {'name': 'resources/nsym49.JPG', 'path': 'resources/nsym49.JPG'},
+    {'name': 'resources/nsym72.JPG', 'path': 'resources/nsym72.JPG'},
+    {'name': 'resources/nsym22.JPG', 'path': 'resources/nsym22.JPG'},
+    {'name': 'resources/nsym21.JPG', 'path': 'resources/nsym21.JPG'},
+    {'name': 'resources/sym50.JPG', 'path': 'resources/sym50.JPG'},
+    {'name': 'resources/nsym35.JPG', 'path': 'resources/nsym35.JPG'},
+    {'name': 'resources/sym47.JPG', 'path': 'resources/sym47.JPG'},
+    {'name': 'resources/sym57.JPG', 'path': 'resources/sym57.JPG'},
+    {'name': 'resources/nsym66.JPG', 'path': 'resources/nsym66.JPG'},
+    {'name': 'resources/sym4.JPG', 'path': 'resources/sym4.JPG'},
+    {'name': 'resources/sym11.JPG', 'path': 'resources/sym11.JPG'},
+    {'name': 'resources/sym21.JPG', 'path': 'resources/sym21.JPG'},
+    {'name': 'resources/nsym37.JPG', 'path': 'resources/nsym37.JPG'},
+    {'name': 'resources/sym31.JPG', 'path': 'resources/sym31.JPG'},
+    {'name': 'resources/nsym16.JPG', 'path': 'resources/nsym16.JPG'},
+    {'name': 'resources/nsym3.JPG', 'path': 'resources/nsym3.JPG'},
+    {'name': 'resources/1red.JPG', 'path': 'resources/1red.JPG'},
+    {'name': 'resources/nsym64.JPG', 'path': 'resources/nsym64.JPG'},
+    {'name': 'resources/sym40.JPG', 'path': 'resources/sym40.JPG'},
+    {'name': 'resources/sym2.JPG', 'path': 'resources/sym2.JPG'},
+    {'name': 'resources/sym35.JPG', 'path': 'resources/sym35.JPG'},
+    {'name': 'resources/sym46.JPG', 'path': 'resources/sym46.JPG'},
+    {'name': 'resources/sym20.JPG', 'path': 'resources/sym20.JPG'},
+    {'name': 'resources/sym74.JPG', 'path': 'resources/sym74.JPG'},
+    {'name': 'resources/sym66.JPG', 'path': 'resources/sym66.JPG'},
+    {'name': 'resources/nsym80.JPG', 'path': 'resources/nsym80.JPG'},
+    {'name': 'resources/nsym18.JPG', 'path': 'resources/nsym18.JPG'},
+    {'name': 'resources/nsym7.JPG', 'path': 'resources/nsym7.JPG'},
+    {'name': 'resources/nsym58.JPG', 'path': 'resources/nsym58.JPG'},
+    {'name': 'resources/nsym68.JPG', 'path': 'resources/nsym68.JPG'},
+    {'name': 'resources/sym22.JPG', 'path': 'resources/sym22.JPG'},
+    {'name': 'resources/nsym41.JPG', 'path': 'resources/nsym41.JPG'},
+    {'name': 'resources/sym78.JPG', 'path': 'resources/sym78.JPG'},
+    {'name': 'resources/nsym76.JPG', 'path': 'resources/nsym76.JPG'},
+    {'name': 'resources/sym19.JPG', 'path': 'resources/sym19.JPG'},
+    {'name': 'resources/sym54.JPG', 'path': 'resources/sym54.JPG'},
+    {'name': 'resources/sym79.JPG', 'path': 'resources/sym79.JPG'},
+    {'name': 'resources/nsym57.JPG', 'path': 'resources/nsym57.JPG'},
+    {'name': 'resources/sym59.JPG', 'path': 'resources/sym59.JPG'},
+    {'name': 'resources/nsym55.JPG', 'path': 'resources/nsym55.JPG'},
+    {'name': 'resources/nsym9.JPG', 'path': 'resources/nsym9.JPG'},
+    {'name': 'resources/sym75.JPG', 'path': 'resources/sym75.JPG'},
+    {'name': 'resources/nsym26.JPG', 'path': 'resources/nsym26.JPG'},
+    {'name': 'resources/sym18.JPG', 'path': 'resources/sym18.JPG'},
+    {'name': 'resources/nsym5.JPG', 'path': 'resources/nsym5.JPG'}
   ]
 });
 
@@ -389,6 +389,7 @@ var key_resp_4;
 var ins2Clock;
 var text_5;
 var key_resp_5;
+var prac_sym_helperClock;
 var prac_symClock;
 var resources_path;
 var pracSymmTrialNumber;
@@ -399,6 +400,7 @@ var countDownText;
 var correct_total_text;
 var timerPracSym;
 var non_sym_images;
+var sym_images;
 var fixation;
 var image_2;
 var text_sym_nsym_3;
@@ -410,6 +412,7 @@ var usedTime;
 var maskColor;
 var greenMask;
 var redMask;
+var picture;
 var image_3;
 var image_4;
 var prac_sym_fbClock;
@@ -1221,6 +1224,8 @@ async function experimentInit() {
   
   key_resp_5 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
+  // Initialize components for Routine "prac_sym_helper"
+  prac_sym_helperClock = new util.Clock();
   // Initialize components for Routine "prac_sym"
   prac_symClock = new util.Clock();
   // Run 'Begin Experiment' code from code_prac_sym
@@ -1247,11 +1252,25 @@ async function experimentInit() {
   }
   
   // Create the second array for the symmetric images
-  let sym_images = [];
+  sym_images = [];
   for (let i = 1; i < 80; i++) {
   const image_name = 'sym' + i + '.JPG';
   const image_path = resources_path + image_name;
   sym_images.push(image_path);
+  }
+  
+  
+  function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  
+  while (0 !== currentIndex) {
+  randomIndex = Math.floor(Math.random() * currentIndex);
+  currentIndex -= 1;
+  temporaryValue = array[currentIndex];
+  array[currentIndex] = array[randomIndex];
+  array[randomIndex] = temporaryValue;
+  }
+  return array;
   }
   
   //creating function that chooses x amount of sym and nsym images
@@ -1259,15 +1278,19 @@ async function experimentInit() {
   if (pracSymmTrialNumber % 2 === 0) {
   const half_trials = Math.floor(pracSymmTrialNumber / 2);
   // Select random samples from sym and nsym images
-  const selected_non_sym_images = non_sym_images.slice(0, half_trials);
-  const selected_sym_images = sym_images.slice(0, half_trials);
+  let selected_non_sym_images = shuffle(non_sym_images);
+      selected_non_sym_images = selected_non_sym_images.slice(0, half_trials);
+  let selected_sym_images = shuffle(sym_images);
+      selected_sym_images = selected_sym_images.slice(0, half_trials);
   selected_images = selected_non_sym_images.concat(selected_sym_images);
   selected_images.sort(() => Math.random() - 0.5); }
    else {
   const half_trials = Math.floor((pracSymmTrialNumber + 1) / 2);
   //same here
-  const selected_non_sym_images = non_sym_images.slice(0, half_trials);
-  const selected_sym_images = sym_images.slice(0, half_trials);
+  let selected_non_sym_images = shuffle(non_sym_images);
+      selected_non_sym_images = selected_non_sym_images.slice(0, half_trials);
+  let selected_sym_images = shuffle(sym_images);
+      selected_sym_images = selected_sym_images.slice(0, half_trials);
   //but we delete one
   selected_images = selected_non_sym_images.concat(selected_sym_images);
   selected_images.sort(() => Math.random() - 0.5);
@@ -1340,8 +1363,9 @@ async function experimentInit() {
   // Run 'Begin Experiment' code from code_prac_sym_g_r
   usedTime = 0
   maskColor = "";
-  greenMask = resources_path + "/1green.JPG";
-  redMask = resources_path + "/1red.JPG";
+  greenMask = resources_path + "1green.JPG";
+  redMask = resources_path + "1red.JPG";
+  picture = "";
   image_3 = new visual.ImageStim({
     win : psychoJS.window,
     name : 'image_3', units : undefined, 
@@ -2660,6 +2684,9 @@ function trials_prac2LoopBegin(trials_prac2LoopScheduler, snapshot) {
     for (const thisTrials_prac2 of trials_prac2) {
       snapshot = trials_prac2.getSnapshot();
       trials_prac2LoopScheduler.add(importConditions(snapshot));
+      trials_prac2LoopScheduler.add(prac_sym_helperRoutineBegin(snapshot));
+      trials_prac2LoopScheduler.add(prac_sym_helperRoutineEachFrame());
+      trials_prac2LoopScheduler.add(prac_sym_helperRoutineEnd(snapshot));
       const trials_pracLoopScheduler = new Scheduler(psychoJS);
       trials_prac2LoopScheduler.add(trials_pracLoopBegin(trials_pracLoopScheduler, snapshot));
       trials_prac2LoopScheduler.add(trials_pracLoopScheduler);
@@ -3009,6 +3036,7 @@ function square_helperRoutineBegin(snapshot) {
     corr_square_cliqued = 0;
     correct_square_counter = 0;
     
+    
     function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
     
@@ -3021,7 +3049,6 @@ function square_helperRoutineBegin(snapshot) {
     }
     return array;
     }
-    
     
     // keep track of which components have finished
     square_helperComponents = [];
@@ -5171,7 +5198,127 @@ function ins2RoutineEnd(snapshot) {
 }
 
 
-var picture;
+var prac_sym_helperComponents;
+function prac_sym_helperRoutineBegin(snapshot) {
+  return async function () {
+    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
+    
+    //--- Prepare to start Routine 'prac_sym_helper' ---
+    t = 0;
+    prac_sym_helperClock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    
+    
+    function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+    
+    while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+    }
+    return array;
+    }
+    
+    //creating function that chooses x amount of sym and nsym images
+    function select_images(non_sym_images, sym_images, pracSymmTrialNumber) {
+    if (pracSymmTrialNumber % 2 === 0) {
+    const half_trials = Math.floor(pracSymmTrialNumber / 2);
+    // Select random samples from sym and nsym images
+    let selected_non_sym_images = shuffle(non_sym_images);
+        selected_non_sym_images = selected_non_sym_images.slice(0, half_trials);
+    let selected_sym_images = shuffle(sym_images);
+        selected_sym_images = selected_sym_images.slice(0, half_trials);
+    selected_images = selected_non_sym_images.concat(selected_sym_images);
+    selected_images.sort(() => Math.random() - 0.5); }
+     else {
+    const half_trials = Math.floor((pracSymmTrialNumber + 1) / 2);
+    //same here
+    let selected_non_sym_images = shuffle(non_sym_images);
+        selected_non_sym_images = selected_non_sym_images.slice(0, half_trials);
+    let selected_sym_images = shuffle(sym_images);
+        selected_sym_images = selected_sym_images.slice(0, half_trials);
+    //but we delete one
+    selected_images = selected_non_sym_images.concat(selected_sym_images);
+    selected_images.sort(() => Math.random() - 0.5);
+    selected_images.pop();
+    }
+    return selected_images;
+    }
+    
+    total_trials = 0;
+    selected_images = select_images(non_sym_images, sym_images, pracSymmTrialNumber);
+    
+    
+    // keep track of which components have finished
+    prac_sym_helperComponents = [];
+    
+    for (const thisComponent of prac_sym_helperComponents)
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function prac_sym_helperRoutineEachFrame() {
+  return async function () {
+    //--- Loop for each frame of Routine 'prac_sym_helper' ---
+    // get current time
+    t = prac_sym_helperClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    for (const thisComponent of prac_sym_helperComponents)
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+        break;
+      }
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function prac_sym_helperRoutineEnd(snapshot) {
+  return async function () {
+    //--- Ending Routine 'prac_sym_helper' ---
+    for (const thisComponent of prac_sym_helperComponents) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    }
+    // the Routine "prac_sym_helper" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    // Routines running outside a loop should always advance the datafile row
+    if (currentLoop === psychoJS.experiment) {
+      psychoJS.experiment.nextEntry(snapshot);
+    }
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
 var _key_resp_6_allKeys;
 var prac_symComponents;
 function prac_symRoutineBegin(snapshot) {
@@ -5187,8 +5334,8 @@ function prac_symRoutineBegin(snapshot) {
     // update component parameters for each repeat
     // Run 'Begin Routine' code from code_prac_sym
     timerPracSym.reset();
-    picture = selected_images[total_trials];
     
+    picture = selected_images[total_trials];
     key_resp_6.keys = undefined;
     key_resp_6.rt = undefined;
     _key_resp_6_allKeys = [];
@@ -5218,6 +5365,7 @@ function prac_symRoutineEachFrame() {
     // update/draw components on each frame
     // Run 'Each Frame' code from code_prac_sym
     countDownText = toString(timerPracSym.getTime());
+    picture = selected_images[total_trials];
     
     // *fixation* updates
     if (t >= 0.0 && fixation.status === PsychoJS.Status.NOT_STARTED) {
@@ -5368,6 +5516,8 @@ function prac_symRoutineEnd(snapshot) {
       }
     }
     // Run 'End Routine' code from code_prac_sym
+    
+    
     var _pj;
     function _pj_snippets(container) {
         function in_es6(left, right) {
@@ -5537,6 +5687,10 @@ function prac_sym_g_rRoutineEnd(snapshot) {
     // Run 'End Routine' code from code_prac_sym_g_r
     psychoJS.experiment.addData("SymmAnswer", sym_corr);
     maskColor = "";
+    
+    picture = ""
+    
+    setTimeout(() => {}, 20);
     
     // Routines running outside a loop should always advance the datafile row
     if (currentLoop === psychoJS.experiment) {
@@ -7899,6 +8053,8 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
   
   
   

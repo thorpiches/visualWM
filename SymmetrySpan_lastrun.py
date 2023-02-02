@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on február 02, 2023, at 00:31
+    on február 02, 2023, at 12:47
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1423,6 +1423,7 @@ for thisTrials_square_2 in trials_square_2:
     i = 0
     recall_counter = 0
     corr_square_cliqued = 0
+    
     # keep track of which components have finished
     square_helperComponents = []
     for thisComponent in square_helperComponents:
@@ -2544,6 +2545,8 @@ for thisTrials_square_2 in trials_square_2:
     # update component parameters for each repeat
     # Run 'Begin Routine' code from code_next_square_set
     # Showing the participant how many squares he found from total
+    
+    
     result_squares_text = "Eredményed: %d / %d"%(corr_square_cliqued ,thisloop_item_number)
     
     # Setting up the counter that breaks the loop if too many mistakes made
