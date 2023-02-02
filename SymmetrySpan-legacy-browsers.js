@@ -87,14 +87,179 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'resources/grid.png', 'path': 'resources/grid.png'},
+    {'name': 'resources/sym43.JPG', 'path': 'resources/sym43.JPG'},
+    {'name': 'resources/sym37.JPG', 'path': 'resources/sym37.JPG'},
+    {'name': 'resources/sym67.JPG', 'path': 'resources/sym67.JPG'},
+    {'name': 'resources/sym24.JPG', 'path': 'resources/sym24.JPG'},
+    {'name': 'resources/sym3.JPG', 'path': 'resources/sym3.JPG'},
+    {'name': 'resources/sym53.JPG', 'path': 'resources/sym53.JPG'},
+    {'name': 'resources/sym68.JPG', 'path': 'resources/sym68.JPG'},
+    {'name': 'resources/nsym9.JPG', 'path': 'resources/nsym9.JPG'},
+    {'name': 'resources/sym58.JPG', 'path': 'resources/sym58.JPG'},
+    {'name': 'resources/nsym80.JPG', 'path': 'resources/nsym80.JPG'},
+    {'name': 'resources/nsym35.JPG', 'path': 'resources/nsym35.JPG'},
+    {'name': 'resources/sym19.JPG', 'path': 'resources/sym19.JPG'},
+    {'name': 'resources/nsym61.JPG', 'path': 'resources/nsym61.JPG'},
+    {'name': 'resources/sym49.JPG', 'path': 'resources/sym49.JPG'},
+    {'name': 'resources/nsym63.JPG', 'path': 'resources/nsym63.JPG'},
+    {'name': 'resources/sym16.JPG', 'path': 'resources/sym16.JPG'},
+    {'name': 'resources/sym75.JPG', 'path': 'resources/sym75.JPG'},
+    {'name': 'resources/nsym55.JPG', 'path': 'resources/nsym55.JPG'},
+    {'name': 'resources/sym27.JPG', 'path': 'resources/sym27.JPG'},
+    {'name': 'resources/nsym76.JPG', 'path': 'resources/nsym76.JPG'},
+    {'name': 'resources/nsym24.JPG', 'path': 'resources/nsym24.JPG'},
+    {'name': 'resources/1red.JPG', 'path': 'resources/1red.JPG'},
+    {'name': 'resources/nsym11.JPG', 'path': 'resources/nsym11.JPG'},
+    {'name': 'resources/nsym23.JPG', 'path': 'resources/nsym23.JPG'},
+    {'name': 'resources/sym41.JPG', 'path': 'resources/sym41.JPG'},
+    {'name': 'resources/nsym75.JPG', 'path': 'resources/nsym75.JPG'},
+    {'name': 'resources/nsym37.JPG', 'path': 'resources/nsym37.JPG'},
+    {'name': 'resources/sym46.JPG', 'path': 'resources/sym46.JPG'},
+    {'name': 'resources/nsym59.JPG', 'path': 'resources/nsym59.JPG'},
+    {'name': 'resources/nsym49.JPG', 'path': 'resources/nsym49.JPG'},
+    {'name': 'resources/nsym79.JPG', 'path': 'resources/nsym79.JPG'},
+    {'name': 'resources/nsym47.JPG', 'path': 'resources/nsym47.JPG'},
+    {'name': 'resources/nsym21.JPG', 'path': 'resources/nsym21.JPG'},
+    {'name': 'resources/sym72.JPG', 'path': 'resources/sym72.JPG'},
+    {'name': 'resources/nsym73.JPG', 'path': 'resources/nsym73.JPG'},
+    {'name': 'resources/nsym51.JPG', 'path': 'resources/nsym51.JPG'},
+    {'name': 'resources/nsym48.JPG', 'path': 'resources/nsym48.JPG'},
+    {'name': 'resources/nsym28.JPG', 'path': 'resources/nsym28.JPG'},
+    {'name': 'resources/sym61.JPG', 'path': 'resources/sym61.JPG'},
+    {'name': 'resources/sym21.JPG', 'path': 'resources/sym21.JPG'},
+    {'name': 'resources/sym80.JPG', 'path': 'resources/sym80.JPG'},
+    {'name': 'resources/sym54.JPG', 'path': 'resources/sym54.JPG'},
+    {'name': 'resources/nsym32.JPG', 'path': 'resources/nsym32.JPG'},
+    {'name': 'resources/nsym68.JPG', 'path': 'resources/nsym68.JPG'},
+    {'name': 'resources/sym13.JPG', 'path': 'resources/sym13.JPG'},
+    {'name': 'resources/sym26.JPG', 'path': 'resources/sym26.JPG'},
+    {'name': 'resources/sym76.JPG', 'path': 'resources/sym76.JPG'},
+    {'name': 'resources/sym40.JPG', 'path': 'resources/sym40.JPG'},
+    {'name': 'resources/sym63.JPG', 'path': 'resources/sym63.JPG'},
+    {'name': 'resources/sym59.JPG', 'path': 'resources/sym59.JPG'},
+    {'name': 'resources/nsym14.JPG', 'path': 'resources/nsym14.JPG'},
+    {'name': 'resources/nsym20.JPG', 'path': 'resources/nsym20.JPG'},
+    {'name': 'resources/sym60.JPG', 'path': 'resources/sym60.JPG'},
+    {'name': 'resources/sym6.JPG', 'path': 'resources/sym6.JPG'},
+    {'name': 'resources/nsym15.JPG', 'path': 'resources/nsym15.JPG'},
+    {'name': 'resources/nsym54.JPG', 'path': 'resources/nsym54.JPG'},
+    {'name': 'resources/nsym38.JPG', 'path': 'resources/nsym38.JPG'},
+    {'name': 'resources/sym79.JPG', 'path': 'resources/sym79.JPG'},
+    {'name': 'resources/sym55.JPG', 'path': 'resources/sym55.JPG'},
+    {'name': 'resources/sym65.JPG', 'path': 'resources/sym65.JPG'},
+    {'name': 'resources/nsym74.JPG', 'path': 'resources/nsym74.JPG'},
+    {'name': 'resources/sym7.JPG', 'path': 'resources/sym7.JPG'},
+    {'name': 'resources/nsym26.JPG', 'path': 'resources/nsym26.JPG'},
+    {'name': 'resources/nsym5.JPG', 'path': 'resources/nsym5.JPG'},
+    {'name': 'resources/sym9.JPG', 'path': 'resources/sym9.JPG'},
+    {'name': 'resources/nsym50.JPG', 'path': 'resources/nsym50.JPG'},
+    {'name': 'resources/nsym18.JPG', 'path': 'resources/nsym18.JPG'},
+    {'name': 'resources/sym66.JPG', 'path': 'resources/sym66.JPG'},
+    {'name': 'resources/nsym52.JPG', 'path': 'resources/nsym52.JPG'},
+    {'name': 'resources/sym1.JPG', 'path': 'resources/sym1.JPG'},
+    {'name': 'resources/nsym42.JPG', 'path': 'resources/nsym42.JPG'},
+    {'name': 'resources/sym47.JPG', 'path': 'resources/sym47.JPG'},
+    {'name': 'resources/sym74.JPG', 'path': 'resources/sym74.JPG'},
+    {'name': 'resources/nsym57.JPG', 'path': 'resources/nsym57.JPG'},
+    {'name': 'resources/nsym66.JPG', 'path': 'resources/nsym66.JPG'},
+    {'name': 'resources/nsym65.JPG', 'path': 'resources/nsym65.JPG'},
+    {'name': 'resources/sym17.JPG', 'path': 'resources/sym17.JPG'},
+    {'name': 'resources/sym70.JPG', 'path': 'resources/sym70.JPG'},
+    {'name': 'resources/sym34.JPG', 'path': 'resources/sym34.JPG'},
+    {'name': 'resources/nsym69.JPG', 'path': 'resources/nsym69.JPG'},
+    {'name': 'resources/sym2.JPG', 'path': 'resources/sym2.JPG'},
+    {'name': 'resources/nsym41.JPG', 'path': 'resources/nsym41.JPG'},
+    {'name': 'resources/nsym8.JPG', 'path': 'resources/nsym8.JPG'},
+    {'name': 'resources/sym35.JPG', 'path': 'resources/sym35.JPG'},
+    {'name': 'resources/nsym29.JPG', 'path': 'resources/nsym29.JPG'},
+    {'name': 'resources/nsym12.JPG', 'path': 'resources/nsym12.JPG'},
+    {'name': 'resources/nsym19.JPG', 'path': 'resources/nsym19.JPG'},
+    {'name': 'resources/nsym46.JPG', 'path': 'resources/nsym46.JPG'},
+    {'name': 'resources/nsym45.JPG', 'path': 'resources/nsym45.JPG'},
+    {'name': 'resources/nsym13.JPG', 'path': 'resources/nsym13.JPG'},
+    {'name': 'resources/sym15.JPG', 'path': 'resources/sym15.JPG'},
+    {'name': 'resources/sym8.JPG', 'path': 'resources/sym8.JPG'},
+    {'name': 'resources/sym51.JPG', 'path': 'resources/sym51.JPG'},
+    {'name': 'resources/sym39.JPG', 'path': 'resources/sym39.JPG'},
+    {'name': 'resources/nsym16.JPG', 'path': 'resources/nsym16.JPG'},
+    {'name': 'resources/nsym4.JPG', 'path': 'resources/nsym4.JPG'},
+    {'name': 'resources/nsym34.JPG', 'path': 'resources/nsym34.JPG'},
+    {'name': 'resources/1green.JPG', 'path': 'resources/1green.JPG'},
+    {'name': 'resources/sym25.JPG', 'path': 'resources/sym25.JPG'},
+    {'name': 'resources/sym5.JPG', 'path': 'resources/sym5.JPG'},
+    {'name': 'resources/nsym56.JPG', 'path': 'resources/nsym56.JPG'},
+    {'name': 'resources/sym30.JPG', 'path': 'resources/sym30.JPG'},
+    {'name': 'resources/sym38.JPG', 'path': 'resources/sym38.JPG'},
+    {'name': 'resources/nsym6.JPG', 'path': 'resources/nsym6.JPG'},
+    {'name': 'resources/sym73.JPG', 'path': 'resources/sym73.JPG'},
+    {'name': 'resources/sym78.JPG', 'path': 'resources/sym78.JPG'},
+    {'name': 'resources/nsym70.JPG', 'path': 'resources/nsym70.JPG'},
+    {'name': 'resources/nsym39.JPG', 'path': 'resources/nsym39.JPG'},
+    {'name': 'resources/nsym77.JPG', 'path': 'resources/nsym77.JPG'},
+    {'name': 'resources/nsym40.JPG', 'path': 'resources/nsym40.JPG'},
+    {'name': 'resources/nsym44.JPG', 'path': 'resources/nsym44.JPG'},
+    {'name': 'resources/sym23.JPG', 'path': 'resources/sym23.JPG'},
+    {'name': 'resources/nsym1.JPG', 'path': 'resources/nsym1.JPG'},
+    {'name': 'resources/nsym78.JPG', 'path': 'resources/nsym78.JPG'},
+    {'name': 'resources/sym32.JPG', 'path': 'resources/sym32.JPG'},
+    {'name': 'resources/nsym64.JPG', 'path': 'resources/nsym64.JPG'},
+    {'name': 'resources/sym33.JPG', 'path': 'resources/sym33.JPG'},
+    {'name': 'resources/sym57.JPG', 'path': 'resources/sym57.JPG'},
+    {'name': 'resources/sym77.JPG', 'path': 'resources/sym77.JPG'},
     {'name': 'resources/example1.JPG', 'path': 'resources/example1.JPG'},
-    {'name': 'resources/example2.JPG', 'path': 'resources/example2.JPG'}
+    {'name': 'resources/nsym58.JPG', 'path': 'resources/nsym58.JPG'},
+    {'name': 'resources/nsym7.JPG', 'path': 'resources/nsym7.JPG'},
+    {'name': 'resources/nsym71.JPG', 'path': 'resources/nsym71.JPG'},
+    {'name': 'resources/nsym22.JPG', 'path': 'resources/nsym22.JPG'},
+    {'name': 'resources/sym4.JPG', 'path': 'resources/sym4.JPG'},
+    {'name': 'resources/nsym2.JPG', 'path': 'resources/nsym2.JPG'},
+    {'name': 'resources/sym12.JPG', 'path': 'resources/sym12.JPG'},
+    {'name': 'resources/sym44.JPG', 'path': 'resources/sym44.JPG'},
+    {'name': 'resources/nsym31.JPG', 'path': 'resources/nsym31.JPG'},
+    {'name': 'resources/sym50.JPG', 'path': 'resources/sym50.JPG'},
+    {'name': 'resources/sym71.JPG', 'path': 'resources/sym71.JPG'},
+    {'name': 'resources/nsym25.JPG', 'path': 'resources/nsym25.JPG'},
+    {'name': 'resources/sym64.JPG', 'path': 'resources/sym64.JPG'},
+    {'name': 'resources/sym18.JPG', 'path': 'resources/sym18.JPG'},
+    {'name': 'resources/sym45.JPG', 'path': 'resources/sym45.JPG'},
+    {'name': 'resources/sym10.JPG', 'path': 'resources/sym10.JPG'},
+    {'name': 'resources/sym42.JPG', 'path': 'resources/sym42.JPG'},
+    {'name': 'resources/example2.JPG', 'path': 'resources/example2.JPG'},
+    {'name': 'resources/nsym27.JPG', 'path': 'resources/nsym27.JPG'},
+    {'name': 'resources/nsym67.JPG', 'path': 'resources/nsym67.JPG'},
+    {'name': 'resources/sym11.JPG', 'path': 'resources/sym11.JPG'},
+    {'name': 'resources/sym62.JPG', 'path': 'resources/sym62.JPG'},
+    {'name': 'resources/sym31.JPG', 'path': 'resources/sym31.JPG'},
+    {'name': 'resources/nsym72.JPG', 'path': 'resources/nsym72.JPG'},
+    {'name': 'resources/nsym53.JPG', 'path': 'resources/nsym53.JPG'},
+    {'name': 'resources/nsym62.JPG', 'path': 'resources/nsym62.JPG'},
+    {'name': 'resources/sym29.JPG', 'path': 'resources/sym29.JPG'},
+    {'name': 'resources/sym69.JPG', 'path': 'resources/sym69.JPG'},
+    {'name': 'resources/sym28.JPG', 'path': 'resources/sym28.JPG'},
+    {'name': 'resources/grid.png', 'path': 'resources/grid.png'},
+    {'name': 'resources/nsym30.JPG', 'path': 'resources/nsym30.JPG'},
+    {'name': 'resources/nsym36.JPG', 'path': 'resources/nsym36.JPG'},
+    {'name': 'resources/sym22.JPG', 'path': 'resources/sym22.JPG'},
+    {'name': 'resources/sym14.JPG', 'path': 'resources/sym14.JPG'},
+    {'name': 'resources/nsym17.JPG', 'path': 'resources/nsym17.JPG'},
+    {'name': 'resources/nsym33.JPG', 'path': 'resources/nsym33.JPG'},
+    {'name': 'resources/sym20.JPG', 'path': 'resources/sym20.JPG'},
+    {'name': 'resources/sym52.JPG', 'path': 'resources/sym52.JPG'},
+    {'name': 'resources/sym56.JPG', 'path': 'resources/sym56.JPG'},
+    {'name': 'resources/nsym43.JPG', 'path': 'resources/nsym43.JPG'},
+    {'name': 'resources/sym48.JPG', 'path': 'resources/sym48.JPG'},
+    {'name': 'resources/nsym10.JPG', 'path': 'resources/nsym10.JPG'},
+    {'name': 'resources/nsym60.JPG', 'path': 'resources/nsym60.JPG'},
+    {'name': 'resources/sym36.JPG', 'path': 'resources/sym36.JPG'},
+    {'name': 'resources/nsym3.JPG', 'path': 'resources/nsym3.JPG'}
   ]
 });
 
 psychoJS.experimentLogger.setLevel(core.Logger.ServerLevel.EXP);
 
+
+var currentLoop;
+var frameDur;
 async function updateInfo() {
   currentLoop = psychoJS.experiment;  // right now there are no loops
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
@@ -121,6 +286,212 @@ async function updateInfo() {
   return Scheduler.Event.NEXT;
 }
 
+
+var wlcClock;
+var text;
+var key_resp;
+var mouse_4;
+var ins_square_1Clock;
+var text_8;
+var key_resp_8;
+var mouse_5;
+var square_helperClock;
+var loop_breaker;
+var square_names;
+var corr_square_clicked;
+var correct_square_counter;
+var square_names_both;
+var square_dict;
+var square_dict_both;
+var prac_loop_lengths;
+var how_many_prac_loops;
+var thisloop_item_number;
+var counter;
+var square_levelClock;
+var text_level_1;
+var text_level_2;
+var squareClock;
+var fixation2;
+var grid;
+var square_rand;
+var square_recClock;
+var text_9;
+var grid2;
+var mouse;
+var square_0;
+var square_1;
+var square_2;
+var square_3;
+var square_4;
+var square_5;
+var square_6;
+var square_7;
+var square_8;
+var square_9;
+var square_10;
+var square_11;
+var square_12;
+var square_13;
+var square_14;
+var square_15;
+var square_rec_g_rClock;
+var recall_counter;
+var text_10;
+var grid3;
+var square_16;
+var square_17;
+var square_18;
+var square_19;
+var square_20;
+var square_21;
+var square_22;
+var square_23;
+var square_24;
+var square_25;
+var square_26;
+var square_27;
+var square_28;
+var square_29;
+var square_30;
+var square_31;
+var next_setClock;
+var text_result_squares;
+var text_end_prac;
+var mouse_2;
+var key_resp_13;
+var ins_square_endClock;
+var text_square_end;
+var text_11;
+var key_resp_9;
+var mouse_3;
+var ins_sym_1Clock;
+var text_2;
+var key_resp_2;
+var mouse_6;
+var ins_sym_2Clock;
+var text_3;
+var image_sym;
+var text_sym_nsym;
+var key_resp_3;
+var ins_sym_3Clock;
+var text_4;
+var image;
+var text_sym_nsym_2;
+var key_resp_4;
+var ins2Clock;
+var text_5;
+var key_resp_5;
+var prac_symClock;
+var resources_path;
+var pracSymmTrialNumber;
+var selected_images;
+var total_trials;
+var correct_answers;
+var countDownText;
+var correct_total_text;
+var timerPracSym;
+var non_sym_images;
+var fixation;
+var image_2;
+var text_sym_nsym_3;
+var text_countdown;
+var text_how_many_correct;
+var key_resp_6;
+var prac_sym_g_rClock;
+var usedTime;
+var maskColor;
+var greenMask;
+var redMask;
+var image_3;
+var image_4;
+var prac_sym_fbClock;
+var accuracyPercent;
+var prac_sym_loop_nr;
+var prac_fb;
+var accuracyText;
+var text_6;
+var text_score;
+var text_7;
+var key_resp_7;
+var ins_bothClock;
+var text_12;
+var key_resp_10;
+var both_helperClock;
+var overall_symm;
+var overall_symm_corr;
+var both_levelClock;
+var text_both_level_1;
+var text_both_level_2;
+var both_squareClock;
+var fixation_both;
+var grid_both;
+var square_rand_both;
+var both_symClock;
+var selected_images_both;
+var fixation_both_2;
+var image_2_both;
+var text_sym_nsym_3_both;
+var text_countdown_both;
+var text_how_many_correct_both;
+var key_resp_6_both;
+var both_sym_g_rClock;
+var image_3_both;
+var image_4_both;
+var both_square_recClock;
+var text9_both;
+var grid2_both;
+var mouse_both;
+var square_0_both;
+var square_1_both;
+var square_2_both;
+var square_3_both;
+var square_4_both;
+var square_5_both;
+var square_6_both;
+var square_7_both;
+var square_8_both;
+var square_9_both;
+var square_10_both;
+var square_11_both;
+var square_12_both;
+var square_13_both;
+var square_14_both;
+var square_15_both;
+var both_square_rec_g_rClock;
+var text_10_both;
+var grid3_both;
+var square_16_both;
+var square_17_both;
+var square_18_both;
+var square_19_both;
+var square_20_both;
+var square_21_both;
+var square_22_both;
+var square_23_both;
+var square_24_both;
+var square_25_both;
+var square_26_both;
+var square_27_both;
+var square_28_both;
+var square_29_both;
+var square_30_both;
+var square_31_both;
+var both_next_setClock;
+var text_result_square_both;
+var text_end_prac_both;
+var key_resp_12;
+var both_endClock;
+var text_square_end_both;
+var text_14;
+var text_accuracy_both;
+var text_less_acc;
+var key_resp_11;
+var mouse_7;
+var byeClock;
+var text_bye;
+var key_resp_bye;
+var globalClock;
+var routineTimer;
 async function experimentInit() {
   // Initialize components for Routine "wlc"
   wlcClock = new util.Clock();
@@ -168,6 +539,8 @@ async function experimentInit() {
   // create an array of square names
   loop_breaker = 0;
   square_names = [];
+  corr_square_clicked = 0;
+  correct_square_counter = 0;
   for (let i = 0; i < 16; i++) {
   square_names.push("square_" + i);
   }
@@ -468,6 +841,7 @@ async function experimentInit() {
   square_rec_g_rClock = new util.Clock();
   // Run 'Begin Experiment' code from code_square_rec_g_r
   recall_counter = 0;
+  
   text_10 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_10',
@@ -843,21 +1217,21 @@ async function experimentInit() {
   prac_symClock = new util.Clock();
   // Run 'Begin Experiment' code from code_prac_sym
   // Define the path to the resources folder
-  const resources_path = 'resources/';
+  resources_path = 'resources/';
   // Define how many trials I want for the symmetry practice
-  const pracSymmTrialNumber = 10;
+  pracSymmTrialNumber = 10;
   // Define the array for the images to be shown
-  let selected_images = [];
+  selected_images = [];
   // Setting total trials, correct answers and countdown text
-  let total_trials = 0;
-  let correct_answers = 0;
-  let countDownText = "";
-  let correct_total_text = "";
+  total_trials = 0;
+  correct_answers = 0;
+  countDownText = "";
+  correct_total_text = "";
   // Setting timer for live countdown (2000 ms plus 500 fixation)
-  const timerPracSym = 2.5;
+  timerPracSym = new util.CountdownTimer(2.5);
   
   // Create the first array for the non-symmetric images
-  let non_sym_images = [];
+  non_sym_images = [];
   for (let i = 1; i < 80; i++) {
   const image_name = 'nsym' + i + '.JPG';
   const image_path = resources_path + image_name;
@@ -956,10 +1330,10 @@ async function experimentInit() {
   // Initialize components for Routine "prac_sym_g_r"
   prac_sym_g_rClock = new util.Clock();
   // Run 'Begin Experiment' code from code_prac_sym_g_r
-  var usedTime = 0
-  var maskColor = "";
-  var greenMask = resources_path + "/1green.JPG";
-  var redMask = resources_path + "/1red.JPG";
+  usedTime = 0
+  maskColor = "";
+  greenMask = resources_path + "/1green.JPG";
+  redMask = resources_path + "/1red.JPG";
   image_3 = new visual.ImageStim({
     win : psychoJS.window,
     name : 'image_3', units : undefined, 
@@ -981,10 +1355,10 @@ async function experimentInit() {
   // Initialize components for Routine "prac_sym_fb"
   prac_sym_fbClock = new util.Clock();
   // Run 'Begin Experiment' code from code_prac_sym_fb
-  var accuracyPercent = 0;
-  var prac_sym_loop_nr = 0;
-  var prac_fb = "";
-  var accuracyText = "";
+  accuracyPercent = 0;
+  prac_sym_loop_nr = 0;
+  prac_fb = "";
+  accuracyText = "";
   text_6 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_6',
@@ -1042,8 +1416,8 @@ async function experimentInit() {
   // Initialize components for Routine "both_helper"
   both_helperClock = new util.Clock();
   // Run 'Begin Experiment' code from code_both_helper
-  var overall_symm = 0;
-  var overall_symm_corr = 0;
+  overall_symm = 0;
+  overall_symm_corr = 0;
   // Initialize components for Routine "both_level"
   both_levelClock = new util.Clock();
   text_both_level_1 = new visual.TextStim({
@@ -1700,6 +2074,13 @@ async function experimentInit() {
   return Scheduler.Event.NEXT;
 }
 
+
+var t;
+var frameN;
+var continueRoutine;
+var _key_resp_allKeys;
+var gotValidClick;
+var wlcComponents;
 function wlcRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -1736,6 +2117,10 @@ function wlcRoutineBegin(snapshot) {
   }
 }
 
+
+var prevButtonState;
+var _mouseButtons;
+var _mouseXYs;
 function wlcRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'wlc' ---
@@ -1830,6 +2215,7 @@ function wlcRoutineEachFrame() {
   };
 }
 
+
 function wlcRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'wlc' ---
@@ -1868,6 +2254,9 @@ function wlcRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_8_allKeys;
+var ins_square_1Components;
 function ins_square_1RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -1903,6 +2292,7 @@ function ins_square_1RoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins_square_1RoutineEachFrame() {
   return async function () {
@@ -1998,6 +2388,7 @@ function ins_square_1RoutineEachFrame() {
   };
 }
 
+
 function ins_square_1RoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins_square_1' ---
@@ -2036,6 +2427,8 @@ function ins_square_1RoutineEnd(snapshot) {
   }
 }
 
+
+var trials_square_2;
 function trials_square_2LoopBegin(trials_square_2LoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2080,6 +2473,8 @@ function trials_square_2LoopBegin(trials_square_2LoopScheduler, snapshot) {
   }
 }
 
+
+var trials_square;
 function trials_squareLoopBegin(trials_squareLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2110,6 +2505,7 @@ function trials_squareLoopBegin(trials_squareLoopScheduler, snapshot) {
   }
 }
 
+
 async function trials_squareLoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_square);
@@ -2120,6 +2516,7 @@ async function trials_squareLoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_squareLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2140,6 +2537,8 @@ function trials_squareLoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
+var trials_square_rec;
 function trials_square_recLoopBegin(trials_square_recLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2173,6 +2572,7 @@ function trials_square_recLoopBegin(trials_square_recLoopScheduler, snapshot) {
   }
 }
 
+
 async function trials_square_recLoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_square_rec);
@@ -2183,6 +2583,7 @@ async function trials_square_recLoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_square_recLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2203,6 +2604,7 @@ function trials_square_recLoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
 async function trials_square_2LoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_square_2);
@@ -2213,6 +2615,7 @@ async function trials_square_2LoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_square_2LoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2233,6 +2636,8 @@ function trials_square_2LoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
+var trials_prac2;
 function trials_prac2LoopBegin(trials_prac2LoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2267,6 +2672,8 @@ function trials_prac2LoopBegin(trials_prac2LoopScheduler, snapshot) {
   }
 }
 
+
+var trials_prac;
 function trials_pracLoopBegin(trials_pracLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2300,6 +2707,7 @@ function trials_pracLoopBegin(trials_pracLoopScheduler, snapshot) {
   }
 }
 
+
 async function trials_pracLoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_prac);
@@ -2310,6 +2718,7 @@ async function trials_pracLoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_pracLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2330,6 +2739,7 @@ function trials_pracLoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
 async function trials_prac2LoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_prac2);
@@ -2340,6 +2750,7 @@ async function trials_prac2LoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_prac2LoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2360,6 +2771,8 @@ function trials_prac2LoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
+var trials_both;
 function trials_bothLoopBegin(trials_bothLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2404,6 +2817,8 @@ function trials_bothLoopBegin(trials_bothLoopScheduler, snapshot) {
   }
 }
 
+
+var trials_both_square;
 function trials_both_squareLoopBegin(trials_both_squareLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2440,6 +2855,7 @@ function trials_both_squareLoopBegin(trials_both_squareLoopScheduler, snapshot) 
   }
 }
 
+
 async function trials_both_squareLoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_both_square);
@@ -2450,6 +2866,7 @@ async function trials_both_squareLoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_both_squareLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2470,6 +2887,8 @@ function trials_both_squareLoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
+var trials_both_square_rec;
 function trials_both_square_recLoopBegin(trials_both_square_recLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2503,6 +2922,7 @@ function trials_both_square_recLoopBegin(trials_both_square_recLoopScheduler, sn
   }
 }
 
+
 async function trials_both_square_recLoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_both_square_rec);
@@ -2513,6 +2933,7 @@ async function trials_both_square_recLoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_both_square_recLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2533,6 +2954,7 @@ function trials_both_square_recLoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
 async function trials_bothLoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_both);
@@ -2543,6 +2965,7 @@ async function trials_bothLoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_bothLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2563,6 +2986,11 @@ function trials_bothLoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
+var random_square_names;
+var i;
+var corr_square_cliqued;
+var square_helperComponents;
 function square_helperRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -2581,6 +3009,7 @@ function square_helperRoutineBegin(snapshot) {
     i = 0;
     recall_counter = 0;
     corr_square_cliqued = 0;
+    correct_square_counter = 0;
     
     function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -2606,6 +3035,7 @@ function square_helperRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function square_helperRoutineEachFrame() {
   return async function () {
@@ -2640,6 +3070,7 @@ function square_helperRoutineEachFrame() {
   };
 }
 
+
 function square_helperRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'square_helper' ---
@@ -2662,6 +3093,8 @@ function square_helperRoutineEnd(snapshot) {
   }
 }
 
+
+var square_levelComponents;
 function square_levelRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -2686,6 +3119,8 @@ function square_levelRoutineBegin(snapshot) {
   }
 }
 
+
+var frameRemains;
 function square_levelRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'square_level' ---
@@ -2751,6 +3186,7 @@ function square_levelRoutineEachFrame() {
   };
 }
 
+
 function square_levelRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'square_level' ---
@@ -2767,6 +3203,10 @@ function square_levelRoutineEnd(snapshot) {
   }
 }
 
+
+var square_name_show;
+var coordinates;
+var squareComponents;
 function squareRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -2797,6 +3237,7 @@ function squareRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function squareRoutineEachFrame() {
   return async function () {
@@ -2873,6 +3314,7 @@ function squareRoutineEachFrame() {
   };
 }
 
+
 function squareRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'square' ---
@@ -2893,6 +3335,8 @@ function squareRoutineEnd(snapshot) {
   }
 }
 
+
+var square_recComponents;
 function square_recRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -2942,6 +3386,7 @@ function square_recRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function square_recRoutineEachFrame() {
   return async function () {
@@ -3192,6 +3637,7 @@ function square_recRoutineEachFrame() {
   };
 }
 
+
 function square_recRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'square_rec' ---
@@ -3220,6 +3666,8 @@ function square_recRoutineEnd(snapshot) {
   }
 }
 
+
+var square_rec_g_rComponents;
 function square_rec_g_rRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -3232,73 +3680,119 @@ function square_rec_g_rRoutineBegin(snapshot) {
     routineTimer.add(0.200000);
     // update component parameters for each repeat
     // Run 'Begin Routine' code from code_square_rec_g_r
-    if (mouse.clicked_name[0] === "square_0" && random_square_names[recall_counter] === "square_0") {
-    corr_square_cliqued += 1;
-    square_16.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_1" && random_square_names[recall_counter] === "square_1") {
-    corr_square_cliqued += 1;
-    square_17.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_2" && random_square_names[recall_counter] === "square_2") {
-    corr_square_cliqued += 1;
-    square_18.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_3" && random_square_names[recall_counter] === "square_3") {
-    corr_square_cliqued += 1;
-    square_19.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_4" && random_square_names[recall_counter] === "square_4") {
-    corr_square_cliqued += 1;
-    square_20.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_5" && random_square_names[recall_counter] === "square_5") {
-    corr_square_cliqued += 1;
-    square_21.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_6" && random_square_names[recall_counter] === "square_6") {
-    corr_square_cliqued += 1;
-    square_22.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_7" && random_square_names[recall_counter] === "square_7") {
-    corr_square_cliqued += 1;
-    square_23.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_8" && random_square_names[recall_counter] === "square_8") {
-    corr_square_cliqued += 1;
-    square_24.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_9" && random_square_names[recall_counter] === "square_9") {
-    corr_square_cliqued += 1;
-    square_25.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_10" && random_square_names[recall_counter] === "square_10") {
-    corr_square_cliqued += 1;
-    square_26.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_11" && random_square_names[recall_counter] === "square_11") {
-    corr_square_cliqued += 1;
-    square_27.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_12" && random_square_names[recall_counter] === "square_12") {
-    corr_square_cliqued += 1;
-    square_28.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_13" && random_square_names[recall_counter] === "square_13") {
-    corr_square_cliqued += 1;
-    square_29.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_14" && random_square_names[recall_counter] === "square_14") {
-    corr_square_cliqued += 1;
-    square_30.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_15" && random_square_names[recall_counter] === "square_15") {
-    corr_square_cliqued += 1;
-    square_31.color = "#006400";
+    if (((mouse.clicked_name[0] === "square_0") && (random_square_names[recall_counter] === "square_0"))) {
+        corr_square_cliqued ++;
+        correct_square_counter += 1;
+        square_16.fillColor = "#006400";
     } else {
-    square_16.color = "#ff0000";
-    square_17.color = "#ff0000";
-    square_18.color = "#ff0000";
-    square_19.color = "#ff0000";
-    square_20.color = "#ff0000";
-    square_21.color = "#ff0000";
-    square_22.color = "#ff0000";
-    square_23.color = "#ff0000";
-    square_24.color = "#ff0000";
-    square_25.color = "#ff0000";
-    square_26.color = "#ff0000";
-    square_27.color = "#ff0000";
-    square_28.color = "#ff0000";
-    square_29.color = "#ff0000";
-    square_30.color = "#ff0000";
-    square_31.color = "#ff0000";
+        if (((mouse.clicked_name[0] === "square_1") && (random_square_names[recall_counter] === "square_1"))) {
+            corr_square_cliqued ++;
+            correct_square_counter += 1;
+            square_17.fillColor = "#006400";
+        } else {
+            if (((mouse.clicked_name[0] === "square_2") && (random_square_names[recall_counter] === "square_2"))) {
+                corr_square_cliqued ++;
+                correct_square_counter += 1;
+                square_18.fillColor = "#006400";
+            } else {
+                if (((mouse.clicked_name[0] === "square_3") && (random_square_names[recall_counter] === "square_3"))) {
+                    corr_square_cliqued ++;
+                    correct_square_counter += 1;
+                    square_19.fillColor = "#006400";
+                } else {
+                    if (((mouse.clicked_name[0] === "square_4") && (random_square_names[recall_counter] === "square_4"))) {
+                        corr_square_cliqued ++;
+                        correct_square_counter += 1;
+                        square_20.fillColor = "#006400";
+                    } else {
+                        if (((mouse.clicked_name[0] === "square_5") && (random_square_names[recall_counter] === "square_5"))) {
+                            corr_square_cliqued ++;
+                            correct_square_counter += 1;
+                            square_21.fillColor = "#006400";
+                        } else {
+                            if (((mouse.clicked_name[0] === "square_6") && (random_square_names[recall_counter] === "square_6"))) {
+                                corr_square_cliqued ++;
+                                correct_square_counter += 1;
+                                square_22.fillColor = "#006400";
+                            } else {
+                                if (((mouse.clicked_name[0] === "square_7") && (random_square_names[recall_counter] === "square_7"))) {
+                                    corr_square_cliqued ++;
+                                    correct_square_counter += 1;
+                                    square_23.fillColor = "#006400";
+                                } else {
+                                    if (((mouse.clicked_name[0] === "square_8") && (random_square_names[recall_counter] === "square_8"))) {
+                                        corr_square_cliqued ++;
+                                        correct_square_counter += 1;
+                                        square_24.fillColor = "#006400";
+                                    } else {
+                                        if (((mouse.clicked_name[0] === "square_9") && (random_square_names[recall_counter] === "square_9"))) {
+                                            corr_square_cliqued ++;
+                                            correct_square_counter += 1;
+                                            square_25.fillColor = "#006400";
+                                        } else {
+                                            if (((mouse.clicked_name[0] === "square_10") && (random_square_names[recall_counter] === "square_10"))) {
+                                                corr_square_cliqued ++;
+                                                correct_square_counter += 1;
+                                                square_26.fillColor = "#006400";
+                                            } else {
+                                                if (((mouse.clicked_name[0] === "square_11") && (random_square_names[recall_counter] === "square_11"))) {
+                                                    corr_square_cliqued ++;
+                                                    correct_square_counter += 1;
+                                                    square_27.fillColor = "#006400";
+                                                } else {
+                                                    if (((mouse.clicked_name[0] === "square_12") && (random_square_names[recall_counter] === "square_12"))) {
+                                                        corr_square_cliqued ++;
+                                                        correct_square_counter += 1;
+                                                        square_28.fillColor = "#006400";
+                                                    } else {
+                                                        if (((mouse.clicked_name[0] === "square_13") && (random_square_names[recall_counter] === "square_13"))) {
+                                                            corr_square_cliqued ++;
+                                                            correct_square_counter += 1;
+                                                            square_29.fillColor = "#006400";
+                                                        } else {
+                                                            if (((mouse.clicked_name[0] === "square_14") && (random_square_names[recall_counter] === "square_14"))) {
+                                                                corr_square_cliqued ++;
+                                                                correct_square_counter += 1;
+                                                                square_30.fillColor = "#006400";
+                                                            } else {
+                                                                if (((mouse.clicked_name[0] === "square_15") && (random_square_names[recall_counter] === "square_15"))) {
+                                                                    corr_square_cliqued ++;
+                                                                    correct_square_counter += 1;
+                                                                    square_31.fillColor = "#006400";
+                                                                } else {
+                                                                    square_16.fillColor = "#ff0000";
+                                                                    square_17.fillColor = "#ff0000";
+                                                                    square_18.fillColor = "#ff0000";
+                                                                    square_19.fillColor = "#ff0000";
+                                                                    square_20.fillColor = "#ff0000";
+                                                                    square_21.fillColor = "#ff0000";
+                                                                    square_22.fillColor = "#ff0000";
+                                                                    square_23.fillColor = "#ff0000";
+                                                                    square_24.fillColor = "#ff0000";
+                                                                    square_25.fillColor = "#ff0000";
+                                                                    square_26.fillColor = "#ff0000";
+                                                                    square_27.fillColor = "#ff0000";
+                                                                    square_28.fillColor = "#ff0000";
+                                                                    square_29.fillColor = "#ff0000";
+                                                                    square_30.fillColor = "#ff0000";
+                                                                    square_31.fillColor = "#ff0000";
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-    }
+    
     // keep track of which components have finished
     square_rec_g_rComponents = [];
     square_rec_g_rComponents.push(text_10);
@@ -3327,6 +3821,7 @@ function square_rec_g_rRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function square_rec_g_rRoutineEachFrame() {
   return async function () {
@@ -3613,6 +4108,7 @@ function square_rec_g_rRoutineEachFrame() {
   };
 }
 
+
 function square_rec_g_rRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'square_rec_g_r' ---
@@ -3622,11 +4118,40 @@ function square_rec_g_rRoutineEnd(snapshot) {
       }
     });
     // Run 'End Routine' code from code_square_rec_g_r
-    for (var i, _pj_c = 0, _pj_a = util.range(16), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
-        i = _pj_a[_pj_c];
-        exec(`square_${(i + 16)}.color = '#ff8080'`);
-        exec(`square_${(i + 16)}.lineColor = '#ffffff'`);
-    }
+    square_16.fillColor = "#ff8080";
+    square_17.fillColor= "#ff8080";
+    square_18.fillColor= "#ff8080";
+    square_19.fillColor= "#ff8080";
+    square_20.fillColor= "#ff8080";
+    square_21.fillColor= "#ff8080";
+    square_22.fillColor= "#ff8080";
+    square_23.fillColor= "#ff8080";
+    square_24.fillColor= "#ff8080";
+    square_25.fillColor= "#ff8080";
+    square_26.fillColor= "#ff8080";
+    square_27.fillColor= "#ff8080";
+    square_28.fillColor= "#ff8080";
+    square_29.fillColor= "#ff8080";
+    square_30.fillColor= "#ff8080";
+    square_31.fillColor= "#ff8080";
+    
+    square_16.borderColor = '#ffffff'
+    square_17.borderColor = '#ffffff'
+    square_18.borderColor = '#ffffff'
+    square_19.borderColor = '#ffffff'
+    square_20.borderColor = '#ffffff'
+    square_21.borderColor = '#ffffff'
+    square_22.borderColor = '#ffffff'
+    square_23.borderColor = '#ffffff'
+    square_24.borderColor = '#ffffff'
+    square_25.borderColor = '#ffffff'
+    square_26.borderColor = '#ffffff'
+    square_27.borderColor = '#ffffff'
+    square_28.borderColor = '#ffffff'
+    square_29.borderColor = '#ffffff'
+    square_30.borderColor = '#ffffff'
+    square_31.borderColor = '#ffffff'
+    
     recall_counter += 1;
     
     // Routines running outside a loop should always advance the datafile row
@@ -3637,6 +4162,11 @@ function square_rec_g_rRoutineEnd(snapshot) {
   }
 }
 
+
+var result_squares_text;
+var end_prac_text;
+var _key_resp_13_allKeys;
+var next_setComponents;
 function next_setRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -3648,9 +4178,9 @@ function next_setRoutineBegin(snapshot) {
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
     // Run 'Begin Routine' code from code_next_square_set
-    result_squares_text = "Eredményed: " + corr_square_clicked + " / " + thisloop_item_number;
+    result_squares_text = "Eredményed: " + correct_square_counter + " / " + thisloop_item_number;
     
-    if (corr_square_clicked === thisloop_item_number) {
+    if (correct_square_counter === thisloop_item_number) {
     loop_breaker = 0;
     } else {
     loop_breaker++;
@@ -3690,6 +4220,7 @@ function next_setRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function next_setRoutineEachFrame() {
   return async function () {
@@ -3803,6 +4334,7 @@ function next_setRoutineEachFrame() {
   };
 }
 
+
 function next_setRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'next_set' ---
@@ -3812,7 +4344,7 @@ function next_setRoutineEnd(snapshot) {
       }
     });
     // Run 'End Routine' code from code_next_square_set
-    psychoJS.experiment.addData("number_of_correct_squares_clicked", corr_square_cliqued);
+    psychoJS.experiment.addData("number_of_correct_squares_clicked", correct_square_counter);
     psychoJS.experiment.addData("total_squares_clicked", thisloop_item_number);
     if ((loop_breaker === 3)) {
         trials_square_2.finished = true;
@@ -3848,6 +4380,10 @@ function next_setRoutineEnd(snapshot) {
   }
 }
 
+
+var square_end_text;
+var _key_resp_9_allKeys;
+var ins_square_endComponents;
 function ins_square_endRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -3895,6 +4431,7 @@ function ins_square_endRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins_square_endRoutineEachFrame() {
   return async function () {
@@ -4004,6 +4541,7 @@ function ins_square_endRoutineEachFrame() {
   };
 }
 
+
 function ins_square_endRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins_square_end' ---
@@ -4042,6 +4580,9 @@ function ins_square_endRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_2_allKeys;
+var ins_sym_1Components;
 function ins_sym_1RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -4077,6 +4618,7 @@ function ins_sym_1RoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins_sym_1RoutineEachFrame() {
   return async function () {
@@ -4172,6 +4714,7 @@ function ins_sym_1RoutineEachFrame() {
   };
 }
 
+
 function ins_sym_1RoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins_sym_1' ---
@@ -4210,6 +4753,9 @@ function ins_sym_1RoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_3_allKeys;
+var ins_sym_2Components;
 function ins_sym_2RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -4238,6 +4784,7 @@ function ins_sym_2RoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins_sym_2RoutineEachFrame() {
   return async function () {
@@ -4326,6 +4873,7 @@ function ins_sym_2RoutineEachFrame() {
   };
 }
 
+
 function ins_sym_2RoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins_sym_2' ---
@@ -4356,6 +4904,9 @@ function ins_sym_2RoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_4_allKeys;
+var ins_sym_3Components;
 function ins_sym_3RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -4384,6 +4935,7 @@ function ins_sym_3RoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins_sym_3RoutineEachFrame() {
   return async function () {
@@ -4472,6 +5024,7 @@ function ins_sym_3RoutineEachFrame() {
   };
 }
 
+
 function ins_sym_3RoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins_sym_3' ---
@@ -4502,6 +5055,9 @@ function ins_sym_3RoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_5_allKeys;
+var ins2Components;
 function ins2RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -4527,6 +5083,7 @@ function ins2RoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins2RoutineEachFrame() {
   return async function () {
@@ -4595,6 +5152,7 @@ function ins2RoutineEachFrame() {
   };
 }
 
+
 function ins2RoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins2' ---
@@ -4625,6 +5183,10 @@ function ins2RoutineEnd(snapshot) {
   }
 }
 
+
+var picture;
+var _key_resp_6_allKeys;
+var prac_symComponents;
 function prac_symRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -4660,6 +5222,7 @@ function prac_symRoutineBegin(snapshot) {
   }
 }
 
+
 function prac_symRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'prac_sym' ---
@@ -4668,7 +5231,7 @@ function prac_symRoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     // Run 'Each Frame' code from code_prac_sym
-    countDownText = timerPracSym.toFixed(1);
+    countDownText = toString(timerPracSym.getTime());
     
     // *fixation* updates
     if (t >= 0.0 && fixation.status === PsychoJS.Status.NOT_STARTED) {
@@ -4806,6 +5369,10 @@ function prac_symRoutineEachFrame() {
   };
 }
 
+
+var _pj;
+var remainingTime;
+var sym_corr;
 function prac_symRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'prac_sym' ---
@@ -4877,6 +5444,8 @@ function prac_symRoutineEnd(snapshot) {
   }
 }
 
+
+var prac_sym_g_rComponents;
 function prac_sym_g_rRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -4900,6 +5469,7 @@ function prac_sym_g_rRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function prac_sym_g_rRoutineEachFrame() {
   return async function () {
@@ -4970,6 +5540,7 @@ function prac_sym_g_rRoutineEachFrame() {
   };
 }
 
+
 function prac_sym_g_rRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'prac_sym_g_r' ---
@@ -4990,6 +5561,9 @@ function prac_sym_g_rRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_7_allKeys;
+var prac_sym_fbComponents;
 function prac_sym_fbRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5037,6 +5611,7 @@ function prac_sym_fbRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function prac_sym_fbRoutineEachFrame() {
   return async function () {
@@ -5125,6 +5700,7 @@ function prac_sym_fbRoutineEachFrame() {
   };
 }
 
+
 function prac_sym_fbRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'prac_sym_fb' ---
@@ -5165,6 +5741,9 @@ function prac_sym_fbRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_10_allKeys;
+var ins_bothComponents;
 function ins_bothRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5190,6 +5769,7 @@ function ins_bothRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins_bothRoutineEachFrame() {
   return async function () {
@@ -5258,6 +5838,7 @@ function ins_bothRoutineEachFrame() {
   };
 }
 
+
 function ins_bothRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins_both' ---
@@ -5288,6 +5869,8 @@ function ins_bothRoutineEnd(snapshot) {
   }
 }
 
+
+var both_helperComponents;
 function both_helperRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5335,6 +5918,7 @@ function both_helperRoutineBegin(snapshot) {
   }
 }
 
+
 function both_helperRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'both_helper' ---
@@ -5368,6 +5952,7 @@ function both_helperRoutineEachFrame() {
   };
 }
 
+
 function both_helperRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_helper' ---
@@ -5390,6 +5975,8 @@ function both_helperRoutineEnd(snapshot) {
   }
 }
 
+
+var both_levelComponents;
 function both_levelRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5413,6 +6000,7 @@ function both_levelRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_levelRoutineEachFrame() {
   return async function () {
@@ -5479,6 +6067,7 @@ function both_levelRoutineEachFrame() {
   };
 }
 
+
 function both_levelRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_level' ---
@@ -5495,6 +6084,8 @@ function both_levelRoutineEnd(snapshot) {
   }
 }
 
+
+var both_squareComponents;
 function both_squareRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5507,8 +6098,8 @@ function both_squareRoutineBegin(snapshot) {
     routineTimer.add(1.150000);
     // update component parameters for each repeat
     // Run 'Begin Routine' code from code_both_square
-    var square_name_show = random_square_names[i];
-    var coordinates = square_dict_both[square_name_show];
+    square_name_show = random_square_names[i];
+    coordinates = square_dict_both[square_name_show];
     square_rand_both.setPos(coordinates);
     // keep track of which components have finished
     both_squareComponents = [];
@@ -5523,6 +6114,7 @@ function both_squareRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_squareRoutineEachFrame() {
   return async function () {
@@ -5599,6 +6191,7 @@ function both_squareRoutineEachFrame() {
   };
 }
 
+
 function both_squareRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_square' ---
@@ -5619,6 +6212,9 @@ function both_squareRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_6_both_allKeys;
+var both_symComponents;
 function both_symRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5653,6 +6249,7 @@ function both_symRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_symRoutineEachFrame() {
   return async function () {
@@ -5801,6 +6398,7 @@ function both_symRoutineEachFrame() {
   };
 }
 
+
 function both_symRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_sym' ---
@@ -5874,6 +6472,8 @@ function both_symRoutineEnd(snapshot) {
   }
 }
 
+
+var both_sym_g_rComponents;
 function both_sym_g_rRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5897,6 +6497,7 @@ function both_sym_g_rRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_sym_g_rRoutineEachFrame() {
   return async function () {
@@ -5967,6 +6568,7 @@ function both_sym_g_rRoutineEachFrame() {
   };
 }
 
+
 function both_sym_g_rRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_sym_g_r' ---
@@ -5987,6 +6589,8 @@ function both_sym_g_rRoutineEnd(snapshot) {
   }
 }
 
+
+var both_square_recComponents;
 function both_square_recRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -6036,6 +6640,7 @@ function both_square_recRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_square_recRoutineEachFrame() {
   return async function () {
@@ -6286,6 +6891,7 @@ function both_square_recRoutineEachFrame() {
   };
 }
 
+
 function both_square_recRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_square_rec' ---
@@ -6314,6 +6920,8 @@ function both_square_recRoutineEnd(snapshot) {
   }
 }
 
+
+var both_square_rec_g_rComponents;
 function both_square_rec_g_rRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -6392,7 +7000,7 @@ function both_square_rec_g_rRoutineBegin(snapshot) {
     square_30.color = "#ff0000";
     square_31.color = "#ff0000";
     }
-    }
+    
     // keep track of which components have finished
     both_square_rec_g_rComponents = [];
     both_square_rec_g_rComponents.push(text_10_both);
@@ -6421,6 +7029,7 @@ function both_square_rec_g_rRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_square_rec_g_rRoutineEachFrame() {
   return async function () {
@@ -6707,6 +7316,7 @@ function both_square_rec_g_rRoutineEachFrame() {
   };
 }
 
+
 function both_square_rec_g_rRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_square_rec_g_r' ---
@@ -6716,11 +7326,40 @@ function both_square_rec_g_rRoutineEnd(snapshot) {
       }
     });
     // Run 'End Routine' code from code_square_rec_g_r_both
-    for (var i, _pj_c = 0, _pj_a = util.range(16), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
-        i = _pj_a[_pj_c];
-        exec(`square_${(i + 16)}_both.color = '#ff8080'`);
-        exec(`square_${(i + 16)}_both.lineColor = '#ffffff'`);
-    }
+    square_16.color = "#ff8080";
+    square_17.color = "#ff8080";
+    square_18.color = "#ff8080";
+    square_19.color = "#ff8080";
+    square_20.color = "#ff8080";
+    square_21.color = "#ff8080";
+    square_22.color = "#ff8080";
+    square_23.color = "#ff8080";
+    square_24.color = "#ff0080";
+    square_25.color = "#ff0080";
+    square_26.color = "#ff0080";
+    square_27.color = "#ff0080";
+    square_28.color = "#ff0080";
+    square_29.color = "#ff0080";
+    square_30.color = "#ff0080";
+    square_31.color = "#ff0080";
+    
+    square_16.lineColor = '#ffffff'
+    square_17.lineColor = '#ffffff'
+    square_18.lineColor = '#ffffff'
+    square_19.lineColor = '#ffffff'
+    square_20.lineColor = '#ffffff'
+    square_21.lineColor = '#ffffff'
+    square_22.lineColor = '#ffffff'
+    square_23.lineColor = '#ffffff'
+    square_24.lineColor = '#ffffff'
+    square_25.lineColor = '#ffffff'
+    square_26.lineColor = '#ffffff'
+    square_27.lineColor = '#ffffff'
+    square_28.lineColor = '#ffffff'
+    square_29.lineColor = '#ffffff'
+    square_30.lineColor = '#ffffff'
+    square_31.lineColor = '#ffffff'
+    
     recall_counter += 1;
     
     // Routines running outside a loop should always advance the datafile row
@@ -6731,6 +7370,9 @@ function both_square_rec_g_rRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_12_allKeys;
+var both_next_setComponents;
 function both_next_setRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -6774,6 +7416,7 @@ function both_next_setRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_next_setRoutineEachFrame() {
   return async function () {
@@ -6860,6 +7503,7 @@ function both_next_setRoutineEachFrame() {
   };
 }
 
+
 function both_next_setRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_next_set' ---
@@ -6901,6 +7545,11 @@ function both_next_setRoutineEnd(snapshot) {
   }
 }
 
+
+var overall_accuracy_both;
+var text_if_less_accuracy;
+var _key_resp_11_allKeys;
+var both_endComponents;
 function both_endRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -6958,6 +7607,7 @@ function both_endRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_endRoutineEachFrame() {
   return async function () {
@@ -7095,6 +7745,7 @@ function both_endRoutineEachFrame() {
   };
 }
 
+
 function both_endRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_end' ---
@@ -7133,6 +7784,9 @@ function both_endRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_bye_allKeys;
+var byeComponents;
 function byeRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -7158,6 +7812,7 @@ function byeRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function byeRoutineEachFrame() {
   return async function () {
@@ -7226,6 +7881,7 @@ function byeRoutineEachFrame() {
   };
 }
 
+
 function byeRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'bye' ---
@@ -7256,12 +7912,14 @@ function byeRoutineEnd(snapshot) {
   }
 }
 
+
 function importConditions(currentLoop) {
   return async function () {
     psychoJS.importAttributes(currentLoop.getCurrentTrial());
     return Scheduler.Event.NEXT;
     };
 }
+
 
 async function quitPsychoJS(message, isCompleted) {
   // Check for and save orphaned data

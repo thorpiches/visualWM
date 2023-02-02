@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on február 01, 2023, at 20:14
+    on február 02, 2023, at 00:31
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -127,6 +127,7 @@ import random
 
 #create an array of the square names
 loop_breaker = 0
+corr_square_clicked = 0
 square_names = ["square_" + str(i) for i in range(16)]
 square_names_both = ["square_" + str(i) + "_both" for i in range(16)]
 
@@ -931,9 +932,6 @@ square_15_both = visual.Rect(
     opacity=1.0, depth=-18.0, interpolate=True)
 
 # --- Initialize components for Routine "both_square_rec_g_r" ---
-# Run 'Begin Experiment' code from code_square_rec_g_r_both
-recall_counter = 0
-
 text_10_both = visual.TextStim(win=win, name='text_10_both',
     text='Kattints a négyzetekre abban a sorrendben, ahogyan megjelentek!',
     font='Open Sans',
@@ -2053,6 +2051,7 @@ for thisTrials_square_2 in trials_square_2:
         routineForceEnded = False
         # update component parameters for each repeat
         # Run 'Begin Routine' code from code_square_rec_g_r
+        
         if mouse.clicked_name[0] == "square_0" and random_square_names[recall_counter] == "square_0":
             corr_square_cliqued += 1
             square_16.color = "#006400"
@@ -2102,9 +2101,22 @@ for thisTrials_square_2 in trials_square_2:
             corr_square_cliqued += 1
             square_31.color = "#006400"
         else:
-            for i in range(16):
-                exec(f"square_{i+16}.color = '#ff0000'")
-        
+            square_16.color = "#ff0000";
+            square_17.color = "#ff0000";
+            square_18.color = "#ff0000";
+            square_19.color = "#ff0000";
+            square_20.color = "#ff0000";
+            square_21.color = "#ff0000";
+            square_22.color = "#ff0000";
+            square_23.color = "#ff0000";
+            square_24.color = "#ff0000";
+            square_25.color = "#ff0000";
+            square_26.color = "#ff0000";
+            square_27.color = "#ff0000";
+            square_28.color = "#ff0000";
+            square_29.color = "#ff0000";
+            square_30.color = "#ff0000";
+            square_31.color = "#ff0000";
         # keep track of which components have finished
         square_rec_g_rComponents = [text_10, grid3, square_16, square_17, square_18, square_19, square_20, square_21, square_22, square_23, square_24, square_25, square_26, square_27, square_28, square_29, square_30, square_31]
         for thisComponent in square_rec_g_rComponents:
@@ -3395,12 +3407,8 @@ for thisTrials_prac2 in trials_prac2:
         routineForceEnded = False
         # update component parameters for each repeat
         # Run 'Begin Routine' code from code_prac_sym
-        timerPracSym.reset()
-        picture = selected_images[total_trials]
-        
-        
-        
-        
+        timerPracSym.reset();
+        picture = selected_images[total_trials];
         key_resp_6.keys = []
         key_resp_6.rt = []
         _key_resp_6_allKeys = []
@@ -5034,8 +5042,6 @@ for thisTrials_both in trials_both:
         routineForceEnded = False
         # update component parameters for each repeat
         # Run 'Begin Routine' code from code_square_rec_g_r_both
-        print(mouse_both.clicked_name[0])
-        print(random_square_names[recall_counter])
         
         if mouse_both.clicked_name[0] == "square_0_both" and random_square_names[recall_counter] == "square_0_both":
             corr_square_cliqued += 1
