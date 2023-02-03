@@ -844,7 +844,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="A négyzetek egy 4x4-es négyzetrácsban fognak megjelenni egymás után. Jegyezd meg a helyes sorrendet!&amp;#10;&amp;#10;Ha lemegy a feladat, meg fog jelenni egy üres négyzetrács. &amp;#10;Abban a sorrendben kell kattintanod a négyzetekre, ahogyan emlékeid szerint megjelentek. Erre bármennyi időd lesz.&amp;#10;&amp;#10;Ahányas szinten vagy, annyi négyzet fog megjelenni egymás után. Először alacsony szinten fogsz kezdeni, ám ha többször is sikerül adott szinten a helyes sorrendet megadnod, egy idő után szintet lépsz. Próbálj meg minél magasabb szintet elérni!&amp;#10;&amp;#10;Most egy pár gyakorlókör fog következni. &amp;#10;SPACE/Kattintás&amp;#10;" valType="str" updates="constant" name="text"/>
+        <Param val="Először csak négyzetek fognak megjelenni egymás után, egy 4x4-es négyzetrácsban. Jegyezd meg a helyes sorrendet!&amp;#10;&amp;#10;Ha lemegy a feladat, megjelenik egy üres négyzetrács. &amp;#10;Abban a sorrendben kell kattintanod a négyzetekre, ahogyan emlékeid szerint megjelentek. Erre bármennyi időd lesz.&amp;#10;&amp;#10;Ahányas szinten vagy, annyi négyzet fog megjelenni egymás után. Először alacsony szinten fogsz kezdeni, ám ha többször is sikerül adott szinten a helyes sorrendet megadnod, egy idő után szintet lépsz. Próbálj meg minél magasabb szintet elérni!&amp;#10;&amp;#10;Most egy pár gyakorlókör fog következni. &amp;#10;SPACE/Kattintás&amp;#10;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -2247,7 +2247,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="A következő részben a feladat hasonló lesz.&amp;#10;&amp;#10;Ugyanígy négyzetek fognak megjelenni, és a feladatod továbbra is minél hosszabb szekvenciákat megjegyezni.&amp;#10;Azonban minden négyzet között lesz egy döntési feladatod: el kell dönteni egy ábráról, hogy függőlegesen szimmetrikus-e.&amp;#10;&amp;#10;Először nézzük meg, hogyan fog a szimmetriadöntés kinézni.&amp;#10;SPACE/Katt" valType="str" updates="constant" name="text"/>
+        <Param val="A következő részben a feladat hasonló lesz.&amp;#10;&amp;#10;Ugyanígy négyzetek fognak megjelenni, és a feladatod továbbra is minél hosszabb szekvenciákat megjegyezni.&amp;#10;Azonban minden bemutatott négyzet között lesz egy döntési feladat: el kell dönteni egy ábráról, hogy függőlegesen szimmetrikus-e.&amp;#10;&amp;#10;Először nézzük meg, hogyan fog a szimmetriadöntés kinézni.&amp;#10;SPACE/Katt" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>

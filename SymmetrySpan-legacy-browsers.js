@@ -521,7 +521,7 @@ async function experimentInit() {
   text_8 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_8',
-    text: 'A négyzetek egy 4x4-es négyzetrácsban fognak megjelenni egymás után. Jegyezd meg a helyes sorrendet!\n\nHa lemegy a feladat, meg fog jelenni egy üres négyzetrács. \nAbban a sorrendben kell kattintanod a négyzetekre, ahogyan emlékeid szerint megjelentek. Erre bármennyi időd lesz.\n\nAhányas szinten vagy, annyi négyzet fog megjelenni egymás után. Először alacsony szinten fogsz kezdeni, ám ha többször is sikerül adott szinten a helyes sorrendet megadnod, egy idő után szintet lépsz. Próbálj meg minél magasabb szintet elérni!\n\nMost egy pár gyakorlókör fog következni. \nSPACE/Kattintás\n',
+    text: 'Először csak négyzetek fognak megjelenni egymás után, egy 4x4-es négyzetrácsban. Jegyezd meg a helyes sorrendet!\n\nHa lemegy a feladat, megjelenik egy üres négyzetrács. \nAbban a sorrendben kell kattintanod a négyzetekre, ahogyan emlékeid szerint megjelentek. Erre bármennyi időd lesz.\n\nAhányas szinten vagy, annyi négyzet fog megjelenni egymás után. Először alacsony szinten fogsz kezdeni, ám ha többször is sikerül adott szinten a helyes sorrendet megadnod, egy idő után szintet lépsz. Próbálj meg minél magasabb szintet elérni!\n\nMost egy pár gyakorlókör fog következni. \nSPACE/Kattintás\n',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -1091,7 +1091,7 @@ async function experimentInit() {
   text_11 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_11',
-    text: 'A következő részben a feladat hasonló lesz.\n\nUgyanígy négyzetek fognak megjelenni, és a feladatod továbbra is minél hosszabb szekvenciákat megjegyezni.\nAzonban minden négyzet között lesz egy döntési feladatod: el kell dönteni egy ábráról, hogy függőlegesen szimmetrikus-e.\n\nElőször nézzük meg, hogyan fog a szimmetriadöntés kinézni.\nSPACE/Katt',
+    text: 'A következő részben a feladat hasonló lesz.\n\nUgyanígy négyzetek fognak megjelenni, és a feladatod továbbra is minél hosszabb szekvenciákat megjegyezni.\nAzonban minden bemutatott négyzet között lesz egy döntési feladat: el kell dönteni egy ábráról, hogy függőlegesen szimmetrikus-e.\n\nElőször nézzük meg, hogyan fog a szimmetriadöntés kinézni.\nSPACE/Katt',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, (- 0.1)], height: 0.04,  wrapWidth: undefined, ori: 0.0,
