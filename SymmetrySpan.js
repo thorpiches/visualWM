@@ -7745,11 +7745,12 @@ function both_next_setRoutineEnd(snapshot) {
     correct_answers = 0;
     accuracyText = "";
     correct_total_text = "";
+    text_how_many_correct.setText("", true)
     
     psychoJS.experiment.addData("number_of_correct_squares_clicked", correct_square_counter);
     psychoJS.experiment.addData("total_squares_clicked", thisloop_item_number);
     if ((loop_breaker === 3)) {
-        trials_square_2.finished = true;
+        trials_both.finished = true;
     }
     
     
