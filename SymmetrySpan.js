@@ -509,7 +509,7 @@ async function experimentInit() {
   text = new visual.TextStim({
     win: psychoJS.window,
     name: 'text',
-    text: 'Üdv!\n\nKérünk, amíg tart a kísérlet, ne lépj ki a teljes képernyős módból.\n\nEgy emlékezeti feladat fog következni. Piros négyzetek fognak egy négyzetrácsban egymás után megjelenni. Igyekezz a helyes sorrendet megjegyezni!\n\nA feladatnak lesz egy második része is, ahol minden bemutatott piros négyzet között meg fog jelenni egy ábra is, amelyről el kell döntened, hogy függőlegesen szimmetrikus-e vagy sem. Itt is az lesz a célod, hogy a piros négyzetek minél hosszabb sorrendjét helyesen megjegyezd.\n\nElőször lesz egy kis gyakorlás, hogy megismerkedj a feladattal.\n\nHa készen állsz, nyomd meg a SPACE billenyűt vagy kattints egyet.',
+    text: 'Üdv!\n\nKérünk, amíg tart a kísérlet, ne lépj ki a teljes képernyős módból.\n\nEgy emlékezeti feladat fog következni. Piros négyzetek fognak egy négyzetrácsban egymás után megjelenni. Igyekezz a helyes sorrendet megjegyezni!\n\nA feladatnak lesz egy második része is, ahol minden bemutatott piros négyzet között meg fog jelenni egy ábra is, amelyről el kell döntened, hogy függőlegesen szimmetrikus-e vagy sem. Itt is az lesz a célod, hogy a piros négyzetek minél hosszabb sorrendjét helyesen megjegyezd.\n\nElőször lesz egy kis gyakorlás, hogy megismerkedj a feladattal.\n\nHa készen állsz, nyomd meg a SPACE billentyűt vagy kattints egyet.',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -529,7 +529,7 @@ async function experimentInit() {
   text_8 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_8',
-    text: 'Először csak négyzetek fognak megjelenni egymás után, egy 4x4-es négyzetrácsban. Jegyezd meg a helyes sorrendet!\n\nHa lemegy a feladat, megjelenik egy üres négyzetrács. \nAbban a sorrendben kell kattintanod a négyzetekre, ahogyan emlékeid szerint megjelentek. Erre bármennyi időd lesz.\n\nAhányas szinten vagy, annyi négyzet fog megjelenni egymás után. Először alacsony szinten fogsz kezdeni, ám ha többször is sikerül adott szinten a helyes sorrendet megadnod, egy idő után szintet lépsz. Próbálj meg minél magasabb szintet elérni!\n\nMost egy pár gyakorlókör fog következni. \nSPACE/Kattintás\n',
+    text: 'Először nézzük az első részt. \nPiros négyzetek fognak megjelenni egymás után egy 4x4-es négyzetrácsban. Jegyezd meg a helyes sorrendet!\n\nHa lemegy a feladat, megjelenik egy üres négyzetrács. \nAbban a sorrendben kell kattintanod a négyzetekre, ahogyan szerinted megjelentek. Erre bármennyi időd lesz.\n\nAhányas szinten vagy, annyi négyzet fog megjelenni egymás után. Először alacsony szinten fogsz kezdeni, ám ha többször is sikerül adott szinten a helyes sorrendet megadnod, egy idő után szintet lépsz. Próbálj meg minél magasabb szintet elérni!\n\nMost egy pár gyakorlókör fog következni. \nSPACE/Kattintás\n',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -1099,7 +1099,7 @@ async function experimentInit() {
   text_11 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_11',
-    text: 'A következő részben a feladat hasonló lesz.\n\nUgyanígy négyzetek fognak megjelenni, és a feladatod továbbra is minél hosszabb szekvenciákat megjegyezni.\nAzonban minden bemutatott négyzet között lesz egy döntési feladat: el kell dönteni egy ábráról, hogy függőlegesen szimmetrikus-e.\n\nElőször nézzük meg, hogyan fog a szimmetriadöntés kinézni.\nSPACE/Katt',
+    text: 'A következő feladat hasonló lesz.\n\nUgyanígy négyzetek fognak megjelenni, és a feladatod továbbra is minél hosszabb szekvenciákat megjegyezni.\nAzonban minden bemutatott négyzet között lesz egy döntési feladat: el kell döntened egy ábráról, hogy függőlegesen szimmetrikus-e.\n\nElőször nézzük meg, hogyan néz ki a döntési feladat.\n\nSPACE/Katt',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, (- 0.1)], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -1119,7 +1119,7 @@ async function experimentInit() {
   text_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_2',
-    text: 'Meg fog jelenni egy kép, amelyről el kell döntened, hogy FÜGGŐLEGESEN SZIMMETRIKUS-e.\n \nHa szimmetrikus, a BAL gombot (a billentyűzeten) kell megnyomnod,\nha nem szimmetrikus, a JOBB gombot.\n\nSPACE/Katt',
+    text: 'Meg fog jelenni egy kép, amelyről el kell döntened, hogy FÜGGŐLEGESEN szimmetrikus-e.\n \nHa szimmetrikus, a billentyűzeten a BAL gombot kell megnyomnod,\nha nem szimmetrikus, a JOBB gombot.\n\nSPACE/Katt',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -1176,7 +1176,7 @@ async function experimentInit() {
   text_4 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_4',
-    text: 'Az alábbi ábra pedig szimmetrikus.\nNyomd meg a megfelelő gombot.',
+    text: 'Az alábbi ábra pedig nem az.\nNyomd meg a megfelelő gombot.',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0.35], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -3126,7 +3126,7 @@ function square_levelRoutineBegin(snapshot) {
     square_levelClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(2.000000);
+    routineTimer.add(1.500000);
     // update component parameters for each repeat
     document.body.style.cursor='none';
     // keep track of which components have finished
@@ -3160,7 +3160,7 @@ function square_levelRoutineEachFrame() {
       text_level_1.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (text_level_1.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       text_level_1.setAutoDraw(false);
     }
@@ -3174,7 +3174,7 @@ function square_levelRoutineEachFrame() {
       text_level_2.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (text_level_2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       text_level_2.setAutoDraw(false);
     }
@@ -6170,7 +6170,7 @@ function both_levelRoutineBegin(snapshot) {
     both_levelClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(2.000000);
+    routineTimer.add(1.500000);
     // update component parameters for each repeat
     document.body.style.cursor='none';
     // keep track of which components have finished
@@ -6203,7 +6203,7 @@ function both_levelRoutineEachFrame() {
       text_both_level_1.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (text_both_level_1.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       text_both_level_1.setAutoDraw(false);
     }
@@ -6217,7 +6217,7 @@ function both_levelRoutineEachFrame() {
       text_both_level_2.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (text_both_level_2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       text_both_level_2.setAutoDraw(false);
     }
