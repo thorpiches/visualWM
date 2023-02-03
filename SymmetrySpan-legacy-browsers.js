@@ -501,7 +501,7 @@ async function experimentInit() {
   text = new visual.TextStim({
     win: psychoJS.window,
     name: 'text',
-    text: 'Üdv!\nEbben a kísérletben az lesz a feladatod, hogy megjegyezd, milyen sorrendben jelennek meg piros négyzetek egy négyzetrácsban. \n\nHa ez a rész sikerült, kicsit nehezedni fog a feladat: \nMinden piros négyzet között meg fog jelenni egy ábra, amelyről el kell döntened, hogy függőlegesen szimmetrikus-e vagy sem.\n\nElőször lesz egy kis gyakorlás, hogy megismerkedj a feladattal.\n\nHa készen állsz, nyomd meg a SPACE billenyűt vagy kattints egyet.',
+    text: 'Üdv!\n\nKérünk, amíg tart a kísérlet, ne lépj ki a teljes képernyős módból.\n\nEgy emlékezeti feladat fog következni. Piros négyzetek fognak egy négyzetrácsban egymás után megjelenni. Igyekezz a helyes sorrendet megjegyezni!\n\nA feladatnak lesz egy második része is, ahol minden bemutatott piros négyzet között meg fog jelenni egy ábra is, amelyről el kell döntened, hogy függőlegesen szimmetrikus-e vagy sem. Itt is az lesz a célod, hogy a piros négyzetek minél hosszabb sorrendjét helyesen megjegyezd.\n\nElőször lesz egy kis gyakorlás, hogy megismerkedj a feladattal.\n\nHa készen állsz, nyomd meg a SPACE billenyűt vagy kattints egyet.',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -521,7 +521,7 @@ async function experimentInit() {
   text_8 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_8',
-    text: 'Egy 4x4-es négyzetrácsban piros négyzetek fognak megjelenni egymás után. Jegyezd meg a helyes sorrendet!\n\nHa lemegy a feladat, meg fog jelenni egy üres négyzetrács. \nAbban a sorrendben kell kattintanod a négyzetekre, ahogyan emlékeid szerint megjelentek. Erre bármennyi időd lesz, nem kell sietni.\n\nAhányas szinten vagy, annyi négyzet fog megjelenni. Először ez viszonylag kevés lesz, ám ha sikerül adott szinten a sorrendet többször is helyesen megadnod, egy idő után szintet lépsz. Próbálj meg minél magasabb szintet elérni!\n\nMost egy pár gyakorlókör fog következni. \nSPACE/Kattintás\n',
+    text: 'A négyzetek egy 4x4-es négyzetrácsban fognak megjelenni egymás után. Jegyezd meg a helyes sorrendet!\n\nHa lemegy a feladat, meg fog jelenni egy üres négyzetrács. \nAbban a sorrendben kell kattintanod a négyzetekre, ahogyan emlékeid szerint megjelentek. Erre bármennyi időd lesz.\n\nAhányas szinten vagy, annyi négyzet fog megjelenni egymás után. Először alacsony szinten fogsz kezdeni, ám ha többször is sikerül adott szinten a helyes sorrendet megadnod, egy idő után szintet lépsz. Próbálj meg minél magasabb szintet elérni!\n\nMost egy pár gyakorlókör fog következni. \nSPACE/Kattintás\n',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -588,7 +588,7 @@ async function experimentInit() {
     pos: [(- 0.15), 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
-    depth: 0.0 
+    depth: -1.0 
   });
   
   text_level_2 = new visual.TextStim({
@@ -600,7 +600,7 @@ async function experimentInit() {
     pos: [0.15, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
-    depth: -1.0 
+    depth: -2.0 
   });
   
   // Initialize components for Routine "square"
@@ -1111,7 +1111,7 @@ async function experimentInit() {
   text_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_2',
-    text: 'Meg fog jelenni egy kép, amelyről el kell döntened, hogy FÜGGŐLEGESEN SZIMMETRIKUS-e.\n \nHa szimmetrikus, a BAL gombot (a billentyűzeten) kell megnyomnod,\nha nem szimmetrikus, a JOBB gombot.\n\n\nSPACE/Katt',
+    text: 'Meg fog jelenni egy kép, amelyről el kell döntened, hogy FÜGGŐLEGESEN SZIMMETRIKUS-e.\n \nHa szimmetrikus, a BAL gombot (a billentyűzeten) kell megnyomnod,\nha nem szimmetrikus, a JOBB gombot.\n\nSPACE/Katt',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -1427,7 +1427,7 @@ async function experimentInit() {
   text_12 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_12',
-    text: 'Most nézzük meg, hogyan fog a négyzetemlékezeti és a szimmetriadöntéses feladat egyszerre kinézni!\n\nMinden bemutatott piros négyzet után döntened kell egy kép szimetrikusságáról!\n\nEgyrészt igyekezz megjegyezni, hol jelennek meg a négyzetek, másrészt ne felejtsd el, hogy minden négyzet között helyesen kell döntened 2mp-en belül az ábrák függőleges szimmetrikusságáról!\n\nElőször lesz egy pár gyakorlókör.\n\nKészítsd az ujjaidat a BAL és JOBB gombokra.\nSPACE',
+    text: 'Most nézzük meg, hogyan fog a négyzetemlékezeti és a szimmetriadöntéses feladat egyszerre kinézni.\n\nMinden bemutatott piros négyzet után döntened kell egy kép szimetrikusságáról. \nEgyrészt igyekezz megjegyezni, hol jelennek meg a négyzetek, másrészt ne felejtsd el, hogy minden négyzet között helyesen kell döntened 2 másodpercen belül az ábrák függőleges szimmetrikusságáról.\n\nNem baj, ha egyszer-egyszer hibázol a szimmetrikus döntési feladatban. Ne felejtsd, a fő cél az, hogy minél hosszabb szekvenciákat jegyezz meg. Viszont figyelj, hogy összesítve 85% fölött maradjon a helyes döntéseid aránya.\n\nElőször lesz egy pár gyakorlókör.\nKészítsd az ujjaidat a BAL és JOBB gombokra.\n\nSPACE',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -1454,7 +1454,7 @@ async function experimentInit() {
     pos: [(- 0.15), 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
-    depth: 0.0 
+    depth: -1.0 
   });
   
   text_both_level_2 = new visual.TextStim({
@@ -1466,7 +1466,7 @@ async function experimentInit() {
     pos: [0.15, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
-    depth: -1.0 
+    depth: -2.0 
   });
   
   // Initialize components for Routine "both_square"
@@ -3131,6 +3131,7 @@ function square_levelRoutineBegin(snapshot) {
     continueRoutine = true; // until we're told otherwise
     routineTimer.add(2.000000);
     // update component parameters for each repeat
+    document.body.style.cursor='none';
     // keep track of which components have finished
     square_levelComponents = [];
     square_levelComponents.push(text_level_1);
@@ -3249,6 +3250,7 @@ function squareRoutineBegin(snapshot) {
     square_rand.setPos(coordinates);
     
     document.body.style.cursor='none';
+    
     // keep track of which components have finished
     squareComponents = [];
     squareComponents.push(fixation2);
@@ -4375,6 +4377,7 @@ function next_setRoutineEnd(snapshot) {
         trials_square_2.finished = true;
     }
     
+    text_end_prac.setText("", true);
     // store data for psychoJS.experiment (ExperimentHandler)
     if (mouse_2.x) {  psychoJS.experiment.addData('mouse_2.x', mouse_2.x[0])};
     if (mouse_2.y) {  psychoJS.experiment.addData('mouse_2.y', mouse_2.y[0])};
@@ -5349,6 +5352,8 @@ function prac_symRoutineBegin(snapshot) {
     
     image_2.setImage(picture);
     image_3.setImage(picture);
+    
+    document.body.style.cursor='none';
     key_resp_6.keys = undefined;
     key_resp_6.rt = undefined;
     _key_resp_6_allKeys = [];
@@ -5711,7 +5716,7 @@ function prac_sym_g_rRoutineEnd(snapshot) {
     
     picture = ""
     
-    
+    document.body.style.cursor='auto';
     // Routines running outside a loop should always advance the datafile row
     if (currentLoop === psychoJS.experiment) {
       psychoJS.experiment.nextEntry(snapshot);
@@ -5746,7 +5751,7 @@ function prac_sym_fbRoutineBegin(snapshot) {
     }
     accuracyText = (`${accuracyPercent}` + "%");
     if ((prac_sym_loop_nr <= 1)) {
-        prac_fb = "A k\u00eds\u00e9rlet sikeres teljes\u00edt\u00e9s\u00e9hez majd legal\u00e1bb 85%-ot kell el\u00e9rned!\n\nHa \u00fajra k\u00edv\u00e1nsz gyakorolni, nyomd meg a BAL vagy a JOBB gombot. \u00d6sszesen k\u00e9tszer gyakorolhatod ezt a feladatr\u00e9szt.\n\nHA a k\u00f6vetkez\u0151 r\u00e9szre ugran\u00e1l, nyomd meg a SPACE gombot";
+        prac_fb = "A k\u00eds\u00e9rlet sikeres teljes\u00edt\u00e9s\u00e9hez majd legal\u00e1bb 85%-ot kell el\u00e9rned!\n\nHa \u00fajra k\u00edv\u00e1nsz gyakorolni, nyomd meg a BAL vagy a JOBB gombot. \u00d6sszesen háromszor gyakorolhatod ezt a feladatr\u00e9szt.\n\nHA a k\u00f6vetkez\u0151 r\u00e9szre ugran\u00e1l, nyomd meg a SPACE gombot";
     } else {
         prac_fb = "A k\u00eds\u00e9rlet sikeres teljes\u00edt\u00e9s\u00e9hez majd legal\u00e1bb 85%-ot kell el\u00e9rned!\n\n Elfogytak a gyakorl\u00e1si lehet\u0151s\u00e9geid\nTov\u00e1bb: SPACE";
     }
@@ -5879,6 +5884,7 @@ function prac_sym_fbRoutineEnd(snapshot) {
     }
     
     text_how_many_correct.setText("", true)
+    
     // update the trial handler
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(key_resp_7.corr, level);
@@ -6185,6 +6191,7 @@ function both_levelRoutineBegin(snapshot) {
     continueRoutine = true; // until we're told otherwise
     routineTimer.add(2.000000);
     // update component parameters for each repeat
+    document.body.style.cursor='none';
     // keep track of which components have finished
     both_levelComponents = [];
     both_levelComponents.push(text_both_level_1);
@@ -7653,9 +7660,9 @@ function both_next_setRoutineBegin(snapshot) {
     
     end_prac_text;
     if (counter <= 2) {
-    end_prac_text = "Kattints, vagy nyomd meg a SPACE-t a következő gyakorlókörhöz!";
+    end_prac_text = "Nyomd meg a SPACE-t a következő gyakorlókörhöz!";
     } else if (counter === 3) {
-    end_prac_text = "Szép! Most következzenek az éles körök!\n\nPróbálj meg minél magasabb szintre jutni!\n\nA folytatáshoz kattints, vagy nyomd meg a SPACE-t";
+    end_prac_text = "Szép! Most következzenek az éles körök!\n\nPróbálj meg minél magasabb szintre jutni!\n\nA nyomd meg a SPACE-t";
     } else {
     end_prac_text = "SPACE";
     }
@@ -7784,7 +7791,7 @@ function both_next_setRoutineEnd(snapshot) {
         trials_both.finished = true;
     }
     
-    
+    text_end_prac_both.setText("", true);
     // update the trial handler
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(key_resp_12.corr, level);
@@ -7830,7 +7837,7 @@ function both_endRoutineBegin(snapshot) {
     if ((overall_symm === 0)) {
         accuracyPercent = 0;
     } else {
-        accuracyPercent = ((overall_symm_corr / overall_symm) * 100).toFixed(2);
+        accuracyPercent = ((overall_symm_corr / overall_symm) * 100).toFixed(1);
     }
     
     
@@ -8190,6 +8197,10 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
+  
+  
   
   
   
