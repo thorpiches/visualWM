@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on február 02, 2023, at 12:47
+    on február 03, 2023, at 10:12
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -534,6 +534,8 @@ text_5 = visual.TextStim(win=win, name='text_5',
     languageStyle='LTR',
     depth=0.0);
 key_resp_5 = keyboard.Keyboard()
+
+# --- Initialize components for Routine "prac_sym_helper" ---
 
 # --- Initialize components for Routine "prac_sym" ---
 # Run 'Begin Experiment' code from code_prac_sym
@@ -3386,6 +3388,64 @@ for thisTrials_prac2 in trials_prac2:
         for paramName in thisTrials_prac2:
             exec('{} = thisTrials_prac2[paramName]'.format(paramName))
     
+    # --- Prepare to start Routine "prac_sym_helper" ---
+    continueRoutine = True
+    routineForceEnded = False
+    # update component parameters for each repeat
+    # Run 'Begin Routine' code from code_prac_sym_helper
+    if isFirstRun == 0:
+        continueRoutine = False
+    # keep track of which components have finished
+    prac_sym_helperComponents = []
+    for thisComponent in prac_sym_helperComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "prac_sym_helper" ---
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in prac_sym_helperComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "prac_sym_helper" ---
+    for thisComponent in prac_sym_helperComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # Run 'End Routine' code from code_prac_sym_helper
+    if isFirstRun == 0:
+        isFirstRun = 1
+    # the Routine "prac_sym_helper" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
     # set up handler to look after randomisation of conditions etc
     trials_prac = data.TrialHandler(nReps=pracSymmTrialNumber, method='random', 
         extraInfo=expInfo, originPath=-1,
@@ -3411,6 +3471,7 @@ for thisTrials_prac2 in trials_prac2:
         # update component parameters for each repeat
         # Run 'Begin Routine' code from code_prac_sym
         timerPracSym.reset();
+        
         picture = selected_images[total_trials];
         key_resp_6.keys = []
         key_resp_6.rt = []
@@ -3438,6 +3499,11 @@ for thisTrials_prac2 in trials_prac2:
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             # Run 'Each Frame' code from code_prac_sym
+            if (routineTimer.getTime() = 2.000:
+                image_2.opacity = 0
+            else:
+                image_2.opacity = 1
+            
             countDownText = "%.1f"%(timerPracSym.getTime())
             
             
@@ -3463,7 +3529,7 @@ for thisTrials_prac2 in trials_prac2:
                     fixation.setAutoDraw(False)
             
             # *image_2* updates
-            if image_2.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+            if image_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
                 # keep track of start time/frame for later
                 image_2.frameNStart = frameN  # exact frame index
                 image_2.tStart = t  # local t and not account for scr refresh
@@ -3474,7 +3540,7 @@ for thisTrials_prac2 in trials_prac2:
                 image_2.setAutoDraw(True)
             if image_2.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > image_2.tStartRefresh + 2-frameTolerance:
+                if tThisFlipGlobal > image_2.tStartRefresh + 2.5-frameTolerance:
                     # keep track of stop time/frame for later
                     image_2.tStop = t  # not accounting for scr refresh
                     image_2.frameNStop = frameN  # exact frame index
@@ -3666,7 +3732,7 @@ for thisTrials_prac2 in trials_prac2:
         frameN = -1
         
         # --- Run Routine "prac_sym_g_r" ---
-        while continueRoutine and routineTimer.getTime() < 0.2:
+        while continueRoutine:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -3675,7 +3741,7 @@ for thisTrials_prac2 in trials_prac2:
             # update/draw components on each frame
             
             # *image_3* updates
-            if image_3.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            if image_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
                 image_3.frameNStart = frameN  # exact frame index
                 image_3.tStart = t  # local t and not account for scr refresh
@@ -3743,11 +3809,6 @@ for thisTrials_prac2 in trials_prac2:
         # Run 'End Routine' code from code_prac_sym_g_r
         thisExp.addData('SymmAnswer', sym_corr) 
         maskColor = ""
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if routineForceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-0.200000)
         thisExp.nextEntry()
         
     # completed pracSymmTrialNumber repeats of 'trials_prac'

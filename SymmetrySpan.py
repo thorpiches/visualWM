@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on február 01, 2023, at 18:41
+    on február 03, 2023, at 09:59
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,7 +35,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '2022.2.5'
-expName = 'Symmetry_Span'  # from the Builder filename that created this script
+expName = 'Symmetry_Span_1'  # from the Builder filename that created this script
 expInfo = {
     'participant': f"{randint(0, 999999):06.0f}",
     'session': '001',
@@ -127,6 +127,7 @@ import random
 
 #create an array of the square names
 loop_breaker = 0
+corr_square_clicked = 0
 square_names = ["square_" + str(i) for i in range(16)]
 square_names_both = ["square_" + str(i) + "_both" for i in range(16)]
 
@@ -534,6 +535,8 @@ text_5 = visual.TextStim(win=win, name='text_5',
     depth=0.0);
 key_resp_5 = keyboard.Keyboard()
 
+# --- Initialize components for Routine "prac_sym_helper" ---
+
 # --- Initialize components for Routine "prac_sym" ---
 # Run 'Begin Experiment' code from code_prac_sym
 import os
@@ -796,10 +799,6 @@ key_resp_6_both = keyboard.Keyboard()
 usedTime = 0
 
 
-# Import the green and red mask images
-maskColor = ""
-greenMask = os.path.join(resources_path, '1green.JPG')
-redMask = os.path.join(resources_path, '1red.JPG')
 
 image_3_both = visual.ImageStim(
     win=win,
@@ -935,9 +934,6 @@ square_15_both = visual.Rect(
     opacity=1.0, depth=-18.0, interpolate=True)
 
 # --- Initialize components for Routine "both_square_rec_g_r" ---
-# Run 'Begin Experiment' code from code_square_rec_g_r_both
-recall_counter = 0
-
 text_10_both = visual.TextStim(win=win, name='text_10_both',
     text='Kattints a négyzetekre abban a sorrendben, ahogyan megjelentek!',
     font='Open Sans',
@@ -1429,6 +1425,7 @@ for thisTrials_square_2 in trials_square_2:
     i = 0
     recall_counter = 0
     corr_square_cliqued = 0
+    
     # keep track of which components have finished
     square_helperComponents = []
     for thisComponent in square_helperComponents:
@@ -2057,6 +2054,7 @@ for thisTrials_square_2 in trials_square_2:
         routineForceEnded = False
         # update component parameters for each repeat
         # Run 'Begin Routine' code from code_square_rec_g_r
+        
         if mouse.clicked_name[0] == "square_0" and random_square_names[recall_counter] == "square_0":
             corr_square_cliqued += 1
             square_16.color = "#006400"
@@ -2106,9 +2104,22 @@ for thisTrials_square_2 in trials_square_2:
             corr_square_cliqued += 1
             square_31.color = "#006400"
         else:
-            for i in range(16):
-                exec(f"square_{i+16}.color = '#ff0000'")
-        
+            square_16.color = "#ff0000";
+            square_17.color = "#ff0000";
+            square_18.color = "#ff0000";
+            square_19.color = "#ff0000";
+            square_20.color = "#ff0000";
+            square_21.color = "#ff0000";
+            square_22.color = "#ff0000";
+            square_23.color = "#ff0000";
+            square_24.color = "#ff0000";
+            square_25.color = "#ff0000";
+            square_26.color = "#ff0000";
+            square_27.color = "#ff0000";
+            square_28.color = "#ff0000";
+            square_29.color = "#ff0000";
+            square_30.color = "#ff0000";
+            square_31.color = "#ff0000";
         # keep track of which components have finished
         square_rec_g_rComponents = [text_10, grid3, square_16, square_17, square_18, square_19, square_20, square_21, square_22, square_23, square_24, square_25, square_26, square_27, square_28, square_29, square_30, square_31]
         for thisComponent in square_rec_g_rComponents:
@@ -2536,6 +2547,8 @@ for thisTrials_square_2 in trials_square_2:
     # update component parameters for each repeat
     # Run 'Begin Routine' code from code_next_square_set
     # Showing the participant how many squares he found from total
+    
+    
     result_squares_text = "Eredményed: %d / %d"%(corr_square_cliqued ,thisloop_item_number)
     
     # Setting up the counter that breaks the loop if too many mistakes made
@@ -3375,6 +3388,64 @@ for thisTrials_prac2 in trials_prac2:
         for paramName in thisTrials_prac2:
             exec('{} = thisTrials_prac2[paramName]'.format(paramName))
     
+    # --- Prepare to start Routine "prac_sym_helper" ---
+    continueRoutine = True
+    routineForceEnded = False
+    # update component parameters for each repeat
+    # Run 'Begin Routine' code from code_prac_sym_helper
+    if isFirstRun == 0:
+        continueRoutine = False
+    # keep track of which components have finished
+    prac_sym_helperComponents = []
+    for thisComponent in prac_sym_helperComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "prac_sym_helper" ---
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in prac_sym_helperComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "prac_sym_helper" ---
+    for thisComponent in prac_sym_helperComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # Run 'End Routine' code from code_prac_sym_helper
+    if isFirstRun == 0:
+        isFirstRun = 1
+    # the Routine "prac_sym_helper" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
     # set up handler to look after randomisation of conditions etc
     trials_prac = data.TrialHandler(nReps=pracSymmTrialNumber, method='random', 
         extraInfo=expInfo, originPath=-1,
@@ -3399,12 +3470,9 @@ for thisTrials_prac2 in trials_prac2:
         routineForceEnded = False
         # update component parameters for each repeat
         # Run 'Begin Routine' code from code_prac_sym
-        timerPracSym.reset()
-        picture = selected_images[total_trials]
+        timerPracSym.reset();
         
-        
-        
-        
+        picture = selected_images[total_trials];
         key_resp_6.keys = []
         key_resp_6.rt = []
         _key_resp_6_allKeys = []
@@ -3431,6 +3499,11 @@ for thisTrials_prac2 in trials_prac2:
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             # Run 'Each Frame' code from code_prac_sym
+            if (routineTimer.getTime() = 2.000:
+                image_2.opacity = 0
+            else:
+                image_2.opacity = 1
+            
             countDownText = "%.1f"%(timerPracSym.getTime())
             
             
@@ -3456,7 +3529,7 @@ for thisTrials_prac2 in trials_prac2:
                     fixation.setAutoDraw(False)
             
             # *image_2* updates
-            if image_2.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+            if image_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
                 # keep track of start time/frame for later
                 image_2.frameNStart = frameN  # exact frame index
                 image_2.tStart = t  # local t and not account for scr refresh
@@ -3467,7 +3540,7 @@ for thisTrials_prac2 in trials_prac2:
                 image_2.setAutoDraw(True)
             if image_2.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > image_2.tStartRefresh + 2-frameTolerance:
+                if tThisFlipGlobal > image_2.tStartRefresh + 2.5-frameTolerance:
                     # keep track of stop time/frame for later
                     image_2.tStop = t  # not accounting for scr refresh
                     image_2.frameNStop = frameN  # exact frame index
@@ -3659,7 +3732,7 @@ for thisTrials_prac2 in trials_prac2:
         frameN = -1
         
         # --- Run Routine "prac_sym_g_r" ---
-        while continueRoutine and routineTimer.getTime() < 0.2:
+        while continueRoutine:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -3668,7 +3741,7 @@ for thisTrials_prac2 in trials_prac2:
             # update/draw components on each frame
             
             # *image_3* updates
-            if image_3.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            if image_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
                 image_3.frameNStart = frameN  # exact frame index
                 image_3.tStart = t  # local t and not account for scr refresh
@@ -3736,11 +3809,6 @@ for thisTrials_prac2 in trials_prac2:
         # Run 'End Routine' code from code_prac_sym_g_r
         thisExp.addData('SymmAnswer', sym_corr) 
         maskColor = ""
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if routineForceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-0.200000)
         thisExp.nextEntry()
         
     # completed pracSymmTrialNumber repeats of 'trials_prac'
@@ -5038,8 +5106,6 @@ for thisTrials_both in trials_both:
         routineForceEnded = False
         # update component parameters for each repeat
         # Run 'Begin Routine' code from code_square_rec_g_r_both
-        print(mouse_both.clicked_name[0])
-        print(random_square_names[recall_counter])
         
         if mouse_both.clicked_name[0] == "square_0_both" and random_square_names[recall_counter] == "square_0_both":
             corr_square_cliqued += 1
