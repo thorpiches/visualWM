@@ -5580,7 +5580,7 @@ function prac_symRoutineEnd(snapshot) {
     }
     image_4.setImage(maskColor);
     total_trials += 1;
-    correct_total_text = `Helyes válaszok:${correct_answers} / ${total_trials}`;
+    correct_total_text = `Helyes válaszok: ${correct_answers} / ${total_trials}`;
     
     // update the trial handler
     if (currentLoop instanceof MultiStairHandler) {
@@ -6649,6 +6649,7 @@ function both_symRoutineEnd(snapshot) {
     } else {
         if ((key_resp_6_both.keys === sym_corr)) {
             correct_answers += 1;
+            overall_symm_corr += 1
             maskColor = greenMask;
         } else {
             correct_answers += 0;
@@ -6658,7 +6659,7 @@ function both_symRoutineEnd(snapshot) {
     image_4_both.setImage(maskColor);
     total_trials += 1;
     overall_symm += 1;
-    correct_total_text = `Helyes válaszok:${correct_answers} / ${total_trials}`;
+    correct_total_text = `Helyes válaszok: ${correct_answers} / ${total_trials}`;
     // update the trial handler
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(key_resp_6_both.corr, level);
