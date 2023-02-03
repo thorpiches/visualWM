@@ -6426,7 +6426,7 @@ function both_symRoutineBegin(snapshot) {
     // Run 'Begin Routine' code from code_prac_sym_both
     timerPracSym.reset();
     
-    picture = selected_images[total_trials];
+    picture = selected_images_both[total_trials];
     
     image_2_both.setImage(picture);
     image_3_both.setImage(picture);
@@ -7771,7 +7771,7 @@ function both_next_setRoutineEnd(snapshot) {
     correct_answers = 0;
     accuracyText = "";
     correct_total_text = "";
-    text_how_many_correct.setText("", true)
+    text_how_many_correct_both.setText("", true)
     
     psychoJS.experiment.addData("number_of_correct_squares_clicked", correct_square_counter);
     psychoJS.experiment.addData("total_squares_clicked", thisloop_item_number);
