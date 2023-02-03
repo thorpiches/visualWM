@@ -1569,9 +1569,6 @@ async function experimentInit() {
   
   // Initialize components for Routine "both_sym_g_r"
   both_sym_g_rClock = new util.Clock();
-  // Run 'Begin Experiment' code from code_prac_sym_g_r_both
-  usedTime = 0;
-  
   image_3_both = new visual.ImageStim({
     win : psychoJS.window,
     name : 'image_3_both', units : undefined, 
@@ -4220,7 +4217,7 @@ function next_setRoutineBegin(snapshot) {
     } else if (counter === 3) {
     end_prac_text = "Szép! Most következzenek az éles körök!\n\nPróbálj meg minél magasabb szintre jutni!\n\nA folytatáshoz kattints, vagy nyomd meg a SPACE-t";
     } else {
-    end_prac_text = "SPACE/Click";
+    end_prac_text = "SPACE/Katt";
     }
     // setup some python lists for storing info about the mouse_2
     // current position of the mouse:
@@ -5223,12 +5220,6 @@ function prac_sym_helperRoutineBegin(snapshot) {
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    // Run 'Begin Routine' code from code_prac_sym_helper
-    if (isFirstRun === 0) {
-      continueRoutine = false;
-    }
-    
-    
     function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
     
@@ -5318,7 +5309,6 @@ function prac_sym_helperRoutineEachFrame() {
 }
 
 
-var isFirstRun;
 function prac_sym_helperRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'prac_sym_helper' ---
@@ -5327,11 +5317,6 @@ function prac_sym_helperRoutineEnd(snapshot) {
         thisComponent.setAutoDraw(false);
       }
     });
-    // Run 'End Routine' code from code_prac_sym_helper
-    if (isFirstRun === 0) {
-      isFirstRun = 1;
-    }
-    
     // the Routine "prac_sym_helper" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -5726,7 +5711,6 @@ function prac_sym_g_rRoutineEnd(snapshot) {
     
     picture = ""
     
-    setTimeout(() => {}, 20);
     
     // Routines running outside a loop should always advance the datafile row
     if (currentLoop === psychoJS.experiment) {
@@ -6059,29 +6043,66 @@ function both_helperRoutineBegin(snapshot) {
     // update component parameters for each repeat
     // Run 'Begin Routine' code from code_both_helper
     thisloop_item_number = prac_loop_lengths[counter];
-    random_square_names = random.sample(square_names_both, thisloop_item_number);
+    
+    random_square_names = shuffle(square_names_both).slice(0, thisloop_item_number);
+    
     i = 0;
     recall_counter = 0;
     corr_square_cliqued = 0;
-    function select_images_both(non_sym_images, sym_images, thisloop_item_number) {
-        var half_trials, selected_non_sym_images, selected_sym_images;
-        if (((thisloop_item_number % 2) === 0)) {
-            half_trials = Number.parseInt((thisloop_item_number / 2));
-            selected_non_sym_images = random.sample(non_sym_images, half_trials);
-            selected_sym_images = random.sample(sym_images, half_trials);
-            selected_images_both = (selected_non_sym_images + selected_sym_images);
-            random.shuffle(selected_images);
-        } else {
-            half_trials = Number.parseInt(((thisloop_item_number + 1) / 2));
-            selected_non_sym_images = random.sample(non_sym_images, half_trials);
-            selected_sym_images = random.sample(sym_images, half_trials);
-            selected_images_both = (selected_non_sym_images + selected_sym_images);
-            random.shuffle(selected_images_both);
-            selected_images_both.pop();
-        }
-        return selected_images_both;
+    correct_square_counter = 0;
+    
+    total_trials = 0;
+    
+    
+    function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+    
+    while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
     }
-    selected_images_both = select_images_both(non_sym_images, sym_images, thisloop_item_number);
+    return array;
+    }
+    
+    
+    //creating function that chooses x amount of sym and nsym images
+    function select_images_both(non_sym_images, sym_images, pracSymmTrialNumber) {
+    if (pracSymmTrialNumber % 2 === 0) {
+    const half_trials = Math.floor(pracSymmTrialNumber / 2);
+    // Select random samples from sym and nsym images
+    let selected_non_sym_images = shuffle(non_sym_images);
+        selected_non_sym_images = selected_non_sym_images.slice(0, half_trials);
+    let selected_sym_images = shuffle(sym_images);
+        selected_sym_images = selected_sym_images.slice(0, half_trials);
+    selected_images_both = selected_non_sym_images.concat(selected_sym_images);
+    selected_images_both.sort(() => Math.random() - 0.5); }
+     else {
+    const half_trials = Math.floor((pracSymmTrialNumber + 1) / 2);
+    //same here
+    let selected_non_sym_images = shuffle(non_sym_images);
+        selected_non_sym_images = selected_non_sym_images.slice(0, half_trials);
+    let selected_sym_images = shuffle(sym_images);
+        selected_sym_images = selected_sym_images.slice(0, half_trials);
+    //but we delete one
+    selected_images_both = selected_non_sym_images.concat(selected_sym_images);
+    selected_images_both.sort(() => Math.random() - 0.5);
+    selected_images_both.pop();
+    }
+    return selected_images_both;
+    }
+    
+    selected_images_both = select_images_both(non_sym_images, sym_images, pracSymmTrialNumber);
+    
+    
+    
+    
+    
+    
+    
+    
     
     // keep track of which components have finished
     both_helperComponents = [];
@@ -6404,8 +6425,11 @@ function both_symRoutineBegin(snapshot) {
     // update component parameters for each repeat
     // Run 'Begin Routine' code from code_prac_sym_both
     timerPracSym.reset();
-    picture = selected_images_both[total_trials];
     
+    picture = selected_images[total_trials];
+    
+    image_2_both.setImage(picture);
+    image_3_both.setImage(picture);
     key_resp_6_both.keys = undefined;
     key_resp_6_both.rt = undefined;
     _key_resp_6_both_allKeys = [];
@@ -6435,8 +6459,14 @@ function both_symRoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     // Run 'Each Frame' code from code_prac_sym_both
-    countDownText = `${timerPracSym.getTime()}`;
+     if (routineTimer.getTime() > 2.0000) {
+     image_2_both.opacity = 0;
+    } else {
+     image_2_both.opacity = 1;
+    }
     
+    ;
+    countDownText = (Math.round(timerPracSym.getTime() * 10) / 10).toFixed(1);
     
     // *fixation_both_2* updates
     if (t >= 0.0 && fixation_both_2.status === PsychoJS.Status.NOT_STARTED) {
@@ -6453,7 +6483,7 @@ function both_symRoutineEachFrame() {
     }
     
     // *image_2_both* updates
-    if (t >= 0.5 && image_2_both.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 0 && image_2_both.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       image_2_both.tStart = t;  // (not accounting for frame time here)
       image_2_both.frameNStart = frameN;  // exact frame index
@@ -6461,7 +6491,7 @@ function both_symRoutineEachFrame() {
       image_2_both.setAutoDraw(true);
     }
 
-    frameRemains = 0.5 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0 + 2.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (image_2_both.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       image_2_both.setAutoDraw(false);
     }
@@ -6584,6 +6614,9 @@ function both_symRoutineEnd(snapshot) {
       }
     });
     // Run 'End Routine' code from code_prac_sym_both
+    
+    
+    
     var _pj;
     function _pj_snippets(container) {
         function in_es6(left, right) {
@@ -6616,19 +6649,16 @@ function both_symRoutineEnd(snapshot) {
     } else {
         if ((key_resp_6_both.keys === sym_corr)) {
             correct_answers += 1;
-            overall_symm_corr += 1;
             maskColor = greenMask;
         } else {
             correct_answers += 0;
             maskColor = redMask;
         }
     }
+    image_4_both.setImage(maskColor);
     total_trials += 1;
     overall_symm += 1;
-    correct_total_text = `Helyes válaszok:
-    ${correct_answers} / ${total_trials}`
-    ;
-    
+    correct_total_text = `Helyes válaszok:${correct_answers} / ${total_trials}`;
     // update the trial handler
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(key_resp_6_both.corr, level);
@@ -7110,73 +7140,120 @@ function both_square_rec_g_rRoutineBegin(snapshot) {
     routineTimer.add(0.200000);
     // update component parameters for each repeat
     // Run 'Begin Routine' code from code_square_rec_g_r_both
-    if (mouse.clicked_name[0] === "square_0" && random_square_names[recall_counter] === "square_0") {
-    corr_square_cliqued += 1;
-    square_16.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_1" && random_square_names[recall_counter] === "square_1") {
-    corr_square_cliqued += 1;
-    square_17.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_2" && random_square_names[recall_counter] === "square_2") {
-    corr_square_cliqued += 1;
-    square_18.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_3" && random_square_names[recall_counter] === "square_3") {
-    corr_square_cliqued += 1;
-    square_19.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_4" && random_square_names[recall_counter] === "square_4") {
-    corr_square_cliqued += 1;
-    square_20.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_5" && random_square_names[recall_counter] === "square_5") {
-    corr_square_cliqued += 1;
-    square_21.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_6" && random_square_names[recall_counter] === "square_6") {
-    corr_square_cliqued += 1;
-    square_22.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_7" && random_square_names[recall_counter] === "square_7") {
-    corr_square_cliqued += 1;
-    square_23.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_8" && random_square_names[recall_counter] === "square_8") {
-    corr_square_cliqued += 1;
-    square_24.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_9" && random_square_names[recall_counter] === "square_9") {
-    corr_square_cliqued += 1;
-    square_25.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_10" && random_square_names[recall_counter] === "square_10") {
-    corr_square_cliqued += 1;
-    square_26.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_11" && random_square_names[recall_counter] === "square_11") {
-    corr_square_cliqued += 1;
-    square_27.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_12" && random_square_names[recall_counter] === "square_12") {
-    corr_square_cliqued += 1;
-    square_28.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_13" && random_square_names[recall_counter] === "square_13") {
-    corr_square_cliqued += 1;
-    square_29.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_14" && random_square_names[recall_counter] === "square_14") {
-    corr_square_cliqued += 1;
-    square_30.color = "#006400";
-    } else if (mouse.clicked_name[0] === "square_15" && random_square_names[recall_counter] === "square_15") {
-    corr_square_cliqued += 1;
-    square_31.color = "#006400";
-    } else {
-    square_16.color = "#ff0000";
-    square_17.color = "#ff0000";
-    square_18.color = "#ff0000";
-    square_19.color = "#ff0000";
-    square_20.color = "#ff0000";
-    square_21.color = "#ff0000";
-    square_22.color = "#ff0000";
-    square_23.color = "#ff0000";
-    square_24.color = "#ff0000";
-    square_25.color = "#ff0000";
-    square_26.color = "#ff0000";
-    square_27.color = "#ff0000";
-    square_28.color = "#ff0000";
-    square_29.color = "#ff0000";
-    square_30.color = "#ff0000";
-    square_31.color = "#ff0000";
-    }
     
+    
+    if (((mouse_both.clicked_name[0] === "square_0_both") && (random_square_names[recall_counter] === "square_0_both"))) {
+        corr_square_cliqued ++;
+        correct_square_counter += 1;
+        square_16_both.fillColor = "#006400";
+    } else {
+        if (((mouse_both.clicked_name[0] === "square_1_both") && (random_square_names[recall_counter] === "square_1_both"))) {
+            corr_square_cliqued ++;
+            correct_square_counter += 1;
+            square_17_both.fillColor = "#006400";
+        } else {
+            if (((mouse_both.clicked_name[0] === "square_2_both") && (random_square_names[recall_counter] === "square_2_both"))) {
+                corr_square_cliqued ++;
+                correct_square_counter += 1;
+                square_18_both.fillColor = "#006400";
+            } else {
+                if (((mouse_both.clicked_name[0] === "square_3_both") && (random_square_names[recall_counter] === "square_3_both"))) {
+                    corr_square_cliqued ++;
+                    correct_square_counter += 1;
+                    square_19_both.fillColor = "#006400";
+                } else {
+                    if (((mouse_both.clicked_name[0] === "square_4_both") && (random_square_names[recall_counter] === "square_4_both"))) {
+                        corr_square_cliqued ++;
+                        correct_square_counter += 1;
+                        square_20_both.fillColor = "#006400";
+                    } else {
+                        if (((mouse_both.clicked_name[0] === "square_5_both") && (random_square_names[recall_counter] === "square_5_both"))) {
+                            corr_square_cliqued ++;
+                            correct_square_counter += 1;
+                            square_21_both.fillColor = "#006400";
+                        } else {
+                            if (((mouse_both.clicked_name[0] === "square_6_both") && (random_square_names[recall_counter] === "square_6_both"))) {
+                                corr_square_cliqued ++;
+                                correct_square_counter += 1;
+                                square_22_both.fillColor = "#006400";
+                            } else {
+                                if (((mouse_both.clicked_name[0] === "square_7_both") && (random_square_names[recall_counter] === "square_7_both"))) {
+                                    corr_square_cliqued ++;
+                                    correct_square_counter += 1;
+                                    square_23_both.fillColor = "#006400";
+                                } else {
+                                    if (((mouse_both.clicked_name[0] === "square_8_both") && (random_square_names[recall_counter] === "square_8_both"))) {
+                                        corr_square_cliqued ++;
+                                        correct_square_counter += 1;
+                                        square_24_both.fillColor = "#006400";
+                                    } else {
+                                        if (((mouse_both.clicked_name[0] === "square_9_both") && (random_square_names[recall_counter] === "square_9_both"))) {
+                                            corr_square_cliqued ++;
+                                            correct_square_counter += 1;
+                                            square_25_both.fillColor = "#006400";
+                                        } else {
+                                            if (((mouse_both.clicked_name[0] === "square_10_both") && (random_square_names[recall_counter] === "square_10_both"))) {
+                                                corr_square_cliqued ++;
+                                                correct_square_counter += 1;
+                                                square_26_both.fillColor = "#006400";
+                                            } else {
+                                                if (((mouse_both.clicked_name[0] === "square_11_both") && (random_square_names[recall_counter] === "square_11_both"))) {
+                                                    corr_square_cliqued ++;
+                                                    correct_square_counter += 1;
+                                                    square_27_both.fillColor = "#006400";
+                                                } else {
+                                                    if (((mouse_both.clicked_name[0] === "square_12_both") && (random_square_names[recall_counter] === "square_12_both"))) {
+                                                        corr_square_cliqued ++;
+                                                        correct_square_counter += 1;
+                                                        square_28_both.fillColor = "#006400";
+                                                    } else {
+                                                        if (((mouse_both.clicked_name[0] === "square_13_both") && (random_square_names[recall_counter] === "square_13_both"))) {
+                                                            corr_square_cliqued ++;
+                                                            correct_square_counter += 1;
+                                                            square_29_both.fillColor = "#006400";
+                                                        } else {
+                                                            if (((mouse_both.clicked_name[0] === "square_14_both") && (random_square_names[recall_counter] === "square_14_both"))) {
+                                                                corr_square_cliqued ++;
+                                                                correct_square_counter += 1;
+                                                                square_30_both.fillColor = "#006400";
+                                                            } else {
+                                                                if (((mouse_both.clicked_name[0] === "square_15_both") && (random_square_names[recall_counter] === "square_15_both"))) {
+                                                                    corr_square_cliqued ++;
+                                                                    correct_square_counter += 1;
+                                                                    square_31_both.fillColor = "#006400";
+                                                                } else {
+                                                                    square_16_both.fillColor = "#ff0000";
+                                                                    square_17_both.fillColor = "#ff0000";
+                                                                    square_18_both.fillColor = "#ff0000";
+                                                                    square_19_both.fillColor = "#ff0000";
+                                                                    square_20_both.fillColor = "#ff0000";
+                                                                    square_21_both.fillColor = "#ff0000";
+                                                                    square_22_both.fillColor = "#ff0000";
+                                                                    square_23_both.fillColor = "#ff0000";
+                                                                    square_24_both.fillColor = "#ff0000";
+                                                                    square_25_both.fillColor = "#ff0000";
+                                                                    square_26_both.fillColor = "#ff0000";
+                                                                    square_27_both.fillColor = "#ff0000";
+                                                                    square_28_both.fillColor = "#ff0000";
+                                                                    square_29_both.fillColor = "#ff0000";
+                                                                    square_30_both.fillColor = "#ff0000";
+                                                                    square_31_both.fillColor = "#ff0000";
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     // keep track of which components have finished
     both_square_rec_g_rComponents = [];
     both_square_rec_g_rComponents.push(text_10_both);
@@ -7502,39 +7579,40 @@ function both_square_rec_g_rRoutineEnd(snapshot) {
       }
     });
     // Run 'End Routine' code from code_square_rec_g_r_both
-    square_16.color = "#ff8080";
-    square_17.color = "#ff8080";
-    square_18.color = "#ff8080";
-    square_19.color = "#ff8080";
-    square_20.color = "#ff8080";
-    square_21.color = "#ff8080";
-    square_22.color = "#ff8080";
-    square_23.color = "#ff8080";
-    square_24.color = "#ff0080";
-    square_25.color = "#ff0080";
-    square_26.color = "#ff0080";
-    square_27.color = "#ff0080";
-    square_28.color = "#ff0080";
-    square_29.color = "#ff0080";
-    square_30.color = "#ff0080";
-    square_31.color = "#ff0080";
+    square_16_both.fillColor = "#ff8080";
+    square_17_both.fillColor  = "#ff8080";
+    square_18_both.fillColor = "#ff8080";
+    square_19_both.fillColor = "#ff8080";
+    square_20_both.fillColor = "#ff8080";
+    square_21_both.fillColor = "#ff8080";
+    square_22_both.fillColor = "#ff8080";
+    square_23_both.fillColor = "#ff8080";
+    square_24_both.fillColor = "#ff8080";
+    square_25_both.fillColor = "#ff8080";
+    square_26_both.fillColor = "#ff8080";
+    square_27_both.fillColor = "#ff8080";
+    square_28_both.fillColor = "#ff8080";
+    square_29_both.fillColor = "#ff8080";
+    square_30_both.fillColor = "#ff8080";
+    square_31_both.fillColor = "#ff8080";
     
-    square_16.lineColor = '#ffffff'
-    square_17.lineColor = '#ffffff'
-    square_18.lineColor = '#ffffff'
-    square_19.lineColor = '#ffffff'
-    square_20.lineColor = '#ffffff'
-    square_21.lineColor = '#ffffff'
-    square_22.lineColor = '#ffffff'
-    square_23.lineColor = '#ffffff'
-    square_24.lineColor = '#ffffff'
-    square_25.lineColor = '#ffffff'
-    square_26.lineColor = '#ffffff'
-    square_27.lineColor = '#ffffff'
-    square_28.lineColor = '#ffffff'
-    square_29.lineColor = '#ffffff'
-    square_30.lineColor = '#ffffff'
-    square_31.lineColor = '#ffffff'
+    square_16_both.borderColor = '#ffffff'
+    square_17_both.borderColor = '#ffffff'
+    square_18_both.borderColor = '#ffffff'
+    square_19_both.borderColor = '#ffffff'
+    square_20_both.borderColor = '#ffffff'
+    square_21_both.borderColor = '#ffffff'
+    square_22_both.borderColor = '#ffffff'
+    square_23_both.borderColor = '#ffffff'
+    square_24_both.borderColor = '#ffffff'
+    square_25_both.borderColor = '#ffffff'
+    square_26_both.borderColor = '#ffffff'
+    square_27_both.borderColor = '#ffffff'
+    square_28_both.borderColor = '#ffffff'
+    square_29_both.borderColor = '#ffffff'
+    square_30_both.borderColor = '#ffffff'
+    square_31_both.borderColor = '#ffffff'
+    
     
     recall_counter += 1;
     
@@ -7560,22 +7638,22 @@ function both_next_setRoutineBegin(snapshot) {
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
     // Run 'Begin Routine' code from code_next_square_set_both
-    result_squares_text = `Eredményed: ${corr_square_cliqued} / ${thisloop_item_number}`;
-    if ((corr_square_cliqued === thisloop_item_number)) {
-        loop_breaker = 0;
+    result_squares_text = "Eredményed: " + correct_square_counter + " / " + thisloop_item_number;
+    
+    if (correct_square_counter === thisloop_item_number) {
+    loop_breaker = 0;
     } else {
-        loop_breaker += 1;
-    }
-    if ((counter <= 2)) {
-        end_prac_text = "Kattints, vagy nyomd meg a SPACE-t a k\u00f6vetkez\u0151 gyakorl\u00f3k\u00f6rh\u00f6z!";
-    } else {
-        if ((counter === 3)) {
-            end_prac_text = "Sz\u00e9p! Most k\u00f6vetkezzenek az \u00e9les k\u00f6r\u00f6k!\n\nPr\u00f3b\u00e1lj meg min\u00e9l magasabb szintre jutni!\n\nA folytat\u00e1shoz kattints, vagy nyomd meg a SPACE-t ";
-        } else {
-            end_prac_text = "SPACE";
-        }
+    loop_breaker++;
     }
     
+    end_prac_text;
+    if (counter <= 2) {
+    end_prac_text = "Kattints, vagy nyomd meg a SPACE-t a következő gyakorlókörhöz!";
+    } else if (counter === 3) {
+    end_prac_text = "Szép! Most következzenek az éles körök!\n\nPróbálj meg minél magasabb szintre jutni!\n\nA folytatáshoz kattints, vagy nyomd meg a SPACE-t";
+    } else {
+    end_prac_text = "SPACE";
+    }
     key_resp_12.keys = undefined;
     key_resp_12.rt = undefined;
     _key_resp_12_allKeys = [];
@@ -7693,11 +7771,13 @@ function both_next_setRoutineEnd(snapshot) {
     correct_answers = 0;
     accuracyText = "";
     correct_total_text = "";
-    if ((loop_breaker === 3)) {
-        trials_both.finished = true;
-    }
-    psychoJS.experiment.addData("number_of_correct_squares_clicked", corr_square_cliqued);
+    
+    psychoJS.experiment.addData("number_of_correct_squares_clicked", correct_square_counter);
     psychoJS.experiment.addData("total_squares_clicked", thisloop_item_number);
+    if ((loop_breaker === 3)) {
+        trials_square_2.finished = true;
+    }
+    
     
     // update the trial handler
     if (currentLoop instanceof MultiStairHandler) {
