@@ -7423,6 +7423,69 @@ function both_square_rec_g_rRoutineBegin(snapshot) {
                                                                     square_29_both.fillColor = "#ff0000";
                                                                     square_30_both.fillColor = "#ff0000";
                                                                     square_31_both.fillColor = "#ff0000";
+                                                                    if (random_square_names[recall_counter] === "square_0_both") {
+                                                                        square_16_both.fillColor = "#006400";
+                                                                    } else {
+                                                                        if (random_square_names[recall_counter] === "square_1_both") {
+                                                                            square_17_both.fillColor = "#006400";
+                                                                        } else {
+                                                                            if (random_square_names[recall_counter] === "square_2_both") {
+                                                                                square_18_both.fillColor = "#006400";
+                                                                            } else {
+                                                                                if (random_square_names[recall_counter] === "square_3_both") {
+                                                                                    square_19_both.fillColor = "#006400";
+                                                                                } else {
+                                                                                    if (random_square_names[recall_counter] === "square_4_both") {
+                                                                                        square_20_both.fillColor = "#006400";
+                                                                                    } else {
+                                                                                        if (random_square_names[recall_counter] === "square_5_both") {
+                                                                                            square_21_both.fillColor = "#006400";
+                                                                                        } else {
+                                                                                            if (random_square_names[recall_counter] === "square_6_both") {
+                                                                                                square_22_both.fillColor = "#006400";
+                                                                                            } else {
+                                                                                                if (random_square_names[recall_counter] === "square_7_both") {
+                                                                                                    square_23_both.fillColor = "#006400";
+                                                                                                } else {
+                                                                                                    if (random_square_names[recall_counter] === "square_8_both") {
+                                                                                                        square_24_both.fillColor = "#006400";
+                                                                                                    } else {
+                                                                                                        if (random_square_names[recall_counter] === "square_9_both") {
+                                                                                                            square_25_both.fillColor = "#006400";
+                                                                                                        } else {
+                                                                                                            if (random_square_names[recall_counter] === "square_10_both") {
+                                                                                                                square_26_both.fillColor = "#006400";
+                                                                                                            } else {
+                                                                                                                if (random_square_names[recall_counter] === "square_11_both") {
+                                                                                                                    square_27_both.fillColor = "#006400";
+                                                                                                                } else {
+                                                                                                                    if (random_square_names[recall_counter] === "square_12_both") {
+                                                                                                                        square_28_both.fillColor = "#006400";
+                                                                                                                    } else {
+                                                                                                                        if (random_square_names[recall_counter] === "square_13_both") {
+                                                                                                                            square_29_both.fillColor = "#006400";
+                                                                                                                        } else {
+                                                                                                                            if (random_square_names[recall_counter] === "square_14_both") {
+                                                                                                                                square_30_both.fillColor = "#006400";
+                                                                                                                            } else {
+                                                                                                                                if (random_square_names[recall_counter] === "square_15_both") {
+                                                                                                                                    square_31_both.fillColor = "#006400";
+                                                                                                                                }
+                                                                                                                            }
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
                                                                 }
                                                             }
                                                         }
@@ -7439,6 +7502,7 @@ function both_square_rec_g_rRoutineBegin(snapshot) {
             }
         }
     }
+    
     // keep track of which components have finished
     both_square_rec_g_rComponents = [];
     both_square_rec_g_rComponents.push(text_10_both);
