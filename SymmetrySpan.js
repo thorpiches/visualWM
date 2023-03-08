@@ -265,6 +265,9 @@ psychoJS.start({
 
 psychoJS.experimentLogger.setLevel(core.Logger.ServerLevel.EXP);
 
+
+var currentLoop;
+var frameDur;
 async function updateInfo() {
   currentLoop = psychoJS.experiment;  // right now there are no loops
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
@@ -291,6 +294,218 @@ async function updateInfo() {
   return Scheduler.Event.NEXT;
 }
 
+
+var wlcClock;
+var text;
+var key_resp;
+var mouse_4;
+var ins_square_1Clock;
+var text_8;
+var key_resp_8;
+var mouse_5;
+var square_helperClock;
+var loop_breaker;
+var square_names;
+var corr_square_clicked;
+var correct_square_counter;
+var square_names_both;
+var square_dict;
+var square_dict_both;
+var prac_loop_lengths;
+var how_many_prac_loops;
+var thisloop_item_number;
+var counter;
+var square_levelClock;
+var text_level_1;
+var text_level_2;
+var squareClock;
+var fixation2;
+var grid;
+var square_rand;
+var square_recClock;
+var text_9;
+var grid2;
+var mouse;
+var square_0;
+var square_1;
+var square_2;
+var square_3;
+var square_4;
+var square_5;
+var square_6;
+var square_7;
+var square_8;
+var square_9;
+var square_10;
+var square_11;
+var square_12;
+var square_13;
+var square_14;
+var square_15;
+var square_rec_g_rClock;
+var recall_counter;
+var text_10;
+var grid3;
+var square_16;
+var square_17;
+var square_18;
+var square_19;
+var square_20;
+var square_21;
+var square_22;
+var square_23;
+var square_24;
+var square_25;
+var square_26;
+var square_27;
+var square_28;
+var square_29;
+var square_30;
+var square_31;
+var next_setClock;
+var text_result_squares;
+var text_end_prac;
+var mouse_2;
+var key_resp_13;
+var ins_square_endClock;
+var text_square_end;
+var text_11;
+var key_resp_9;
+var mouse_3;
+var ins_sym_1Clock;
+var text_2;
+var key_resp_2;
+var mouse_6;
+var ins_sym_2Clock;
+var text_3;
+var image_sym;
+var text_sym_nsym;
+var key_resp_3;
+var ins_sym_3Clock;
+var text_4;
+var image;
+var text_sym_nsym_2;
+var key_resp_4;
+var ins2Clock;
+var text_5;
+var key_resp_5;
+var mouse_10;
+var prac_sym_helperClock;
+var prac_symClock;
+var resources_path;
+var pracSymmTrialNumber;
+var selected_images;
+var total_trials;
+var correct_answers;
+var countDownText;
+var correct_total_text;
+var timerPracSym;
+var non_sym_images;
+var sym_images;
+var fixation;
+var image_2;
+var text_sym_nsym_3;
+var text_countdown;
+var text_how_many_correct;
+var key_resp_6;
+var prac_sym_g_rClock;
+var usedTime;
+var maskColor;
+var greenMask;
+var redMask;
+var picture;
+var image_3;
+var image_4;
+var prac_sym_fbClock;
+var accuracyPercent;
+var prac_sym_loop_nr;
+var prac_fb;
+var accuracyText;
+var text_6;
+var text_score;
+var text_7;
+var key_resp_7;
+var ins_bothClock;
+var text_12;
+var key_resp_10;
+var mouse_9;
+var both_helperClock;
+var overall_symm;
+var overall_symm_corr;
+var both_levelClock;
+var text_both_level_1;
+var text_both_level_2;
+var both_squareClock;
+var fixation_both;
+var grid_both;
+var square_rand_both;
+var both_symClock;
+var selected_images_both;
+var fixation_both_2;
+var image_2_both;
+var text_sym_nsym_3_both;
+var text_countdown_both;
+var text_how_many_correct_both;
+var key_resp_6_both;
+var both_sym_g_rClock;
+var image_3_both;
+var text_corr_sym_or_not;
+var both_square_recClock;
+var text9_both;
+var grid2_both;
+var mouse_both;
+var square_0_both;
+var square_1_both;
+var square_2_both;
+var square_3_both;
+var square_4_both;
+var square_5_both;
+var square_6_both;
+var square_7_both;
+var square_8_both;
+var square_9_both;
+var square_10_both;
+var square_11_both;
+var square_12_both;
+var square_13_both;
+var square_14_both;
+var square_15_both;
+var both_square_rec_g_rClock;
+var text_10_both;
+var grid3_both;
+var square_16_both;
+var square_17_both;
+var square_18_both;
+var square_19_both;
+var square_20_both;
+var square_21_both;
+var square_22_both;
+var square_23_both;
+var square_24_both;
+var square_25_both;
+var square_26_both;
+var square_27_both;
+var square_28_both;
+var square_29_both;
+var square_30_both;
+var square_31_both;
+var both_next_setClock;
+var text_result_square_both;
+var text_end_prac_both;
+var key_resp_12;
+var mouse_8;
+var both_endClock;
+var text_square_end_both;
+var text_14;
+var text_accuracy_both;
+var text_less_acc;
+var key_resp_11;
+var mouse_7;
+var byeClock;
+var text_bye;
+var key_resp_bye;
+var globalClock;
+var routineTimer;
 async function experimentInit() {
   // Initialize components for Routine "wlc"
   wlcClock = new util.Clock();
@@ -1907,6 +2122,13 @@ async function experimentInit() {
   return Scheduler.Event.NEXT;
 }
 
+
+var t;
+var frameN;
+var continueRoutine;
+var _key_resp_allKeys;
+var gotValidClick;
+var wlcComponents;
 function wlcRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -1942,6 +2164,10 @@ function wlcRoutineBegin(snapshot) {
   }
 }
 
+
+var prevButtonState;
+var _mouseButtons;
+var _mouseXYs;
 function wlcRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'wlc' ---
@@ -2036,6 +2262,7 @@ function wlcRoutineEachFrame() {
   };
 }
 
+
 function wlcRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'wlc' ---
@@ -2074,6 +2301,9 @@ function wlcRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_8_allKeys;
+var ins_square_1Components;
 function ins_square_1RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -2108,6 +2338,7 @@ function ins_square_1RoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins_square_1RoutineEachFrame() {
   return async function () {
@@ -2203,6 +2434,7 @@ function ins_square_1RoutineEachFrame() {
   };
 }
 
+
 function ins_square_1RoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins_square_1' ---
@@ -2241,6 +2473,8 @@ function ins_square_1RoutineEnd(snapshot) {
   }
 }
 
+
+var trials_square_2;
 function trials_square_2LoopBegin(trials_square_2LoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2284,6 +2518,8 @@ function trials_square_2LoopBegin(trials_square_2LoopScheduler, snapshot) {
   }
 }
 
+
+var trials_square;
 function trials_squareLoopBegin(trials_squareLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2313,6 +2549,7 @@ function trials_squareLoopBegin(trials_squareLoopScheduler, snapshot) {
   }
 }
 
+
 async function trials_squareLoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_square);
@@ -2323,6 +2560,7 @@ async function trials_squareLoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_squareLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2343,6 +2581,8 @@ function trials_squareLoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
+var trials_square_rec;
 function trials_square_recLoopBegin(trials_square_recLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2375,6 +2615,7 @@ function trials_square_recLoopBegin(trials_square_recLoopScheduler, snapshot) {
   }
 }
 
+
 async function trials_square_recLoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_square_rec);
@@ -2385,6 +2626,7 @@ async function trials_square_recLoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_square_recLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2405,6 +2647,7 @@ function trials_square_recLoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
 async function trials_square_2LoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_square_2);
@@ -2415,6 +2658,7 @@ async function trials_square_2LoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_square_2LoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2435,6 +2679,8 @@ function trials_square_2LoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
+var trials_prac2;
 function trials_prac2LoopBegin(trials_prac2LoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2471,6 +2717,8 @@ function trials_prac2LoopBegin(trials_prac2LoopScheduler, snapshot) {
   }
 }
 
+
+var trials_prac;
 function trials_pracLoopBegin(trials_pracLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2503,6 +2751,7 @@ function trials_pracLoopBegin(trials_pracLoopScheduler, snapshot) {
   }
 }
 
+
 async function trials_pracLoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_prac);
@@ -2513,6 +2762,7 @@ async function trials_pracLoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_pracLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2533,6 +2783,7 @@ function trials_pracLoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
 async function trials_prac2LoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_prac2);
@@ -2543,6 +2794,7 @@ async function trials_prac2LoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_prac2LoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2563,6 +2815,8 @@ function trials_prac2LoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
+var trials_both;
 function trials_bothLoopBegin(trials_bothLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2606,6 +2860,8 @@ function trials_bothLoopBegin(trials_bothLoopScheduler, snapshot) {
   }
 }
 
+
+var trials_both_square;
 function trials_both_squareLoopBegin(trials_both_squareLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2641,6 +2897,7 @@ function trials_both_squareLoopBegin(trials_both_squareLoopScheduler, snapshot) 
   }
 }
 
+
 async function trials_both_squareLoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_both_square);
@@ -2651,6 +2908,7 @@ async function trials_both_squareLoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_both_squareLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2671,6 +2929,8 @@ function trials_both_squareLoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
+var trials_both_square_rec;
 function trials_both_square_recLoopBegin(trials_both_square_recLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -2703,6 +2963,7 @@ function trials_both_square_recLoopBegin(trials_both_square_recLoopScheduler, sn
   }
 }
 
+
 async function trials_both_square_recLoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_both_square_rec);
@@ -2713,6 +2974,7 @@ async function trials_both_square_recLoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_both_square_recLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2733,6 +2995,7 @@ function trials_both_square_recLoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
 async function trials_bothLoopEnd() {
   // terminate loop
   psychoJS.experiment.removeLoop(trials_both);
@@ -2743,6 +3006,7 @@ async function trials_bothLoopEnd() {
     currentLoop = psychoJS.experiment;  // so we use addData from the experiment
   return Scheduler.Event.NEXT;
 }
+
 
 function trials_bothLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -2763,6 +3027,11 @@ function trials_bothLoopEndIteration(scheduler, snapshot) {
   };
 }
 
+
+var random_square_names;
+var i;
+var corr_square_cliqued;
+var square_helperComponents;
 function square_helperRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -2807,6 +3076,7 @@ function square_helperRoutineBegin(snapshot) {
   }
 }
 
+
 function square_helperRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'square_helper' ---
@@ -2840,6 +3110,7 @@ function square_helperRoutineEachFrame() {
   };
 }
 
+
 function square_helperRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'square_helper' ---
@@ -2862,6 +3133,8 @@ function square_helperRoutineEnd(snapshot) {
   }
 }
 
+
+var square_levelComponents;
 function square_levelRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -2886,6 +3159,8 @@ function square_levelRoutineBegin(snapshot) {
   }
 }
 
+
+var frameRemains;
 function square_levelRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'square_level' ---
@@ -2951,6 +3226,7 @@ function square_levelRoutineEachFrame() {
   };
 }
 
+
 function square_levelRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'square_level' ---
@@ -2967,6 +3243,10 @@ function square_levelRoutineEnd(snapshot) {
   }
 }
 
+
+var square_name_show;
+var coordinates;
+var squareComponents;
 function squareRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -2997,6 +3277,7 @@ function squareRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function squareRoutineEachFrame() {
   return async function () {
@@ -3073,6 +3354,7 @@ function squareRoutineEachFrame() {
   };
 }
 
+
 function squareRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'square' ---
@@ -3093,6 +3375,8 @@ function squareRoutineEnd(snapshot) {
   }
 }
 
+
+var square_recComponents;
 function square_recRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -3141,6 +3425,7 @@ function square_recRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function square_recRoutineEachFrame() {
   return async function () {
@@ -3391,6 +3676,7 @@ function square_recRoutineEachFrame() {
   };
 }
 
+
 function square_recRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'square_rec' ---
@@ -3419,6 +3705,8 @@ function square_recRoutineEnd(snapshot) {
   }
 }
 
+
+var square_rec_g_rComponents;
 function square_rec_g_rRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -3431,121 +3719,182 @@ function square_rec_g_rRoutineBegin(snapshot) {
     routineTimer.add(0.200000);
     // update component parameters for each repeat
     // Run 'Begin Routine' code from code_square_rec_g_r
+    if (((mouse.clicked_name[0] === "square_0") && (random_square_names[recall_counter] === "square_0"))) {
+        corr_square_cliqued ++;
+        correct_square_counter += 1;
+        square_16.fillColor = "#006400";
+    } else {
+        if (((mouse.clicked_name[0] === "square_1") && (random_square_names[recall_counter] === "square_1"))) {
+            corr_square_cliqued ++;
+            correct_square_counter += 1;
+            square_17.fillColor = "#006400";
+        } else {
+            if (((mouse.clicked_name[0] === "square_2") && (random_square_names[recall_counter] === "square_2"))) {
+                corr_square_cliqued ++;
+                correct_square_counter += 1;
+                square_18.fillColor = "#006400";
+            } else {
+                if (((mouse.clicked_name[0] === "square_3") && (random_square_names[recall_counter] === "square_3"))) {
+                    corr_square_cliqued ++;
+                    correct_square_counter += 1;
+                    square_19.fillColor = "#006400";
+                } else {
+                    if (((mouse.clicked_name[0] === "square_4") && (random_square_names[recall_counter] === "square_4"))) {
+                        corr_square_cliqued ++;
+                        correct_square_counter += 1;
+                        square_20.fillColor = "#006400";
+                    } else {
+                        if (((mouse.clicked_name[0] === "square_5") && (random_square_names[recall_counter] === "square_5"))) {
+                            corr_square_cliqued ++;
+                            correct_square_counter += 1;
+                            square_21.fillColor = "#006400";
+                        } else {
+                            if (((mouse.clicked_name[0] === "square_6") && (random_square_names[recall_counter] === "square_6"))) {
+                                corr_square_cliqued ++;
+                                correct_square_counter += 1;
+                                square_22.fillColor = "#006400";
+                            } else {
+                                if (((mouse.clicked_name[0] === "square_7") && (random_square_names[recall_counter] === "square_7"))) {
+                                    corr_square_cliqued ++;
+                                    correct_square_counter += 1;
+                                    square_23.fillColor = "#006400";
+                                } else {
+                                    if (((mouse.clicked_name[0] === "square_8") && (random_square_names[recall_counter] === "square_8"))) {
+                                        corr_square_cliqued ++;
+                                        correct_square_counter += 1;
+                                        square_24.fillColor = "#006400";
+                                    } else {
+                                        if (((mouse.clicked_name[0] === "square_9") && (random_square_names[recall_counter] === "square_9"))) {
+                                            corr_square_cliqued ++;
+                                            correct_square_counter += 1;
+                                            square_25.fillColor = "#006400";
+                                        } else {
+                                            if (((mouse.clicked_name[0] === "square_10") && (random_square_names[recall_counter] === "square_10"))) {
+                                                corr_square_cliqued ++;
+                                                correct_square_counter += 1;
+                                                square_26.fillColor = "#006400";
+                                            } else {
+                                                if (((mouse.clicked_name[0] === "square_11") && (random_square_names[recall_counter] === "square_11"))) {
+                                                    corr_square_cliqued ++;
+                                                    correct_square_counter += 1;
+                                                    square_27.fillColor = "#006400";
+                                                } else {
+                                                    if (((mouse.clicked_name[0] === "square_12") && (random_square_names[recall_counter] === "square_12"))) {
+                                                        corr_square_cliqued ++;
+                                                        correct_square_counter += 1;
+                                                        square_28.fillColor = "#006400";
+                                                    } else {
+                                                        if (((mouse.clicked_name[0] === "square_13") && (random_square_names[recall_counter] === "square_13"))) {
+                                                            corr_square_cliqued ++;
+                                                            correct_square_counter += 1;
+                                                            square_29.fillColor = "#006400";
+                                                        } else {
+                                                            if (((mouse.clicked_name[0] === "square_14") && (random_square_names[recall_counter] === "square_14"))) {
+                                                                corr_square_cliqued ++;
+                                                                correct_square_counter += 1;
+                                                                square_30.fillColor = "#006400";
+                                                            } else {
+                                                                if (((mouse.clicked_name[0] === "square_15") && (random_square_names[recall_counter] === "square_15"))) {
+                                                                    corr_square_cliqued ++;
+                                                                    correct_square_counter += 1;
+                                                                    square_31.fillColor = "#006400";
+                                                                } else {
+                                                                    square_16.color = "#ff0000";
+                                                                    square_17.color = "#ff0000";
+                                                                    square_18.color = "#ff0000";
+                                                                    square_19.color = "#ff0000";
+                                                                    square_20.color = "#ff0000";
+                                                                    square_21.color = "#ff0000";
+                                                                    square_22.color = "#ff0000";
+                                                                    square_23.color = "#ff0000";
+                                                                    square_24.color = "#ff0000";
+                                                                    square_25.color = "#ff0000";
+                                                                    square_26.color = "#ff0000";
+                                                                    square_27.color = "#ff0000";
+                                                                    square_28.color = "#ff0000";
+                                                                    square_29.color = "#ff0000";
+                                                                    square_30.color = "#ff0000";
+                                                                    square_31.color = "#ff0000";
+                                                                    if (((mouse.clicked_name[0] === "square_0") && (random_square_names[recall_counter] === "square_0"))) {
+                                                                        square_16.color = "#006400";
+                                                                    } else {
+                                                                        if (((mouse.clicked_name[0] === "square_1") && (random_square_names[recall_counter] === "square_1"))) {
+                                                                            square_17.color = "#006400";
+                                                                        } else {
+                                                                            if (((mouse.clicked_name[0] === "square_2") && (random_square_names[recall_counter] === "square_2"))) {
+                                                                                square_18.color = "#006400";
+                                                                            } else {
+                                                                                if (((mouse.clicked_name[0] === "square_3") && (random_square_names[recall_counter] === "square_3"))) {
+                                                                                    square_19.color = "#006400";
+                                                                                } else {
+                                                                                    if (((mouse.clicked_name[0] === "square_4") && (random_square_names[recall_counter] === "square_4"))) {
+                                                                                        square_20.color = "#006400";
+                                                                                    } else {
+                                                                                        if (((mouse.clicked_name[0] === "square_5") && (random_square_names[recall_counter] === "square_5"))) {
+                                                                                            square_21.color = "#006400";
+                                                                                        } else {
+                                                                                            if (((mouse.clicked_name[0] === "square_6") && (random_square_names[recall_counter] === "square_6"))) {
+                                                                                                square_22.color = "#006400";
+                                                                                            } else {
+                                                                                                if (((mouse.clicked_name[0] === "square_7") && (random_square_names[recall_counter] === "square_7"))) {
+                                                                                                    square_23.color = "#006400";
+                                                                                                } else {
+                                                                                                    if (((mouse.clicked_name[0] === "square_8") && (random_square_names[recall_counter] === "square_8"))) {
+                                                                                                        square_24.color = "#006400";
+                                                                                                    } else {
+                                                                                                        if (((mouse.clicked_name[0] === "square_9") && (random_square_names[recall_counter] === "square_9"))) {
+                                                                                                            square_25.color = "#006400";
+                                                                                                        } else {
+                                                                                                            if (((mouse.clicked_name[0] === "square_10") && (random_square_names[recall_counter] === "square_10"))) {
+                                                                                                                square_26.color = "#006400";
+                                                                                                            } else {
+                                                                                                                if (((mouse.clicked_name[0] === "square_11") && (random_square_names[recall_counter] === "square_11"))) {
+                                                                                                                    square_27.color = "#006400";
+                                                                                                                } else {
+                                                                                                                    if (((mouse.clicked_name[0] === "square_12") && (random_square_names[recall_counter] === "square_12"))) {
+                                                                                                                        square_28.color = "#006400";
+                                                                                                                    } else {
+                                                                                                                        if (((mouse.clicked_name[0] === "square_13") && (random_square_names[recall_counter] === "square_13"))) {
+                                                                                                                            square_29.color = "#006400";
+                                                                                                                        } else {
+                                                                                                                            if (((mouse.clicked_name[0] === "square_14") && (random_square_names[recall_counter] === "square_14"))) {
+                                                                                                                                square_30.color = "#006400";
+                                                                                                                            } else {
+                                                                                                                                if (((mouse.clicked_name[0] === "square_15") && (random_square_names[recall_counter] === "square_15"))) {
+                                                                                                                                    square_31.color = "#006400";
+                                                                                                                                }
+                                                                                                                            }
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     
-    if (((mouse.clicked_name[0] === "square_0") & & (random_square_names[recall_counter] === "square_0"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_16.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_1") & & (random_square_names[recall_counter] == = "square_1"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_17.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_2") & & (random_square_names[recall_counter] == = "square_2"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_18.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_3") & & (random_square_names[recall_counter] == = "square_3"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_19.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_4") & & (random_square_names[recall_counter] == = "square_4"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_20.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_5") & & (random_square_names[recall_counter] == = "square_5"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_21.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_6") & & (random_square_names[recall_counter] == = "square_6"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_22.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_7") & & (random_square_names[recall_counter] == = "square_7"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_23.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_8") & & (random_square_names[recall_counter] == = "square_8"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_24.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_9") & & (random_square_names[recall_counter] == = "square_9"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_25.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_10") & & (random_square_names[recall_counter] == = "square_10"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_26.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_11") & & (random_square_names[recall_counter] == = "square_11"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_27.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_12") & & (random_square_names[recall_counter] == = "square_12"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_28.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_13") & & (random_square_names[recall_counter] == = "square_13"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_29.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_14") & & (random_square_names[recall_counter] == = "square_14"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_30.fillColor = "#006400";
-    } else {
-    if (((mouse.clicked_name[0] == = "square_15") & & (random_square_names[recall_counter] == = "square_15"))) {
-    corr_square_cliqued ++;
-    correct_square_counter += 1;
-    square_31.fillColor = "#006400";
-    } else {
-    square_16.fillColor = "#ff0000";
-    square_17.fillColor = "#ff0000";
-    square_18.fillColor = "#ff0000";
-    square_19.fillColor = "#ff0000";
-    square_20.fillColor = "#ff0000";
-    square_21.fillColor = "#ff0000";
-    square_22.fillColor = "#ff0000";
-    square_23.fillColor = "#ff0000";
-    square_24.fillColor = "#ff0000";
-    square_25.fillColor = "#ff0000";
-    square_26.fillColor = "#ff0000";
-    square_27.fillColor = "#ff0000";
-    square_28.fillColor = "#ff0000";
-    square_29.fillColor = "#ff0000";
-    square_30.fillColor = "#ff0000";
-    square_31.fillColor = "#ff0000";
-    
-    
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
     // keep track of which components have finished
     square_rec_g_rComponents = [];
     square_rec_g_rComponents.push(text_10);
@@ -3573,6 +3922,7 @@ function square_rec_g_rRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function square_rec_g_rRoutineEachFrame() {
   return async function () {
@@ -3859,6 +4209,7 @@ function square_rec_g_rRoutineEachFrame() {
   };
 }
 
+
 function square_rec_g_rRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'square_rec_g_r' ---
@@ -3883,6 +4234,11 @@ function square_rec_g_rRoutineEnd(snapshot) {
   }
 }
 
+
+var result_squares_text;
+var end_prac_text;
+var _key_resp_13_allKeys;
+var next_setComponents;
 function next_setRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -3935,6 +4291,7 @@ function next_setRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function next_setRoutineEachFrame() {
   return async function () {
@@ -4048,6 +4405,7 @@ function next_setRoutineEachFrame() {
   };
 }
 
+
 function next_setRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'next_set' ---
@@ -4094,6 +4452,10 @@ function next_setRoutineEnd(snapshot) {
   }
 }
 
+
+var square_end_text;
+var _key_resp_9_allKeys;
+var ins_square_endComponents;
 function ins_square_endRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -4140,6 +4502,7 @@ function ins_square_endRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins_square_endRoutineEachFrame() {
   return async function () {
@@ -4249,6 +4612,7 @@ function ins_square_endRoutineEachFrame() {
   };
 }
 
+
 function ins_square_endRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins_square_end' ---
@@ -4287,6 +4651,9 @@ function ins_square_endRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_2_allKeys;
+var ins_sym_1Components;
 function ins_sym_1RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -4321,6 +4688,7 @@ function ins_sym_1RoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins_sym_1RoutineEachFrame() {
   return async function () {
@@ -4416,6 +4784,7 @@ function ins_sym_1RoutineEachFrame() {
   };
 }
 
+
 function ins_sym_1RoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins_sym_1' ---
@@ -4454,6 +4823,9 @@ function ins_sym_1RoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_3_allKeys;
+var ins_sym_2Components;
 function ins_sym_2RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -4481,6 +4853,7 @@ function ins_sym_2RoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins_sym_2RoutineEachFrame() {
   return async function () {
@@ -4569,6 +4942,7 @@ function ins_sym_2RoutineEachFrame() {
   };
 }
 
+
 function ins_sym_2RoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins_sym_2' ---
@@ -4599,6 +4973,9 @@ function ins_sym_2RoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_4_allKeys;
+var ins_sym_3Components;
 function ins_sym_3RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -4626,6 +5003,7 @@ function ins_sym_3RoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins_sym_3RoutineEachFrame() {
   return async function () {
@@ -4714,6 +5092,7 @@ function ins_sym_3RoutineEachFrame() {
   };
 }
 
+
 function ins_sym_3RoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins_sym_3' ---
@@ -4744,6 +5123,9 @@ function ins_sym_3RoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_5_allKeys;
+var ins2Components;
 function ins2RoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -4778,6 +5160,7 @@ function ins2RoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins2RoutineEachFrame() {
   return async function () {
@@ -4873,6 +5256,7 @@ function ins2RoutineEachFrame() {
   };
 }
 
+
 function ins2RoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins2' ---
@@ -4911,6 +5295,8 @@ function ins2RoutineEnd(snapshot) {
   }
 }
 
+
+var prac_sym_helperComponents;
 function prac_sym_helperRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -4974,6 +5360,7 @@ function prac_sym_helperRoutineBegin(snapshot) {
   }
 }
 
+
 function prac_sym_helperRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'prac_sym_helper' ---
@@ -5007,6 +5394,7 @@ function prac_sym_helperRoutineEachFrame() {
   };
 }
 
+
 function prac_sym_helperRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'prac_sym_helper' ---
@@ -5026,6 +5414,9 @@ function prac_sym_helperRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_6_allKeys;
+var prac_symComponents;
 function prac_symRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5064,6 +5455,7 @@ function prac_symRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function prac_symRoutineEachFrame() {
   return async function () {
@@ -5219,6 +5611,10 @@ function prac_symRoutineEachFrame() {
   };
 }
 
+
+var _pj;
+var remainingTime;
+var sym_corr;
 function prac_symRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'prac_sym' ---
@@ -5291,6 +5687,8 @@ function prac_symRoutineEnd(snapshot) {
   }
 }
 
+
+var prac_sym_g_rComponents;
 function prac_sym_g_rRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5313,6 +5711,7 @@ function prac_sym_g_rRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function prac_sym_g_rRoutineEachFrame() {
   return async function () {
@@ -5383,6 +5782,7 @@ function prac_sym_g_rRoutineEachFrame() {
   };
 }
 
+
 function prac_sym_g_rRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'prac_sym_g_r' ---
@@ -5406,6 +5806,9 @@ function prac_sym_g_rRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_7_allKeys;
+var prac_sym_fbComponents;
 function prac_sym_fbRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5452,6 +5855,7 @@ function prac_sym_fbRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function prac_sym_fbRoutineEachFrame() {
   return async function () {
@@ -5540,6 +5944,7 @@ function prac_sym_fbRoutineEachFrame() {
   };
 }
 
+
 function prac_sym_fbRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'prac_sym_fb' ---
@@ -5582,6 +5987,9 @@ function prac_sym_fbRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_10_allKeys;
+var ins_bothComponents;
 function ins_bothRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5616,6 +6024,7 @@ function ins_bothRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function ins_bothRoutineEachFrame() {
   return async function () {
@@ -5711,6 +6120,7 @@ function ins_bothRoutineEachFrame() {
   };
 }
 
+
 function ins_bothRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ins_both' ---
@@ -5749,6 +6159,8 @@ function ins_bothRoutineEnd(snapshot) {
   }
 }
 
+
+var both_helperComponents;
 function both_helperRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5832,6 +6244,7 @@ function both_helperRoutineBegin(snapshot) {
   }
 }
 
+
 function both_helperRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'both_helper' ---
@@ -5865,6 +6278,7 @@ function both_helperRoutineEachFrame() {
   };
 }
 
+
 function both_helperRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_helper' ---
@@ -5887,6 +6301,8 @@ function both_helperRoutineEnd(snapshot) {
   }
 }
 
+
+var both_levelComponents;
 function both_levelRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -5910,6 +6326,7 @@ function both_levelRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_levelRoutineEachFrame() {
   return async function () {
@@ -5976,6 +6393,7 @@ function both_levelRoutineEachFrame() {
   };
 }
 
+
 function both_levelRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_level' ---
@@ -5992,6 +6410,8 @@ function both_levelRoutineEnd(snapshot) {
   }
 }
 
+
+var both_squareComponents;
 function both_squareRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -6021,6 +6441,7 @@ function both_squareRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_squareRoutineEachFrame() {
   return async function () {
@@ -6097,6 +6518,7 @@ function both_squareRoutineEachFrame() {
   };
 }
 
+
 function both_squareRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_square' ---
@@ -6117,6 +6539,9 @@ function both_squareRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_6_both_allKeys;
+var both_symComponents;
 function both_symRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -6153,6 +6578,7 @@ function both_symRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_symRoutineEachFrame() {
   return async function () {
@@ -6306,6 +6732,8 @@ function both_symRoutineEachFrame() {
   };
 }
 
+
+var symCorrectText;
 function both_symRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_sym' ---
@@ -6383,6 +6811,8 @@ function both_symRoutineEnd(snapshot) {
   }
 }
 
+
+var both_sym_g_rComponents;
 function both_sym_g_rRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -6406,6 +6836,7 @@ function both_sym_g_rRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_sym_g_rRoutineEachFrame() {
   return async function () {
@@ -6472,6 +6903,8 @@ function both_sym_g_rRoutineEachFrame() {
   };
 }
 
+
+var $symCorrectText;
 function both_sym_g_rRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_sym_g_r' ---
@@ -6495,6 +6928,8 @@ function both_sym_g_rRoutineEnd(snapshot) {
   }
 }
 
+
+var both_square_recComponents;
 function both_square_recRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -6543,6 +6978,7 @@ function both_square_recRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_square_recRoutineEachFrame() {
   return async function () {
@@ -6793,6 +7229,7 @@ function both_square_recRoutineEachFrame() {
   };
 }
 
+
 function both_square_recRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_square_rec' ---
@@ -6821,6 +7258,8 @@ function both_square_recRoutineEnd(snapshot) {
   }
 }
 
+
+var both_square_rec_g_rComponents;
 function both_square_rec_g_rRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -6974,6 +7413,7 @@ function both_square_rec_g_rRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_square_rec_g_rRoutineEachFrame() {
   return async function () {
@@ -7260,6 +7700,7 @@ function both_square_rec_g_rRoutineEachFrame() {
   };
 }
 
+
 function both_square_rec_g_rRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_square_rec_g_r' ---
@@ -7314,6 +7755,9 @@ function both_square_rec_g_rRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_12_allKeys;
+var both_next_setComponents;
 function both_next_setRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -7366,6 +7810,7 @@ function both_next_setRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_next_setRoutineEachFrame() {
   return async function () {
@@ -7479,6 +7924,7 @@ function both_next_setRoutineEachFrame() {
   };
 }
 
+
 function both_next_setRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_next_set' ---
@@ -7531,6 +7977,11 @@ function both_next_setRoutineEnd(snapshot) {
   }
 }
 
+
+var overall_accuracy_both;
+var text_if_less_accuracy;
+var _key_resp_11_allKeys;
+var both_endComponents;
 function both_endRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -7589,6 +8040,7 @@ function both_endRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function both_endRoutineEachFrame() {
   return async function () {
@@ -7726,6 +8178,7 @@ function both_endRoutineEachFrame() {
   };
 }
 
+
 function both_endRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'both_end' ---
@@ -7764,6 +8217,9 @@ function both_endRoutineEnd(snapshot) {
   }
 }
 
+
+var _key_resp_bye_allKeys;
+var byeComponents;
 function byeRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
@@ -7788,6 +8244,7 @@ function byeRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function byeRoutineEachFrame() {
   return async function () {
@@ -7856,6 +8313,7 @@ function byeRoutineEachFrame() {
   };
 }
 
+
 function byeRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'bye' ---
@@ -7886,12 +8344,14 @@ function byeRoutineEnd(snapshot) {
   }
 }
 
+
 function importConditions(currentLoop) {
   return async function () {
     psychoJS.importAttributes(currentLoop.getCurrentTrial());
     return Scheduler.Event.NEXT;
     };
 }
+
 
 async function quitPsychoJS(message, isCompleted) {
   // Check for and save orphaned data
