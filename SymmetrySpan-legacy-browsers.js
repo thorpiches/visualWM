@@ -1260,7 +1260,7 @@ async function experimentInit() {
   text_13 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_13',
-    text: '1. MW kérdés',
+    text: '1. A feladat során a figyelmemre leginkább jellemző volt, hogy:',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0.3], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -1273,7 +1273,7 @@ async function experimentInit() {
     win: psychoJS.window, name: 'slider_1',
     startValue: undefined,
     size: [1.1, 0.02], pos: [0, 0.2], ori: 0.0, units: 'height',
-    labels: ["Egy\u00e1ltal\u00e1n nem", "Teljes m\u00e9rt\u00e9kben"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    labels: ["1: Gondolataim teljesen elkalandoztak, k\u00e9ptelen voltam a feladatra koncentr\u00e1lni", "V\u00e9gig nagyon f\u00f3kusz\u00e1lt voltam, csak a feladatra koncentr\u00e1ltam"], fontSize: 0.02, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     granularity: 1.0, style: ["RATING"],
     color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
@@ -1283,7 +1283,7 @@ async function experimentInit() {
   text_15 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_15',
-    text: '2. MW kérdés',
+    text: '2. A feladat végrehajtása során gondolataim hangulatára ez volt a leginkább jellemző:',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0.1], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -1296,8 +1296,8 @@ async function experimentInit() {
     win: psychoJS.window, name: 'slider_2',
     startValue: undefined,
     size: [1.1, 0.02], pos: [0, 0], ori: 0.0, units: 'height',
-    labels: ["Egy\u00e1ltal\u00e1n nem", "Teljes m\u00e9rt\u00e9kben"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    granularity: 1.0, style: ["RATING"],
+    labels: ["1: Teljes m\u00e9rt\u00e9kben pozit\u00edv", "2: Ink\u00e1bb pozit\u00edv, mint negat\u00edv", "3: Legink\u00e1bb semleges", "4: Ink\u00e1bb negat\u00edv, mint semleges", "5: Teljes m\u00e9rt\u00e9kben semleges"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5],
+    granularity: 1.0, style: ["RADIO"],
     color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -3, 
     flip: false,
@@ -1306,7 +1306,7 @@ async function experimentInit() {
   text_16 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_16',
-    text: '3. MW kérdés',
+    text: '3. A feladat végrehajtása során gondolataimnak tartalmára ez volt a leginkább jellemző:',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, (- 0.1)], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -1319,8 +1319,8 @@ async function experimentInit() {
     win: psychoJS.window, name: 'slider_3',
     startValue: undefined,
     size: [1.1, 0.02], pos: [0, (- 0.2)], ori: 0.0, units: 'height',
-    labels: ["Egy\u00e1ltal\u00e1n nem", "Teljes m\u00e9rt\u00e9kben"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    granularity: 1.0, style: ["RATING"],
+    labels: ["Legink\u00e1bb a j\u00f6v\u0151 m\u00e9g meg nem t\u00f6rt\u00e9nt esem\u00e9nyei jutottak eszembe.", "Legink\u00e1bb a jelen pillanat, helyzet, j\u00e1rt az eszembenLegink\u00e1bb kor\u00e1bbi esem\u00e9nyek, eml\u00e9kek jutottak eszembe"], fontSize: 0.03, ticks: [1, 2, 3],
+    granularity: 1.0, style: ["RADIO"],
     color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -5, 
     flip: false,
@@ -1345,7 +1345,7 @@ async function experimentInit() {
   text_19 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_19',
-    text: 'Köszönjük!\n\nA következő feladat hasonló lesz.\n\nUgyanígy négyzetek fognak megjelenni, és a feladatod továbbra is minél hosszabb szekvenciákat megjegyezni.\nAzonban minden bemutatott négyzet között lesz egy döntési feladat: el kell döntened egy ábráról, hogy függőlegesen szimmetrikus-e.\n\nElőször nézzük meg, hogyan néz ki a döntési feladat.\n\nSPACE/Katt',
+    text: 'A következő feladat hasonló lesz.\n\nUgyanígy négyzetek fognak megjelenni, és a feladatod továbbra is minél hosszabb szekvenciákat megjegyezni.\nAzonban minden bemutatott négyzet között lesz egy döntési feladat: el kell döntened egy ábráról, hogy függőlegesen szimmetrikus-e.\n\nElőször nézzük meg, hogyan néz ki a döntési feladat.\n\nSPACE/Katt',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0.0,
@@ -2653,7 +2653,7 @@ function PN_aff_questionsRoutineEachFrame() {
 
     
     // *text_23* updates
-    if ((slider_3.rating) && text_23.status === PsychoJS.Status.NOT_STARTED) {
+    if ((slider_5.rating) && text_23.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       text_23.tStart = t;  // (not accounting for frame time here)
       text_23.frameNStart = frameN;  // exact frame index
