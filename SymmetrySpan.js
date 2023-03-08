@@ -3815,7 +3815,7 @@ function square_rec_g_rRoutineBegin(snapshot) {
                                                                     square_29.color = "#ff0000";
                                                                     square_30.color = "#ff0000";
                                                                     square_31.color = "#ff0000";
-                                                                    if (random_square_names[recall_counter] === "square_0") {
+                                                                    /*if (random_square_names[recall_counter] === "square_0") {
                                                                         square_16.color = "#006400";
                                                                     } else {
                                                                         if (random_square_names[recall_counter] === "square_1") {
@@ -3877,7 +3877,7 @@ function square_rec_g_rRoutineBegin(snapshot) {
                                                                                 }
                                                                             }
                                                                         }
-                                                                    }
+                                                                    }*/
                                                                 }
                                                             }
                                                         }
