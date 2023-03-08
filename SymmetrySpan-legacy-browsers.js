@@ -46,6 +46,9 @@ const trials_square_2LoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(trials_square_2LoopBegin(trials_square_2LoopScheduler));
 flowScheduler.add(trials_square_2LoopScheduler);
 flowScheduler.add(trials_square_2LoopEnd);
+flowScheduler.add(MW_questionsRoutineBegin());
+flowScheduler.add(MW_questionsRoutineEachFrame());
+flowScheduler.add(MW_questionsRoutineEnd());
 flowScheduler.add(ins_square_endRoutineBegin());
 flowScheduler.add(ins_square_endRoutineEachFrame());
 flowScheduler.add(ins_square_endRoutineEnd());
@@ -75,6 +78,9 @@ flowScheduler.add(trials_bothLoopEnd);
 flowScheduler.add(both_endRoutineBegin());
 flowScheduler.add(both_endRoutineEachFrame());
 flowScheduler.add(both_endRoutineEnd());
+flowScheduler.add(MW_questionsRoutineBegin());
+flowScheduler.add(MW_questionsRoutineEachFrame());
+flowScheduler.add(MW_questionsRoutineEnd());
 flowScheduler.add(byeRoutineBegin());
 flowScheduler.add(byeRoutineEachFrame());
 flowScheduler.add(byeRoutineEnd());
@@ -359,6 +365,16 @@ var text_result_squares;
 var text_end_prac;
 var mouse_2;
 var key_resp_13;
+var MW_questionsClock;
+var text_13;
+var slider_1;
+var text_15;
+var slider_2;
+var text_16;
+var slider_3;
+var text_17;
+var key_resp_14;
+var mouse_11;
 var ins_square_endClock;
 var text_square_end;
 var text_11;
@@ -1077,6 +1093,95 @@ async function experimentInit() {
   mouse_2.mouseClock = new util.Clock();
   key_resp_13 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
+  // Initialize components for Routine "MW_questions"
+  MW_questionsClock = new util.Clock();
+  text_13 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_13',
+    text: '1. MW kérdés',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0.3], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
+  });
+  
+  slider_1 = new visual.Slider({
+    win: psychoJS.window, name: 'slider_1',
+    startValue: undefined,
+    size: [1.1, 0.02], pos: [0, 0.2], ori: 0.0, units: 'height',
+    labels: ["Egy\u00e1ltal\u00e1n nem", "Teljes m\u00e9rt\u00e9kben"], fontSize: 0.02, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    granularity: 1.0, style: ["RATING"],
+    color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
+    opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
+    flip: false,
+  });
+  
+  text_15 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_15',
+    text: '2. MW kérdés',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0.1], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -2.0 
+  });
+  
+  slider_2 = new visual.Slider({
+    win: psychoJS.window, name: 'slider_2',
+    startValue: undefined,
+    size: [1.1, 0.02], pos: [0, 0], ori: 0.0, units: 'height',
+    labels: ["Egy\u00e1ltal\u00e1n nem", "Teljes m\u00e9rt\u00e9kben"], fontSize: 0.02, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    granularity: 1.0, style: ["RATING"],
+    color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
+    opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
+    flip: false,
+  });
+  
+  text_16 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_16',
+    text: '3. MW kérdés',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, (- 0.1)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -4.0 
+  });
+  
+  slider_3 = new visual.Slider({
+    win: psychoJS.window, name: 'slider_3',
+    startValue: undefined,
+    size: [1.1, 0.02], pos: [0, (- 0.2)], ori: 0.0, units: 'height',
+    labels: ["Egy\u00e1ltal\u00e1n nem", "Teljes m\u00e9rt\u00e9kben"], fontSize: 0.02, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    granularity: 1.0, style: ["RATING"],
+    color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
+    opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
+    flip: false,
+  });
+  
+  text_17 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_17',
+    text: 'SPACE',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, (- 0.4)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -6.0 
+  });
+  
+  key_resp_14 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  
+  mouse_11 = new core.Mouse({
+    win: psychoJS.window,
+  });
+  mouse_11.mouseClock = new util.Clock();
   // Initialize components for Routine "ins_square_end"
   ins_square_endClock = new util.Clock();
   text_square_end = new visual.TextStim({
@@ -4479,6 +4584,252 @@ function next_setRoutineEnd(snapshot) {
     
     key_resp_13.stop();
     // the Routine "next_set" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    // Routines running outside a loop should always advance the datafile row
+    if (currentLoop === psychoJS.experiment) {
+      psychoJS.experiment.nextEntry(snapshot);
+    }
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+var _key_resp_14_allKeys;
+var MW_questionsComponents;
+function MW_questionsRoutineBegin(snapshot) {
+  return async function () {
+    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
+    
+    //--- Prepare to start Routine 'MW_questions' ---
+    t = 0;
+    MW_questionsClock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    slider_1.reset()
+    slider_2.reset()
+    slider_3.reset()
+    key_resp_14.keys = undefined;
+    key_resp_14.rt = undefined;
+    _key_resp_14_allKeys = [];
+    // setup some python lists for storing info about the mouse_11
+    // current position of the mouse:
+    mouse_11.x = [];
+    mouse_11.y = [];
+    mouse_11.leftButton = [];
+    mouse_11.midButton = [];
+    mouse_11.rightButton = [];
+    mouse_11.time = [];
+    gotValidClick = false; // until a click is received
+    // keep track of which components have finished
+    MW_questionsComponents = [];
+    MW_questionsComponents.push(text_13);
+    MW_questionsComponents.push(slider_1);
+    MW_questionsComponents.push(text_15);
+    MW_questionsComponents.push(slider_2);
+    MW_questionsComponents.push(text_16);
+    MW_questionsComponents.push(slider_3);
+    MW_questionsComponents.push(text_17);
+    MW_questionsComponents.push(key_resp_14);
+    MW_questionsComponents.push(mouse_11);
+    
+    MW_questionsComponents.forEach( function(thisComponent) {
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+       });
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function MW_questionsRoutineEachFrame() {
+  return async function () {
+    //--- Loop for each frame of Routine 'MW_questions' ---
+    // get current time
+    t = MW_questionsClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *text_13* updates
+    if (t >= 0.0 && text_13.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_13.tStart = t;  // (not accounting for frame time here)
+      text_13.frameNStart = frameN;  // exact frame index
+      
+      text_13.setAutoDraw(true);
+    }
+
+    
+    // *slider_1* updates
+    if (t >= 0.0 && slider_1.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      slider_1.tStart = t;  // (not accounting for frame time here)
+      slider_1.frameNStart = frameN;  // exact frame index
+      
+      slider_1.setAutoDraw(true);
+    }
+
+    
+    // *text_15* updates
+    if (t >= 0.0 && text_15.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_15.tStart = t;  // (not accounting for frame time here)
+      text_15.frameNStart = frameN;  // exact frame index
+      
+      text_15.setAutoDraw(true);
+    }
+
+    
+    // *slider_2* updates
+    if (t >= 0.0 && slider_2.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      slider_2.tStart = t;  // (not accounting for frame time here)
+      slider_2.frameNStart = frameN;  // exact frame index
+      
+      slider_2.setAutoDraw(true);
+    }
+
+    
+    // *text_16* updates
+    if (t >= 0.0 && text_16.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_16.tStart = t;  // (not accounting for frame time here)
+      text_16.frameNStart = frameN;  // exact frame index
+      
+      text_16.setAutoDraw(true);
+    }
+
+    
+    // *slider_3* updates
+    if (t >= 0.0 && slider_3.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      slider_3.tStart = t;  // (not accounting for frame time here)
+      slider_3.frameNStart = frameN;  // exact frame index
+      
+      slider_3.setAutoDraw(true);
+    }
+
+    
+    // *text_17* updates
+    if ((slider_3.rating) && text_17.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_17.tStart = t;  // (not accounting for frame time here)
+      text_17.frameNStart = frameN;  // exact frame index
+      
+      text_17.setAutoDraw(true);
+    }
+
+    
+    // *key_resp_14* updates
+    if ((slider_3.rating) && key_resp_14.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      key_resp_14.tStart = t;  // (not accounting for frame time here)
+      key_resp_14.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { key_resp_14.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_14.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_14.clearEvents(); });
+    }
+
+    if (key_resp_14.status === PsychoJS.Status.STARTED) {
+      let theseKeys = key_resp_14.getKeys({keyList: ['space'], waitRelease: false});
+      _key_resp_14_allKeys = _key_resp_14_allKeys.concat(theseKeys);
+      if (_key_resp_14_allKeys.length > 0) {
+        key_resp_14.keys = _key_resp_14_allKeys[_key_resp_14_allKeys.length - 1].name;  // just the last key pressed
+        key_resp_14.rt = _key_resp_14_allKeys[_key_resp_14_allKeys.length - 1].rt;
+        // a response ends the routine
+        continueRoutine = false;
+      }
+    }
+    
+    // *mouse_11* updates
+    if (t >= 0.0 && mouse_11.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      mouse_11.tStart = t;  // (not accounting for frame time here)
+      mouse_11.frameNStart = frameN;  // exact frame index
+      
+      mouse_11.status = PsychoJS.Status.STARTED;
+      mouse_11.mouseClock.reset();
+      prevButtonState = mouse_11.getPressed();  // if button is down already this ISN'T a new click
+      }
+    if (mouse_11.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
+      _mouseButtons = mouse_11.getPressed();
+      if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
+        prevButtonState = _mouseButtons;
+        if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
+          _mouseXYs = mouse_11.getPos();
+          mouse_11.x.push(_mouseXYs[0]);
+          mouse_11.y.push(_mouseXYs[1]);
+          mouse_11.leftButton.push(_mouseButtons[0]);
+          mouse_11.midButton.push(_mouseButtons[1]);
+          mouse_11.rightButton.push(_mouseButtons[2]);
+          mouse_11.time.push(mouse_11.mouseClock.getTime());
+        }
+      }
+    }
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    MW_questionsComponents.forEach( function(thisComponent) {
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+      }
+    });
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function MW_questionsRoutineEnd(snapshot) {
+  return async function () {
+    //--- Ending Routine 'MW_questions' ---
+    MW_questionsComponents.forEach( function(thisComponent) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    });
+    psychoJS.experiment.addData('slider_1.response', slider_1.getRating());
+    psychoJS.experiment.addData('slider_1.rt', slider_1.getRT());
+    psychoJS.experiment.addData('slider_2.response', slider_2.getRating());
+    psychoJS.experiment.addData('slider_2.rt', slider_2.getRT());
+    psychoJS.experiment.addData('slider_3.response', slider_3.getRating());
+    psychoJS.experiment.addData('slider_3.rt', slider_3.getRT());
+    // update the trial handler
+    if (currentLoop instanceof MultiStairHandler) {
+      currentLoop.addResponse(key_resp_14.corr, level);
+    }
+    psychoJS.experiment.addData('key_resp_14.keys', key_resp_14.keys);
+    if (typeof key_resp_14.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('key_resp_14.rt', key_resp_14.rt);
+        routineTimer.reset();
+        }
+    
+    key_resp_14.stop();
+    // store data for psychoJS.experiment (ExperimentHandler)
+    psychoJS.experiment.addData('mouse_11.x', mouse_11.x);
+    psychoJS.experiment.addData('mouse_11.y', mouse_11.y);
+    psychoJS.experiment.addData('mouse_11.leftButton', mouse_11.leftButton);
+    psychoJS.experiment.addData('mouse_11.midButton', mouse_11.midButton);
+    psychoJS.experiment.addData('mouse_11.rightButton', mouse_11.rightButton);
+    psychoJS.experiment.addData('mouse_11.time', mouse_11.time);
+    
+    // the Routine "MW_questions" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     // Routines running outside a loop should always advance the datafile row
