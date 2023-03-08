@@ -3805,69 +3805,69 @@ function square_rec_g_rRoutineBegin(snapshot) {
                                                                     correct_square_counter += 1;
                                                                     square_31.fillColor = "#006400";
                                                                 } else {
-                                                                    square_16.color = "#ff0000";
-                                                                    square_17.color = "#ff0000";
-                                                                    square_18.color = "#ff0000";
-                                                                    square_19.color = "#ff0000";
-                                                                    square_20.color = "#ff0000";
-                                                                    square_21.color = "#ff0000";
-                                                                    square_22.color = "#ff0000";
-                                                                    square_23.color = "#ff0000";
-                                                                    square_24.color = "#ff0000";
-                                                                    square_25.color = "#ff0000";
-                                                                    square_26.color = "#ff0000";
-                                                                    square_27.color = "#ff0000";
-                                                                    square_28.color = "#ff0000";
-                                                                    square_29.color = "#ff0000";
-                                                                    square_30.color = "#ff0000";
-                                                                    square_31.color = "#ff0000";
-                                                                    /*if (random_square_names[recall_counter] === "square_0") {
-                                                                        square_16.color = "#006400";
+                                                                    square_16.fillColor = "#ff0000";
+                                                                    square_17.fillColor = "#ff0000";
+                                                                    square_18.fillColor = "#ff0000";
+                                                                    square_19.fillColor = "#ff0000";
+                                                                    square_20.fillColor = "#ff0000";
+                                                                    square_21.fillColor = "#ff0000";
+                                                                    square_22.fillColor = "#ff0000";
+                                                                    square_23.fillColor = "#ff0000";
+                                                                    square_24.fillColor = "#ff0000";
+                                                                    square_25.fillColor = "#ff0000";
+                                                                    square_26.fillColor = "#ff0000";
+                                                                    square_27.fillColor = "#ff0000";
+                                                                    square_28.fillColor = "#ff0000";
+                                                                    square_29.fillColor = "#ff0000";
+                                                                    square_30.fillColor = "#ff0000";
+                                                                    square_31.fillColor = "#ff0000";
+                                                                    if (random_square_names[recall_counter] === "square_0") {
+                                                                        square_16.fillColor = "#006400";
                                                                     } else {
                                                                         if (random_square_names[recall_counter] === "square_1") {
-                                                                            square_17.color = "#006400";
+                                                                            square_17.fillColor = "#006400";
                                                                         } else {
                                                                             if (random_square_names[recall_counter] === "square_2") {
-                                                                                square_18.color = "#006400";
+                                                                                square_18.fillColor = "#006400";
                                                                             } else {
                                                                                 if (random_square_names[recall_counter] === "square_3") {
-                                                                                    square_19.color = "#006400";
+                                                                                    square_19.fillColor = "#006400";
                                                                                 } else {
                                                                                     if (random_square_names[recall_counter] === "square_4") {
-                                                                                        square_20.color = "#006400";
+                                                                                        square_20.fillColor = "#006400";
                                                                                     } else {
                                                                                         if (random_square_names[recall_counter] === "square_5") {
-                                                                                            square_21.color = "#006400";
+                                                                                            square_21.fillColor = "#006400";
                                                                                         } else {
                                                                                             if (random_square_names[recall_counter] === "square_6") {
-                                                                                                square_22.color = "#006400";
+                                                                                                square_22.fillColor = "#006400";
                                                                                             } else {
                                                                                                 if (random_square_names[recall_counter] === "square_7") {
-                                                                                                    square_23.color = "#006400";
+                                                                                                    square_23.fillColor = "#006400";
                                                                                                 } else {
                                                                                                     if (random_square_names[recall_counter] === "square_8") {
-                                                                                                        square_24.color = "#006400";
+                                                                                                        square_24.fillColor = "#006400";
                                                                                                     } else {
                                                                                                         if (random_square_names[recall_counter] === "square_9") {
-                                                                                                            square_25.color = "#006400";
+                                                                                                            square_25.fillColor = "#006400";
                                                                                                         } else {
                                                                                                             if (random_square_names[recall_counter] === "square_10") {
-                                                                                                                square_26.color = "#006400";
+                                                                                                                square_26.fillColor = "#006400";
                                                                                                             } else {
                                                                                                                 if (random_square_names[recall_counter] === "square_11") {
-                                                                                                                    square_27.color = "#006400";
+                                                                                                                    square_27.fillColor = "#006400";
                                                                                                                 } else {
                                                                                                                     if (random_square_names[recall_counter] === "square_12") {
-                                                                                                                        square_28.color = "#006400";
+                                                                                                                        square_28.fillColor = "#006400";
                                                                                                                     } else {
                                                                                                                         if (random_square_names[recall_counter] === "square_13") {
-                                                                                                                            square_29.color = "#006400";
+                                                                                                                            square_29.fillColor = "#006400";
                                                                                                                         } else {
                                                                                                                             if (random_square_names[recall_counter] === "square_14") {
-                                                                                                                                square_30.color = "#006400";
+                                                                                                                                square_30.fillColor = "#006400";
                                                                                                                             } else {
                                                                                                                                 if (random_square_names[recall_counter] === "square_15") {
-                                                                                                                                    square_31.color = "#006400";
+                                                                                                                                    square_31.fillColor = "#006400";
                                                                                                                                 }
                                                                                                                             }
                                                                                                                         }
@@ -3883,7 +3883,7 @@ function square_rec_g_rRoutineBegin(snapshot) {
                                                                                 }
                                                                             }
                                                                         }
-                                                                    }*/
+                                                                    }
                                                                 }
                                                             }
                                                         }
