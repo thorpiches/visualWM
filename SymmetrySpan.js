@@ -3815,52 +3815,52 @@ function square_rec_g_rRoutineBegin(snapshot) {
                                                                     square_29.color = "#ff0000";
                                                                     square_30.color = "#ff0000";
                                                                     square_31.color = "#ff0000";
-                                                                    if (((mouse.clicked_name[0] === "square_0") && (random_square_names[recall_counter] === "square_0"))) {
+                                                                    if (random_square_names[recall_counter] === "square_0") {
                                                                         square_16.color = "#006400";
                                                                     } else {
-                                                                        if (((mouse.clicked_name[0] === "square_1") && (random_square_names[recall_counter] === "square_1"))) {
+                                                                        if (random_square_names[recall_counter] === "square_1") {
                                                                             square_17.color = "#006400";
                                                                         } else {
-                                                                            if (((mouse.clicked_name[0] === "square_2") && (random_square_names[recall_counter] === "square_2"))) {
+                                                                            if (random_square_names[recall_counter] === "square_2") {
                                                                                 square_18.color = "#006400";
                                                                             } else {
-                                                                                if (((mouse.clicked_name[0] === "square_3") && (random_square_names[recall_counter] === "square_3"))) {
+                                                                                if (random_square_names[recall_counter] === "square_3") {
                                                                                     square_19.color = "#006400";
                                                                                 } else {
-                                                                                    if (((mouse.clicked_name[0] === "square_4") && (random_square_names[recall_counter] === "square_4"))) {
+                                                                                    if (random_square_names[recall_counter] === "square_4") {
                                                                                         square_20.color = "#006400";
                                                                                     } else {
-                                                                                        if (((mouse.clicked_name[0] === "square_5") && (random_square_names[recall_counter] === "square_5"))) {
+                                                                                        if (random_square_names[recall_counter] === "square_5") {
                                                                                             square_21.color = "#006400";
                                                                                         } else {
-                                                                                            if (((mouse.clicked_name[0] === "square_6") && (random_square_names[recall_counter] === "square_6"))) {
+                                                                                            if (random_square_names[recall_counter] === "square_6") {
                                                                                                 square_22.color = "#006400";
                                                                                             } else {
-                                                                                                if (((mouse.clicked_name[0] === "square_7") && (random_square_names[recall_counter] === "square_7"))) {
+                                                                                                if (random_square_names[recall_counter] === "square_7") {
                                                                                                     square_23.color = "#006400";
                                                                                                 } else {
-                                                                                                    if (((mouse.clicked_name[0] === "square_8") && (random_square_names[recall_counter] === "square_8"))) {
+                                                                                                    if (random_square_names[recall_counter] === "square_8") {
                                                                                                         square_24.color = "#006400";
                                                                                                     } else {
-                                                                                                        if (((mouse.clicked_name[0] === "square_9") && (random_square_names[recall_counter] === "square_9"))) {
+                                                                                                        if (random_square_names[recall_counter] === "square_9") {
                                                                                                             square_25.color = "#006400";
                                                                                                         } else {
-                                                                                                            if (((mouse.clicked_name[0] === "square_10") && (random_square_names[recall_counter] === "square_10"))) {
+                                                                                                            if (random_square_names[recall_counter] === "square_10") {
                                                                                                                 square_26.color = "#006400";
                                                                                                             } else {
-                                                                                                                if (((mouse.clicked_name[0] === "square_11") && (random_square_names[recall_counter] === "square_11"))) {
+                                                                                                                if (random_square_names[recall_counter] === "square_11") {
                                                                                                                     square_27.color = "#006400";
                                                                                                                 } else {
-                                                                                                                    if (((mouse.clicked_name[0] === "square_12") && (random_square_names[recall_counter] === "square_12"))) {
+                                                                                                                    if (random_square_names[recall_counter] === "square_12") {
                                                                                                                         square_28.color = "#006400";
                                                                                                                     } else {
-                                                                                                                        if (((mouse.clicked_name[0] === "square_13") && (random_square_names[recall_counter] === "square_13"))) {
+                                                                                                                        if (random_square_names[recall_counter] === "square_13") {
                                                                                                                             square_29.color = "#006400";
                                                                                                                         } else {
-                                                                                                                            if (((mouse.clicked_name[0] === "square_14") && (random_square_names[recall_counter] === "square_14"))) {
+                                                                                                                            if (random_square_names[recall_counter] === "square_14") {
                                                                                                                                 square_30.color = "#006400";
                                                                                                                             } else {
-                                                                                                                                if (((mouse.clicked_name[0] === "square_15") && (random_square_names[recall_counter] === "square_15"))) {
+                                                                                                                                if (random_square_names[recall_counter] === "square_15") {
                                                                                                                                     square_31.color = "#006400";
                                                                                                                                 }
                                                                                                                             }
@@ -4218,12 +4218,41 @@ function square_rec_g_rRoutineEnd(snapshot) {
         thisComponent.setAutoDraw(false);
       }
     }
-    // Run 'End Routine' code from code_square_rec_g_r
-    for (var i, _pj_c = 0, _pj_a = util.range(16), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
-        i = _pj_a[_pj_c];
-        exec(`square_${(i + 16)}.color = '#ff8080'`);
-        exec(`square_${(i + 16)}.lineColor = '#ffffff'`);
-    }
+    square_16.fillColor = "#ff8080";
+    square_17.fillColor = "#ff8080";
+    square_18.fillColor = "#ff8080";
+    square_19.fillColor = "#ff8080";
+    square_20.fillColor = "#ff8080";
+    square_21.fillColor = "#ff8080";
+    square_22.fillColor = "#ff8080";
+    square_23.fillColor = "#ff8080";
+    square_24.fillColor = "#ff8080";
+    square_25.fillColor = "#ff8080";
+    square_26.fillColor = "#ff8080";
+    square_27.fillColor = "#ff8080";
+    square_28.fillColor = "#ff8080";
+    square_29.fillColor = "#ff8080";
+    square_30.fillColor = "#ff8080";
+    square_31.fillColor = "#ff8080";
+    
+    square_16.borderColor = '#ffffff'
+    square_17.borderColor = '#ffffff'
+    square_18.borderColor = '#ffffff'
+    square_19.borderColor = '#ffffff'
+    square_20.borderColor = '#ffffff'
+    square_21.borderColor = '#ffffff'
+    square_22.borderColor = '#ffffff'
+    square_23.borderColor = '#ffffff'
+    square_24.borderColor = '#ffffff'
+    square_25.borderColor = '#ffffff'
+    square_26.borderColor = '#ffffff'
+    square_27.borderColor = '#ffffff'
+    square_28.borderColor = '#ffffff'
+    square_29.borderColor = '#ffffff'
+    square_30.borderColor = '#ffffff'
+    square_31.borderColor = '#ffffff'
+    
+    
     recall_counter += 1;
     
     // Routines running outside a loop should always advance the datafile row
@@ -7709,7 +7738,6 @@ function both_square_rec_g_rRoutineEnd(snapshot) {
         thisComponent.setAutoDraw(false);
       }
     }
-    // Run 'End Routine' code from code_square_rec_g_r_both
     square_16_both.fillColor = "#ff8080";
     square_17_both.fillColor  = "#ff8080";
     square_18_both.fillColor = "#ff8080";
