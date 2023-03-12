@@ -568,7 +568,7 @@ async function experimentInit() {
     text: 'Üdvözlünk! Köszönjük, hogy részt veszel kutatásunkban.\n\nKérlek, amíg tart a kísérlet, ne lépj ki a teljes képernyős módból.\nKérlek megfelelően nyugodt környezetet és időpontot válassz a feladat elvégzéséhez, hogy ne zavarjon meg közben semmi. A feladatokat megszakítás nélkül, egyetlen részletben végezd el.\n\nA következő oldalon három, hangulatodra vonatkozó kérdés fog megjelenni. Kérlek válaszolj ezekre az 1-10-ig terjedő skálákon  a szerinted leginkább Rád illő pontszámra kattintva.\n\nA folytatáshoz nyomd meg a SPACE billentyűt vagy kattints!',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -597,7 +597,7 @@ async function experimentInit() {
   slider_4 = new visual.Slider({
     win: psychoJS.window, name: 'slider_4',
     startValue: undefined,
-    size: [1.1, 0.02], pos: [0, 0], ori: 0.0, units: 'height',
+    size: [1.1, 0.02], pos: [0, (- 0.1)], ori: 0.0, units: 'height',
     labels: ["1: \u00c1lmos, k\u00e1ba vagyok", "10: Nagyon akt\u00edv, \u00e9ber vagyok"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     granularity: 1.0, style: ["RATING"],
     color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
@@ -636,7 +636,7 @@ async function experimentInit() {
   slider_5 = new visual.Slider({
     win: psychoJS.window, name: 'slider_5',
     startValue: undefined,
-    size: [1.1, 0.02], pos: [0, 0], ori: 0.0, units: 'height',
+    size: [1.1, 0.02], pos: [0, (- 0.1)], ori: 0.0, units: 'height',
     labels: ["1: Teljesen nyugodt, ellazult vagyok", "10: Nagyon izgatott, fesz\u00fclt vagyok"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     granularity: 1.0, style: ["RATING"],
     color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
@@ -675,7 +675,7 @@ async function experimentInit() {
   slider = new visual.Slider({
     win: psychoJS.window, name: 'slider',
     startValue: undefined,
-    size: [1.1, 0.02], pos: [0, 0], ori: 0.0, units: 'height',
+    size: [1.1, 0.02], pos: [0, (- 0.1)], ori: 0.0, units: 'height',
     labels: ["1: Lehangolt, szomor\u00fa, rosszkedv\u0171 vagyok", "10: J\u00f3kedv\u0171, feldobott, vid\u00e1m vagyok"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     granularity: 1.0, style: ["RATING"],
     color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
