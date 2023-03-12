@@ -69,15 +69,15 @@ flowScheduler.add(trials_square_2LoopEnd);
 flowScheduler.add(ins_square_endRoutineBegin());
 flowScheduler.add(ins_square_endRoutineEachFrame());
 flowScheduler.add(ins_square_endRoutineEnd());
-flowScheduler.add(MW_questionsRoutineBegin());
-flowScheduler.add(MW_questionsRoutineEachFrame());
-flowScheduler.add(MW_questionsRoutineEnd());
 flowScheduler.add(MW_questions1RoutineBegin());
 flowScheduler.add(MW_questions1RoutineEachFrame());
 flowScheduler.add(MW_questions1RoutineEnd());
 flowScheduler.add(MW_questions2RoutineBegin());
 flowScheduler.add(MW_questions2RoutineEachFrame());
 flowScheduler.add(MW_questions2RoutineEnd());
+flowScheduler.add(MW_questions3RoutineBegin());
+flowScheduler.add(MW_questions3RoutineEachFrame());
+flowScheduler.add(MW_questions3RoutineEnd());
 flowScheduler.add(next_partRoutineBegin());
 flowScheduler.add(next_partRoutineEachFrame());
 flowScheduler.add(next_partRoutineEnd());
@@ -107,9 +107,15 @@ flowScheduler.add(trials_bothLoopEnd);
 flowScheduler.add(both_endRoutineBegin());
 flowScheduler.add(both_endRoutineEachFrame());
 flowScheduler.add(both_endRoutineEnd());
-flowScheduler.add(MW_questionsRoutineBegin());
-flowScheduler.add(MW_questionsRoutineEachFrame());
-flowScheduler.add(MW_questionsRoutineEnd());
+flowScheduler.add(MW_questions1RoutineBegin());
+flowScheduler.add(MW_questions1RoutineEachFrame());
+flowScheduler.add(MW_questions1RoutineEnd());
+flowScheduler.add(MW_questions2RoutineBegin());
+flowScheduler.add(MW_questions2RoutineEachFrame());
+flowScheduler.add(MW_questions2RoutineEnd());
+flowScheduler.add(MW_questions3RoutineBegin());
+flowScheduler.add(MW_questions3RoutineEachFrame());
+flowScheduler.add(MW_questions3RoutineEnd());
 flowScheduler.add(byeRoutineBegin());
 flowScheduler.add(byeRoutineEachFrame());
 flowScheduler.add(byeRoutineEnd());
@@ -122,171 +128,171 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'resources/sym56.JPG', 'path': 'resources/sym56.JPG'},
-    {'name': 'resources/nsym76.JPG', 'path': 'resources/nsym76.JPG'},
-    {'name': 'resources/sym19.JPG', 'path': 'resources/sym19.JPG'},
-    {'name': 'resources/nsym66.JPG', 'path': 'resources/nsym66.JPG'},
-    {'name': 'resources/sym67.JPG', 'path': 'resources/sym67.JPG'},
-    {'name': 'resources/nsym21.JPG', 'path': 'resources/nsym21.JPG'},
-    {'name': 'resources/sym34.JPG', 'path': 'resources/sym34.JPG'},
-    {'name': 'resources/sym80.JPG', 'path': 'resources/sym80.JPG'},
-    {'name': 'resources/nsym20.JPG', 'path': 'resources/nsym20.JPG'},
-    {'name': 'resources/sym59.JPG', 'path': 'resources/sym59.JPG'},
-    {'name': 'resources/nsym49.JPG', 'path': 'resources/nsym49.JPG'},
-    {'name': 'resources/sym76.JPG', 'path': 'resources/sym76.JPG'},
-    {'name': 'resources/nsym11.JPG', 'path': 'resources/nsym11.JPG'},
-    {'name': 'resources/nsym15.JPG', 'path': 'resources/nsym15.JPG'},
-    {'name': 'resources/nsym56.JPG', 'path': 'resources/nsym56.JPG'},
-    {'name': 'resources/sym48.JPG', 'path': 'resources/sym48.JPG'},
-    {'name': 'resources/nsym47.JPG', 'path': 'resources/nsym47.JPG'},
-    {'name': 'resources/nsym79.JPG', 'path': 'resources/nsym79.JPG'},
-    {'name': 'resources/nsym8.JPG', 'path': 'resources/nsym8.JPG'},
-    {'name': 'resources/example1.JPG', 'path': 'resources/example1.JPG'},
-    {'name': 'resources/nsym69.JPG', 'path': 'resources/nsym69.JPG'},
-    {'name': 'resources/sym61.JPG', 'path': 'resources/sym61.JPG'},
-    {'name': 'resources/nsym32.JPG', 'path': 'resources/nsym32.JPG'},
-    {'name': 'resources/sym23.JPG', 'path': 'resources/sym23.JPG'},
-    {'name': 'resources/nsym24.JPG', 'path': 'resources/nsym24.JPG'},
-    {'name': 'resources/sym3.JPG', 'path': 'resources/sym3.JPG'},
-    {'name': 'resources/sym73.JPG', 'path': 'resources/sym73.JPG'},
-    {'name': 'resources/sym38.JPG', 'path': 'resources/sym38.JPG'},
-    {'name': 'resources/sym72.JPG', 'path': 'resources/sym72.JPG'},
+    {'name': 'resources/sym2.JPG', 'path': 'resources/sym2.JPG'},
     {'name': 'resources/sym6.JPG', 'path': 'resources/sym6.JPG'},
-    {'name': 'resources/nsym30.JPG', 'path': 'resources/nsym30.JPG'},
-    {'name': 'resources/nsym43.JPG', 'path': 'resources/nsym43.JPG'},
-    {'name': 'resources/nsym19.JPG', 'path': 'resources/nsym19.JPG'},
-    {'name': 'resources/sym57.JPG', 'path': 'resources/sym57.JPG'},
-    {'name': 'resources/sym18.JPG', 'path': 'resources/sym18.JPG'},
-    {'name': 'resources/sym45.JPG', 'path': 'resources/sym45.JPG'},
     {'name': 'resources/sym28.JPG', 'path': 'resources/sym28.JPG'},
-    {'name': 'resources/sym74.JPG', 'path': 'resources/sym74.JPG'},
-    {'name': 'resources/nsym25.JPG', 'path': 'resources/nsym25.JPG'},
-    {'name': 'resources/sym21.JPG', 'path': 'resources/sym21.JPG'},
-    {'name': 'resources/sym31.JPG', 'path': 'resources/sym31.JPG'},
-    {'name': 'resources/nsym52.JPG', 'path': 'resources/nsym52.JPG'},
-    {'name': 'resources/nsym17.JPG', 'path': 'resources/nsym17.JPG'},
-    {'name': 'resources/nsym39.JPG', 'path': 'resources/nsym39.JPG'},
-    {'name': 'resources/nsym1.JPG', 'path': 'resources/nsym1.JPG'},
+    {'name': 'resources/nsym80.JPG', 'path': 'resources/nsym80.JPG'},
+    {'name': 'resources/sym76.JPG', 'path': 'resources/sym76.JPG'},
+    {'name': 'resources/nsym31.JPG', 'path': 'resources/nsym31.JPG'},
+    {'name': 'resources/sym19.JPG', 'path': 'resources/sym19.JPG'},
     {'name': 'resources/nsym37.JPG', 'path': 'resources/nsym37.JPG'},
     {'name': 'resources/nsym28.JPG', 'path': 'resources/nsym28.JPG'},
-    {'name': 'resources/sym75.JPG', 'path': 'resources/sym75.JPG'},
-    {'name': 'resources/sym4.JPG', 'path': 'resources/sym4.JPG'},
-    {'name': 'resources/nsym60.JPG', 'path': 'resources/nsym60.JPG'},
-    {'name': 'resources/sym36.JPG', 'path': 'resources/sym36.JPG'},
-    {'name': 'resources/nsym26.JPG', 'path': 'resources/nsym26.JPG'},
-    {'name': 'resources/nsym62.JPG', 'path': 'resources/nsym62.JPG'},
-    {'name': 'resources/nsym3.JPG', 'path': 'resources/nsym3.JPG'},
-    {'name': 'resources/sym2.JPG', 'path': 'resources/sym2.JPG'},
-    {'name': 'resources/nsym75.JPG', 'path': 'resources/nsym75.JPG'},
-    {'name': 'resources/sym58.JPG', 'path': 'resources/sym58.JPG'},
-    {'name': 'resources/sym49.JPG', 'path': 'resources/sym49.JPG'},
-    {'name': 'resources/nsym64.JPG', 'path': 'resources/nsym64.JPG'},
-    {'name': 'resources/nsym72.JPG', 'path': 'resources/nsym72.JPG'},
-    {'name': 'resources/nsym67.JPG', 'path': 'resources/nsym67.JPG'},
-    {'name': 'resources/nsym58.JPG', 'path': 'resources/nsym58.JPG'},
-    {'name': 'resources/sym10.JPG', 'path': 'resources/sym10.JPG'},
-    {'name': 'resources/sym20.JPG', 'path': 'resources/sym20.JPG'},
-    {'name': 'resources/sym35.JPG', 'path': 'resources/sym35.JPG'},
-    {'name': 'resources/nsym54.JPG', 'path': 'resources/nsym54.JPG'},
-    {'name': 'resources/sym12.JPG', 'path': 'resources/sym12.JPG'},
-    {'name': 'resources/nsym6.JPG', 'path': 'resources/nsym6.JPG'},
-    {'name': 'resources/sym25.JPG', 'path': 'resources/sym25.JPG'},
-    {'name': 'resources/nsym42.JPG', 'path': 'resources/nsym42.JPG'},
-    {'name': 'resources/sym53.JPG', 'path': 'resources/sym53.JPG'},
-    {'name': 'resources/sym16.JPG', 'path': 'resources/sym16.JPG'},
-    {'name': 'resources/sym70.JPG', 'path': 'resources/sym70.JPG'},
-    {'name': 'resources/nsym61.JPG', 'path': 'resources/nsym61.JPG'},
-    {'name': 'resources/sym9.JPG', 'path': 'resources/sym9.JPG'},
-    {'name': 'resources/sym68.JPG', 'path': 'resources/sym68.JPG'},
-    {'name': 'resources/nsym10.JPG', 'path': 'resources/nsym10.JPG'},
-    {'name': 'resources/sym41.JPG', 'path': 'resources/sym41.JPG'},
-    {'name': 'resources/nsym13.JPG', 'path': 'resources/nsym13.JPG'},
-    {'name': 'resources/nsym77.JPG', 'path': 'resources/nsym77.JPG'},
-    {'name': 'resources/nsym65.JPG', 'path': 'resources/nsym65.JPG'},
-    {'name': 'resources/sym69.JPG', 'path': 'resources/sym69.JPG'},
-    {'name': 'resources/sym60.JPG', 'path': 'resources/sym60.JPG'},
-    {'name': 'resources/grid.png', 'path': 'resources/grid.png'},
-    {'name': 'resources/nsym29.JPG', 'path': 'resources/nsym29.JPG'},
-    {'name': 'resources/nsym55.JPG', 'path': 'resources/nsym55.JPG'},
-    {'name': 'resources/sym32.JPG', 'path': 'resources/sym32.JPG'},
-    {'name': 'resources/sym1.JPG', 'path': 'resources/sym1.JPG'},
-    {'name': 'resources/sym22.JPG', 'path': 'resources/sym22.JPG'},
-    {'name': 'resources/sym50.JPG', 'path': 'resources/sym50.JPG'},
-    {'name': 'resources/sym78.JPG', 'path': 'resources/sym78.JPG'},
-    {'name': 'resources/nsym40.JPG', 'path': 'resources/nsym40.JPG'},
-    {'name': 'resources/nsym59.JPG', 'path': 'resources/nsym59.JPG'},
-    {'name': 'resources/sym52.JPG', 'path': 'resources/sym52.JPG'},
-    {'name': 'resources/sym17.JPG', 'path': 'resources/sym17.JPG'},
-    {'name': 'resources/nsym45.JPG', 'path': 'resources/nsym45.JPG'},
-    {'name': 'resources/nsym31.JPG', 'path': 'resources/nsym31.JPG'},
-    {'name': 'resources/nsym22.JPG', 'path': 'resources/nsym22.JPG'},
-    {'name': 'resources/sym63.JPG', 'path': 'resources/sym63.JPG'},
-    {'name': 'resources/nsym63.JPG', 'path': 'resources/nsym63.JPG'},
-    {'name': 'resources/nsym9.JPG', 'path': 'resources/nsym9.JPG'},
-    {'name': 'resources/nsym41.JPG', 'path': 'resources/nsym41.JPG'},
-    {'name': 'resources/sym14.JPG', 'path': 'resources/sym14.JPG'},
-    {'name': 'resources/sym46.JPG', 'path': 'resources/sym46.JPG'},
-    {'name': 'resources/nsym7.JPG', 'path': 'resources/nsym7.JPG'},
-    {'name': 'resources/nsym38.JPG', 'path': 'resources/nsym38.JPG'},
-    {'name': 'resources/nsym73.JPG', 'path': 'resources/nsym73.JPG'},
-    {'name': 'resources/sym5.JPG', 'path': 'resources/sym5.JPG'},
-    {'name': 'resources/sym77.JPG', 'path': 'resources/sym77.JPG'},
-    {'name': 'resources/nsym80.JPG', 'path': 'resources/nsym80.JPG'},
-    {'name': 'resources/sym8.JPG', 'path': 'resources/sym8.JPG'},
-    {'name': 'resources/nsym68.JPG', 'path': 'resources/nsym68.JPG'},
-    {'name': 'resources/nsym18.JPG', 'path': 'resources/nsym18.JPG'},
-    {'name': 'resources/sym44.JPG', 'path': 'resources/sym44.JPG'},
-    {'name': 'resources/nsym5.JPG', 'path': 'resources/nsym5.JPG'},
-    {'name': 'resources/nsym74.JPG', 'path': 'resources/nsym74.JPG'},
-    {'name': 'resources/sym55.JPG', 'path': 'resources/sym55.JPG'},
-    {'name': 'resources/nsym34.JPG', 'path': 'resources/nsym34.JPG'},
-    {'name': 'resources/nsym46.JPG', 'path': 'resources/nsym46.JPG'},
-    {'name': 'resources/nsym48.JPG', 'path': 'resources/nsym48.JPG'},
-    {'name': 'resources/nsym70.JPG', 'path': 'resources/nsym70.JPG'},
-    {'name': 'resources/sym64.JPG', 'path': 'resources/sym64.JPG'},
-    {'name': 'resources/sym33.JPG', 'path': 'resources/sym33.JPG'},
-    {'name': 'resources/sym37.JPG', 'path': 'resources/sym37.JPG'},
-    {'name': 'resources/1green.JPG', 'path': 'resources/1green.JPG'},
-    {'name': 'resources/nsym2.JPG', 'path': 'resources/nsym2.JPG'},
-    {'name': 'resources/nsym12.JPG', 'path': 'resources/nsym12.JPG'},
-    {'name': 'resources/sym65.JPG', 'path': 'resources/sym65.JPG'},
-    {'name': 'resources/sym79.JPG', 'path': 'resources/sym79.JPG'},
-    {'name': 'resources/1red.JPG', 'path': 'resources/1red.JPG'},
-    {'name': 'resources/nsym53.JPG', 'path': 'resources/nsym53.JPG'},
+    {'name': 'resources/sym57.JPG', 'path': 'resources/sym57.JPG'},
     {'name': 'resources/sym39.JPG', 'path': 'resources/sym39.JPG'},
-    {'name': 'resources/sym62.JPG', 'path': 'resources/sym62.JPG'},
-    {'name': 'resources/nsym71.JPG', 'path': 'resources/nsym71.JPG'},
-    {'name': 'resources/nsym23.JPG', 'path': 'resources/nsym23.JPG'},
-    {'name': 'resources/sym51.JPG', 'path': 'resources/sym51.JPG'},
-    {'name': 'resources/nsym14.JPG', 'path': 'resources/nsym14.JPG'},
-    {'name': 'resources/nsym50.JPG', 'path': 'resources/nsym50.JPG'},
-    {'name': 'resources/nsym57.JPG', 'path': 'resources/nsym57.JPG'},
-    {'name': 'resources/sym24.JPG', 'path': 'resources/sym24.JPG'},
-    {'name': 'resources/nsym16.JPG', 'path': 'resources/nsym16.JPG'},
-    {'name': 'resources/sym15.JPG', 'path': 'resources/sym15.JPG'},
-    {'name': 'resources/sym42.JPG', 'path': 'resources/sym42.JPG'},
-    {'name': 'resources/sym29.JPG', 'path': 'resources/sym29.JPG'},
-    {'name': 'resources/sym47.JPG', 'path': 'resources/sym47.JPG'},
+    {'name': 'resources/sym53.JPG', 'path': 'resources/sym53.JPG'},
     {'name': 'resources/sym26.JPG', 'path': 'resources/sym26.JPG'},
-    {'name': 'resources/nsym35.JPG', 'path': 'resources/nsym35.JPG'},
-    {'name': 'resources/nsym44.JPG', 'path': 'resources/nsym44.JPG'},
+    {'name': 'resources/sym79.JPG', 'path': 'resources/sym79.JPG'},
+    {'name': 'resources/nsym22.JPG', 'path': 'resources/nsym22.JPG'},
+    {'name': 'resources/sym70.JPG', 'path': 'resources/sym70.JPG'},
     {'name': 'resources/nsym33.JPG', 'path': 'resources/nsym33.JPG'},
-    {'name': 'resources/nsym27.JPG', 'path': 'resources/nsym27.JPG'},
-    {'name': 'resources/sym40.JPG', 'path': 'resources/sym40.JPG'},
-    {'name': 'resources/sym11.JPG', 'path': 'resources/sym11.JPG'},
-    {'name': 'resources/nsym78.JPG', 'path': 'resources/nsym78.JPG'},
-    {'name': 'resources/sym7.JPG', 'path': 'resources/sym7.JPG'},
-    {'name': 'resources/sym13.JPG', 'path': 'resources/sym13.JPG'},
-    {'name': 'resources/example2.JPG', 'path': 'resources/example2.JPG'},
-    {'name': 'resources/sym71.JPG', 'path': 'resources/sym71.JPG'},
-    {'name': 'resources/sym54.JPG', 'path': 'resources/sym54.JPG'},
+    {'name': 'resources/nsym53.JPG', 'path': 'resources/nsym53.JPG'},
+    {'name': 'resources/nsym19.JPG', 'path': 'resources/nsym19.JPG'},
+    {'name': 'resources/sym60.JPG', 'path': 'resources/sym60.JPG'},
+    {'name': 'resources/nsym67.JPG', 'path': 'resources/nsym67.JPG'},
+    {'name': 'resources/sym63.JPG', 'path': 'resources/sym63.JPG'},
+    {'name': 'resources/nsym52.JPG', 'path': 'resources/nsym52.JPG'},
+    {'name': 'resources/sym34.JPG', 'path': 'resources/sym34.JPG'},
+    {'name': 'resources/nsym44.JPG', 'path': 'resources/nsym44.JPG'},
+    {'name': 'resources/nsym48.JPG', 'path': 'resources/nsym48.JPG'},
+    {'name': 'resources/nsym17.JPG', 'path': 'resources/nsym17.JPG'},
+    {'name': 'resources/sym8.JPG', 'path': 'resources/sym8.JPG'},
+    {'name': 'resources/nsym74.JPG', 'path': 'resources/nsym74.JPG'},
+    {'name': 'resources/nsym64.JPG', 'path': 'resources/nsym64.JPG'},
+    {'name': 'resources/nsym1.JPG', 'path': 'resources/nsym1.JPG'},
     {'name': 'resources/sym66.JPG', 'path': 'resources/sym66.JPG'},
+    {'name': 'resources/sym59.JPG', 'path': 'resources/sym59.JPG'},
+    {'name': 'resources/sym22.JPG', 'path': 'resources/sym22.JPG'},
+    {'name': 'resources/nsym71.JPG', 'path': 'resources/nsym71.JPG'},
+    {'name': 'resources/sym41.JPG', 'path': 'resources/sym41.JPG'},
+    {'name': 'resources/nsym34.JPG', 'path': 'resources/nsym34.JPG'},
+    {'name': 'resources/nsym76.JPG', 'path': 'resources/nsym76.JPG'},
+    {'name': 'resources/nsym11.JPG', 'path': 'resources/nsym11.JPG'},
+    {'name': 'resources/sym71.JPG', 'path': 'resources/sym71.JPG'},
+    {'name': 'resources/sym55.JPG', 'path': 'resources/sym55.JPG'},
+    {'name': 'resources/nsym21.JPG', 'path': 'resources/nsym21.JPG'},
+    {'name': 'resources/sym3.JPG', 'path': 'resources/sym3.JPG'},
+    {'name': 'resources/sym9.JPG', 'path': 'resources/sym9.JPG'},
+    {'name': 'resources/nsym6.JPG', 'path': 'resources/nsym6.JPG'},
+    {'name': 'resources/nsym20.JPG', 'path': 'resources/nsym20.JPG'},
+    {'name': 'resources/nsym68.JPG', 'path': 'resources/nsym68.JPG'},
+    {'name': 'resources/nsym47.JPG', 'path': 'resources/nsym47.JPG'},
+    {'name': 'resources/nsym12.JPG', 'path': 'resources/nsym12.JPG'},
+    {'name': 'resources/nsym70.JPG', 'path': 'resources/nsym70.JPG'},
+    {'name': 'resources/nsym30.JPG', 'path': 'resources/nsym30.JPG'},
+    {'name': 'resources/grid.png', 'path': 'resources/grid.png'},
+    {'name': 'resources/sym52.JPG', 'path': 'resources/sym52.JPG'},
+    {'name': 'resources/sym29.JPG', 'path': 'resources/sym29.JPG'},
+    {'name': 'resources/nsym61.JPG', 'path': 'resources/nsym61.JPG'},
+    {'name': 'resources/sym30.JPG', 'path': 'resources/sym30.JPG'},
+    {'name': 'resources/sym67.JPG', 'path': 'resources/sym67.JPG'},
+    {'name': 'resources/sym11.JPG', 'path': 'resources/sym11.JPG'},
+    {'name': 'resources/1red.JPG', 'path': 'resources/1red.JPG'},
+    {'name': 'resources/sym49.JPG', 'path': 'resources/sym49.JPG'},
+    {'name': 'resources/sym1.JPG', 'path': 'resources/sym1.JPG'},
+    {'name': 'resources/sym21.JPG', 'path': 'resources/sym21.JPG'},
+    {'name': 'resources/nsym62.JPG', 'path': 'resources/nsym62.JPG'},
+    {'name': 'resources/nsym56.JPG', 'path': 'resources/nsym56.JPG'},
     {'name': 'resources/sym43.JPG', 'path': 'resources/sym43.JPG'},
-    {'name': 'resources/nsym4.JPG', 'path': 'resources/nsym4.JPG'},
-    {'name': 'resources/nsym51.JPG', 'path': 'resources/nsym51.JPG'},
-    {'name': 'resources/nsym36.JPG', 'path': 'resources/nsym36.JPG'},
+    {'name': 'resources/nsym29.JPG', 'path': 'resources/nsym29.JPG'},
+    {'name': 'resources/nsym66.JPG', 'path': 'resources/nsym66.JPG'},
+    {'name': 'resources/sym73.JPG', 'path': 'resources/sym73.JPG'},
+    {'name': 'resources/nsym73.JPG', 'path': 'resources/nsym73.JPG'},
+    {'name': 'resources/nsym3.JPG', 'path': 'resources/nsym3.JPG'},
+    {'name': 'resources/sym31.JPG', 'path': 'resources/sym31.JPG'},
+    {'name': 'resources/sym74.JPG', 'path': 'resources/sym74.JPG'},
+    {'name': 'resources/sym18.JPG', 'path': 'resources/sym18.JPG'},
+    {'name': 'resources/sym50.JPG', 'path': 'resources/sym50.JPG'},
+    {'name': 'resources/sym35.JPG', 'path': 'resources/sym35.JPG'},
+    {'name': 'resources/nsym26.JPG', 'path': 'resources/nsym26.JPG'},
+    {'name': 'resources/nsym8.JPG', 'path': 'resources/nsym8.JPG'},
+    {'name': 'resources/nsym46.JPG', 'path': 'resources/nsym46.JPG'},
+    {'name': 'resources/sym33.JPG', 'path': 'resources/sym33.JPG'},
     {'name': 'resources/sym27.JPG', 'path': 'resources/sym27.JPG'},
-    {'name': 'resources/sym30.JPG', 'path': 'resources/sym30.JPG'}
+    {'name': 'resources/nsym55.JPG', 'path': 'resources/nsym55.JPG'},
+    {'name': 'resources/example2.JPG', 'path': 'resources/example2.JPG'},
+    {'name': 'resources/nsym72.JPG', 'path': 'resources/nsym72.JPG'},
+    {'name': 'resources/nsym54.JPG', 'path': 'resources/nsym54.JPG'},
+    {'name': 'resources/sym51.JPG', 'path': 'resources/sym51.JPG'},
+    {'name': 'resources/nsym27.JPG', 'path': 'resources/nsym27.JPG'},
+    {'name': 'resources/nsym79.JPG', 'path': 'resources/nsym79.JPG'},
+    {'name': 'resources/nsym42.JPG', 'path': 'resources/nsym42.JPG'},
+    {'name': 'resources/sym14.JPG', 'path': 'resources/sym14.JPG'},
+    {'name': 'resources/sym80.JPG', 'path': 'resources/sym80.JPG'},
+    {'name': 'resources/sym45.JPG', 'path': 'resources/sym45.JPG'},
+    {'name': 'resources/sym46.JPG', 'path': 'resources/sym46.JPG'},
+    {'name': 'resources/nsym35.JPG', 'path': 'resources/nsym35.JPG'},
+    {'name': 'resources/sym42.JPG', 'path': 'resources/sym42.JPG'},
+    {'name': 'resources/nsym63.JPG', 'path': 'resources/nsym63.JPG'},
+    {'name': 'resources/nsym78.JPG', 'path': 'resources/nsym78.JPG'},
+    {'name': 'resources/nsym65.JPG', 'path': 'resources/nsym65.JPG'},
+    {'name': 'resources/nsym69.JPG', 'path': 'resources/nsym69.JPG'},
+    {'name': 'resources/nsym59.JPG', 'path': 'resources/nsym59.JPG'},
+    {'name': 'resources/example1.JPG', 'path': 'resources/example1.JPG'},
+    {'name': 'resources/nsym77.JPG', 'path': 'resources/nsym77.JPG'},
+    {'name': 'resources/nsym7.JPG', 'path': 'resources/nsym7.JPG'},
+    {'name': 'resources/sym16.JPG', 'path': 'resources/sym16.JPG'},
+    {'name': 'resources/nsym60.JPG', 'path': 'resources/nsym60.JPG'},
+    {'name': 'resources/sym75.JPG', 'path': 'resources/sym75.JPG'},
+    {'name': 'resources/nsym38.JPG', 'path': 'resources/nsym38.JPG'},
+    {'name': 'resources/sym72.JPG', 'path': 'resources/sym72.JPG'},
+    {'name': 'resources/nsym24.JPG', 'path': 'resources/nsym24.JPG'},
+    {'name': 'resources/nsym10.JPG', 'path': 'resources/nsym10.JPG'},
+    {'name': 'resources/1green.JPG', 'path': 'resources/1green.JPG'},
+    {'name': 'resources/nsym16.JPG', 'path': 'resources/nsym16.JPG'},
+    {'name': 'resources/sym20.JPG', 'path': 'resources/sym20.JPG'},
+    {'name': 'resources/sym78.JPG', 'path': 'resources/sym78.JPG'},
+    {'name': 'resources/sym4.JPG', 'path': 'resources/sym4.JPG'},
+    {'name': 'resources/nsym5.JPG', 'path': 'resources/nsym5.JPG'},
+    {'name': 'resources/nsym43.JPG', 'path': 'resources/nsym43.JPG'},
+    {'name': 'resources/nsym13.JPG', 'path': 'resources/nsym13.JPG'},
+    {'name': 'resources/nsym57.JPG', 'path': 'resources/nsym57.JPG'},
+    {'name': 'resources/nsym23.JPG', 'path': 'resources/nsym23.JPG'},
+    {'name': 'resources/sym61.JPG', 'path': 'resources/sym61.JPG'},
+    {'name': 'resources/sym40.JPG', 'path': 'resources/sym40.JPG'},
+    {'name': 'resources/sym38.JPG', 'path': 'resources/sym38.JPG'},
+    {'name': 'resources/sym24.JPG', 'path': 'resources/sym24.JPG'},
+    {'name': 'resources/sym68.JPG', 'path': 'resources/sym68.JPG'},
+    {'name': 'resources/nsym58.JPG', 'path': 'resources/nsym58.JPG'},
+    {'name': 'resources/nsym9.JPG', 'path': 'resources/nsym9.JPG'},
+    {'name': 'resources/sym44.JPG', 'path': 'resources/sym44.JPG'},
+    {'name': 'resources/nsym25.JPG', 'path': 'resources/nsym25.JPG'},
+    {'name': 'resources/sym64.JPG', 'path': 'resources/sym64.JPG'},
+    {'name': 'resources/nsym51.JPG', 'path': 'resources/nsym51.JPG'},
+    {'name': 'resources/sym15.JPG', 'path': 'resources/sym15.JPG'},
+    {'name': 'resources/sym5.JPG', 'path': 'resources/sym5.JPG'},
+    {'name': 'resources/sym36.JPG', 'path': 'resources/sym36.JPG'},
+    {'name': 'resources/nsym75.JPG', 'path': 'resources/nsym75.JPG'},
+    {'name': 'resources/nsym15.JPG', 'path': 'resources/nsym15.JPG'},
+    {'name': 'resources/sym48.JPG', 'path': 'resources/sym48.JPG'},
+    {'name': 'resources/sym62.JPG', 'path': 'resources/sym62.JPG'},
+    {'name': 'resources/sym56.JPG', 'path': 'resources/sym56.JPG'},
+    {'name': 'resources/sym65.JPG', 'path': 'resources/sym65.JPG'},
+    {'name': 'resources/nsym49.JPG', 'path': 'resources/nsym49.JPG'},
+    {'name': 'resources/nsym39.JPG', 'path': 'resources/nsym39.JPG'},
+    {'name': 'resources/nsym45.JPG', 'path': 'resources/nsym45.JPG'},
+    {'name': 'resources/nsym40.JPG', 'path': 'resources/nsym40.JPG'},
+    {'name': 'resources/sym12.JPG', 'path': 'resources/sym12.JPG'},
+    {'name': 'resources/sym47.JPG', 'path': 'resources/sym47.JPG'},
+    {'name': 'resources/sym13.JPG', 'path': 'resources/sym13.JPG'},
+    {'name': 'resources/nsym41.JPG', 'path': 'resources/nsym41.JPG'},
+    {'name': 'resources/sym17.JPG', 'path': 'resources/sym17.JPG'},
+    {'name': 'resources/nsym36.JPG', 'path': 'resources/nsym36.JPG'},
+    {'name': 'resources/nsym50.JPG', 'path': 'resources/nsym50.JPG'},
+    {'name': 'resources/sym58.JPG', 'path': 'resources/sym58.JPG'},
+    {'name': 'resources/sym23.JPG', 'path': 'resources/sym23.JPG'},
+    {'name': 'resources/sym7.JPG', 'path': 'resources/sym7.JPG'},
+    {'name': 'resources/sym25.JPG', 'path': 'resources/sym25.JPG'},
+    {'name': 'resources/sym10.JPG', 'path': 'resources/sym10.JPG'},
+    {'name': 'resources/sym37.JPG', 'path': 'resources/sym37.JPG'},
+    {'name': 'resources/sym69.JPG', 'path': 'resources/sym69.JPG'},
+    {'name': 'resources/sym77.JPG', 'path': 'resources/sym77.JPG'},
+    {'name': 'resources/nsym14.JPG', 'path': 'resources/nsym14.JPG'},
+    {'name': 'resources/nsym18.JPG', 'path': 'resources/nsym18.JPG'},
+    {'name': 'resources/sym32.JPG', 'path': 'resources/sym32.JPG'},
+    {'name': 'resources/sym54.JPG', 'path': 'resources/sym54.JPG'},
+    {'name': 'resources/nsym2.JPG', 'path': 'resources/nsym2.JPG'},
+    {'name': 'resources/nsym32.JPG', 'path': 'resources/nsym32.JPG'},
+    {'name': 'resources/nsym4.JPG', 'path': 'resources/nsym4.JPG'}
   ]
 });
 
@@ -418,15 +424,6 @@ var text_square_end;
 var text_18;
 var key_resp_9;
 var mouse_3;
-var MW_questionsClock;
-var text_13;
-var slider_1;
-var text_15;
-var slider_2;
-var text_16;
-var slider_3;
-var text_17;
-var key_resp_14;
 var MW_questions1Clock;
 var text_27;
 var slider_6;
@@ -437,6 +434,11 @@ var text_20;
 var slider_7;
 var text_29;
 var key_resp_21;
+var MW_questions3Clock;
+var text_30;
+var slider_8;
+var text_31;
+var key_resp_22;
 var next_partClock;
 var text_19;
 var mouse_11;
@@ -1308,7 +1310,7 @@ async function experimentInit() {
   text_18 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_18',
-    text: 'Most kérünk a következő oldalon  válaszolj 3 rövid kérdésre.\nA válaszadáshoz kattints a kérdések alatt megjelenő skálán arra a helyre, amely szerinted a leginkább jellemző rád.\n\nSPACE/Katt',
+    text: 'Most kérünk a következő oldalakon  válaszolj 3 rövid kérdésre.\nA válaszadáshoz kattints a kérdések alatt megjelenő skálákon arra a helyre/azokra a gombokra, amely szerinted a leginkább jellemző voltak rád a feladat elvégzése közben.\n\nSPACE/Katt',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, (- 0.15)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
@@ -1323,100 +1325,15 @@ async function experimentInit() {
     win: psychoJS.window,
   });
   mouse_3.mouseClock = new util.Clock();
-  // Initialize components for Routine "MW_questions"
-  MW_questionsClock = new util.Clock();
-  text_13 = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'text_13',
-    text: '1. A feladat során a figyelmemre leginkább jellemző volt, hogy:',
-    font: 'Open Sans',
-    units: undefined, 
-    pos: [0, 0.3], height: 0.04,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: 0.0 
-  });
-  
-  slider_1 = new visual.Slider({
-    win: psychoJS.window, name: 'slider_1',
-    startValue: undefined,
-    size: [1.1, 0.02], pos: [0, 0.2], ori: 0.0, units: 'height',
-    labels: ["1: Gondolataim teljesen elkalandoztak, k\u00e9ptelen voltam a feladatra koncentr\u00e1lni", "V\u00e9gig nagyon f\u00f3kusz\u00e1lt voltam, csak a feladatra koncentr\u00e1ltam"], fontSize: 0.02, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    granularity: 1.0, style: ["RATING"],
-    color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
-    opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
-    flip: false,
-  });
-  
-  text_15 = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'text_15',
-    text: '2. A feladat végrehajtása során gondolataim hangulatára ez volt a leginkább jellemző:',
-    font: 'Open Sans',
-    units: undefined, 
-    pos: [0, 0.1], height: 0.04,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -2.0 
-  });
-  
-  slider_2 = new visual.Slider({
-    win: psychoJS.window, name: 'slider_2',
-    startValue: undefined,
-    size: [1.1, 0.02], pos: [0, 0], ori: 0.0, units: 'height',
-    labels: ["1: Teljes m\u00e9rt\u00e9kben pozit\u00edv", "2: Ink\u00e1bb pozit\u00edv, mint negat\u00edv", "3: Legink\u00e1bb semleges", "4: Ink\u00e1bb negat\u00edv, mint semleges", "5: Teljes m\u00e9rt\u00e9kben semleges"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5],
-    granularity: 1.0, style: ["RADIO"],
-    color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
-    opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -3, 
-    flip: false,
-  });
-  
-  text_16 = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'text_16',
-    text: '3. A feladat végrehajtása során gondolataimnak tartalmára ez volt a leginkább jellemző:',
-    font: 'Open Sans',
-    units: undefined, 
-    pos: [0, (- 0.1)], height: 0.04,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -4.0 
-  });
-  
-  slider_3 = new visual.Slider({
-    win: psychoJS.window, name: 'slider_3',
-    startValue: undefined,
-    size: [1.1, 0.02], pos: [0, (- 0.2)], ori: 0.0, units: 'height',
-    labels: ["Legink\u00e1bb a j\u00f6v\u0151 m\u00e9g meg nem t\u00f6rt\u00e9nt esem\u00e9nyei jutottak eszembe.", "Legink\u00e1bb a jelen pillanat, helyzet, j\u00e1rt az eszembenLegink\u00e1bb kor\u00e1bbi esem\u00e9nyek, eml\u00e9kek jutottak eszembe"], fontSize: 0.03, ticks: [1, 2, 3],
-    granularity: 1.0, style: ["RADIO"],
-    color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
-    opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -5, 
-    flip: false,
-  });
-  
-  text_17 = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'text_17',
-    text: 'SPACE',
-    font: 'Open Sans',
-    units: undefined, 
-    pos: [0, (- 0.4)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -6.0 
-  });
-  
-  key_resp_14 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
-  
   // Initialize components for Routine "MW_questions1"
   MW_questions1Clock = new util.Clock();
   text_27 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_27',
-    text: '1. Kérlek értékeld figyelmedet, gondolataidat a feladat végrehajtása során 1-10-ig terjedő skálán. \nÉrtékelés: Az 1-es „a gondolataim teljesen elkalandoztak, képtelen voltam a feladatra koncentrálni” állapotot, míg a 10-es a „végig nagyon fókuszált voltam, csak a feladatara koncentráltam” állapotokat jelenti.\n\nA feladat során a figyelmemre leginkább jellemző volt, hogy:',
+    text: '1. Kérlek értékeld figyelmedet, gondolataidat a feladat végrehajtása során 1-10-ig terjedő skálán. \n\nÉrtékelés: Az 1-es „a gondolataim teljesen elkalandoztak, képtelen voltam a feladatra koncentrálni” állapotot, míg a 10-es a „végig nagyon fókuszált voltam, csak a feladatara koncentráltam” állapotokat jelenti.\n\nA feladat során a figyelmemre leginkább jellemző volt, hogy:',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0.2], height: 0.04,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0.1], height: 0.04,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -1425,8 +1342,8 @@ async function experimentInit() {
   slider_6 = new visual.Slider({
     win: psychoJS.window, name: 'slider_6',
     startValue: undefined,
-    size: [1.1, 0.02], pos: [0, (- 0.1)], ori: 0.0, units: 'height',
-    labels: ["1", "10"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    size: [1.1, 0.02], pos: [0, (- 0.2)], ori: 0.0, units: 'height',
+    labels: ["1: Gondolataim elkalandoztak", "10: V\u00e9gig f\u00f3kusz\u00e1lt voltam"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     granularity: 1.0, style: ["RATING"],
     color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
@@ -1452,24 +1369,24 @@ async function experimentInit() {
   text_20 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_20',
-    text: '2. Kérjük értékelje a feladat elvégzése során megjelenő gondolatainak hangulatát. \nA feladat végrehajtása során gondolataim:',
+    text: '2. Kérjük értékeld a feladat elvégzése során megjelenő gondolataidnak a hangulatát. \nA feladat végrehajtása során gondolataim:',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0.1], height: 0.04,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0.2], height: 0.04,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
-    depth: -2.0 
+    depth: 0.0 
   });
   
   slider_7 = new visual.Slider({
     win: psychoJS.window, name: 'slider_7',
     startValue: undefined,
-    size: [0.02, 0.7], pos: [0, 0], ori: 0.0, units: 'height',
+    size: [0.02, 0.3], pos: [(- 0.25), (- 0.1)], ori: -180.0, units: 'height',
     labels: ["1: Teljes m\u00e9rt\u00e9kben pozit\u00edvak voltak", "2: Ink\u00e1bb pozit\u00edvak voltak, mint negat\u00edvak", "3: Legink\u00e1bb semlegesek voltak", "4: Ink\u00e1bb negat\u00edvak voltak, mint pozit\u00edvak", "5: Teljes m\u00e9rt\u00e9kben negat\u00edvak voltak"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5],
     granularity: 1.0, style: ["RADIO"],
     color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
-    opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -3, 
-    flip: false,
+    opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
+    flip: true,
   });
   
   text_29 = new visual.TextStim({
@@ -1485,6 +1402,45 @@ async function experimentInit() {
   });
   
   key_resp_21 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  
+  // Initialize components for Routine "MW_questions3"
+  MW_questions3Clock = new util.Clock();
+  text_30 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_30',
+    text: '3. Kérjük értékeld a feladat elvégzése során megjelenő gondolataidnak a tartalmát. \nA feladat végrehajtása során:',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0.2], height: 0.04,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
+  });
+  
+  slider_8 = new visual.Slider({
+    win: psychoJS.window, name: 'slider_8',
+    startValue: undefined,
+    size: [0.02, 0.2], pos: [(- 0.35), (- 0.1)], ori: -180.0, units: 'height',
+    labels: ["1: Legink\u00e1bb a j\u00f6v\u0151 m\u00e9g meg nem t\u00f6rt\u00e9nt esem\u00e9nyei jutottak eszembe.", "2: Legink\u00e1bb a jelen pillanat, helyzet, j\u00e1rt az eszemben.", "3: Legink\u00e1bb kor\u00e1bbi esem\u00e9nyek, eml\u00e9kek jutottak eszembe."], fontSize: 0.03, ticks: [1, 2, 3],
+    granularity: 1.0, style: ["RADIO"],
+    color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
+    opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
+    flip: true,
+  });
+  
+  text_31 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_31',
+    text: 'SPACE',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, (- 0.4)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -2.0 
+  });
+  
+  key_resp_22 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "next_part"
   next_partClock = new util.Clock();
@@ -5698,208 +5654,6 @@ function ins_square_endRoutineEnd(snapshot) {
 }
 
 
-var _key_resp_14_allKeys;
-var MW_questionsComponents;
-function MW_questionsRoutineBegin(snapshot) {
-  return async function () {
-    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
-    
-    //--- Prepare to start Routine 'MW_questions' ---
-    t = 0;
-    MW_questionsClock.reset(); // clock
-    frameN = -1;
-    continueRoutine = true; // until we're told otherwise
-    // update component parameters for each repeat
-    slider_1.reset()
-    slider_2.reset()
-    slider_3.reset()
-    key_resp_14.keys = undefined;
-    key_resp_14.rt = undefined;
-    _key_resp_14_allKeys = [];
-    // keep track of which components have finished
-    MW_questionsComponents = [];
-    MW_questionsComponents.push(text_13);
-    MW_questionsComponents.push(slider_1);
-    MW_questionsComponents.push(text_15);
-    MW_questionsComponents.push(slider_2);
-    MW_questionsComponents.push(text_16);
-    MW_questionsComponents.push(slider_3);
-    MW_questionsComponents.push(text_17);
-    MW_questionsComponents.push(key_resp_14);
-    
-    for (const thisComponent of MW_questionsComponents)
-      if ('status' in thisComponent)
-        thisComponent.status = PsychoJS.Status.NOT_STARTED;
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-function MW_questionsRoutineEachFrame() {
-  return async function () {
-    //--- Loop for each frame of Routine 'MW_questions' ---
-    // get current time
-    t = MW_questionsClock.getTime();
-    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
-    // update/draw components on each frame
-    
-    // *text_13* updates
-    if (t >= 0.0 && text_13.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      text_13.tStart = t;  // (not accounting for frame time here)
-      text_13.frameNStart = frameN;  // exact frame index
-      
-      text_13.setAutoDraw(true);
-    }
-
-    
-    // *slider_1* updates
-    if (t >= 0.0 && slider_1.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      slider_1.tStart = t;  // (not accounting for frame time here)
-      slider_1.frameNStart = frameN;  // exact frame index
-      
-      slider_1.setAutoDraw(true);
-    }
-
-    
-    // *text_15* updates
-    if (t >= 0.0 && text_15.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      text_15.tStart = t;  // (not accounting for frame time here)
-      text_15.frameNStart = frameN;  // exact frame index
-      
-      text_15.setAutoDraw(true);
-    }
-
-    
-    // *slider_2* updates
-    if (t >= 0.0 && slider_2.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      slider_2.tStart = t;  // (not accounting for frame time here)
-      slider_2.frameNStart = frameN;  // exact frame index
-      
-      slider_2.setAutoDraw(true);
-    }
-
-    
-    // *text_16* updates
-    if (t >= 0.0 && text_16.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      text_16.tStart = t;  // (not accounting for frame time here)
-      text_16.frameNStart = frameN;  // exact frame index
-      
-      text_16.setAutoDraw(true);
-    }
-
-    
-    // *slider_3* updates
-    if (t >= 0.0 && slider_3.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      slider_3.tStart = t;  // (not accounting for frame time here)
-      slider_3.frameNStart = frameN;  // exact frame index
-      
-      slider_3.setAutoDraw(true);
-    }
-
-    
-    // *text_17* updates
-    if ((slider_3.rating) && text_17.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      text_17.tStart = t;  // (not accounting for frame time here)
-      text_17.frameNStart = frameN;  // exact frame index
-      
-      text_17.setAutoDraw(true);
-    }
-
-    
-    // *key_resp_14* updates
-    if ((slider_3.rating) && key_resp_14.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      key_resp_14.tStart = t;  // (not accounting for frame time here)
-      key_resp_14.frameNStart = frameN;  // exact frame index
-      
-      // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { key_resp_14.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { key_resp_14.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { key_resp_14.clearEvents(); });
-    }
-
-    if (key_resp_14.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp_14.getKeys({keyList: ['space'], waitRelease: false});
-      _key_resp_14_allKeys = _key_resp_14_allKeys.concat(theseKeys);
-      if (_key_resp_14_allKeys.length > 0) {
-        key_resp_14.keys = _key_resp_14_allKeys[_key_resp_14_allKeys.length - 1].name;  // just the last key pressed
-        key_resp_14.rt = _key_resp_14_allKeys[_key_resp_14_allKeys.length - 1].rt;
-        // a response ends the routine
-        continueRoutine = false;
-      }
-    }
-    
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
-    // check if the Routine should terminate
-    if (!continueRoutine) {  // a component has requested a forced-end of Routine
-      return Scheduler.Event.NEXT;
-    }
-    
-    continueRoutine = false;  // reverts to True if at least one component still running
-    for (const thisComponent of MW_questionsComponents)
-      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
-        continueRoutine = true;
-        break;
-      }
-    
-    // refresh the screen if continuing
-    if (continueRoutine) {
-      return Scheduler.Event.FLIP_REPEAT;
-    } else {
-      return Scheduler.Event.NEXT;
-    }
-  };
-}
-
-
-function MW_questionsRoutineEnd(snapshot) {
-  return async function () {
-    //--- Ending Routine 'MW_questions' ---
-    for (const thisComponent of MW_questionsComponents) {
-      if (typeof thisComponent.setAutoDraw === 'function') {
-        thisComponent.setAutoDraw(false);
-      }
-    }
-    psychoJS.experiment.addData('slider_1.response', slider_1.getRating());
-    psychoJS.experiment.addData('slider_1.rt', slider_1.getRT());
-    psychoJS.experiment.addData('slider_2.response', slider_2.getRating());
-    psychoJS.experiment.addData('slider_2.rt', slider_2.getRT());
-    psychoJS.experiment.addData('slider_3.response', slider_3.getRating());
-    psychoJS.experiment.addData('slider_3.rt', slider_3.getRT());
-    // update the trial handler
-    if (currentLoop instanceof MultiStairHandler) {
-      currentLoop.addResponse(key_resp_14.corr, level);
-    }
-    psychoJS.experiment.addData('key_resp_14.keys', key_resp_14.keys);
-    if (typeof key_resp_14.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('key_resp_14.rt', key_resp_14.rt);
-        routineTimer.reset();
-        }
-    
-    key_resp_14.stop();
-    // the Routine "MW_questions" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset();
-    
-    // Routines running outside a loop should always advance the datafile row
-    if (currentLoop === psychoJS.experiment) {
-      psychoJS.experiment.nextEntry(snapshot);
-    }
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
 var _key_resp_20_allKeys;
 var MW_questions1Components;
 function MW_questions1RoutineBegin(snapshot) {
@@ -6193,6 +5947,158 @@ function MW_questions2RoutineEnd(snapshot) {
     
     key_resp_21.stop();
     // the Routine "MW_questions2" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    // Routines running outside a loop should always advance the datafile row
+    if (currentLoop === psychoJS.experiment) {
+      psychoJS.experiment.nextEntry(snapshot);
+    }
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+var _key_resp_22_allKeys;
+var MW_questions3Components;
+function MW_questions3RoutineBegin(snapshot) {
+  return async function () {
+    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
+    
+    //--- Prepare to start Routine 'MW_questions3' ---
+    t = 0;
+    MW_questions3Clock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    slider_8.reset()
+    key_resp_22.keys = undefined;
+    key_resp_22.rt = undefined;
+    _key_resp_22_allKeys = [];
+    // keep track of which components have finished
+    MW_questions3Components = [];
+    MW_questions3Components.push(text_30);
+    MW_questions3Components.push(slider_8);
+    MW_questions3Components.push(text_31);
+    MW_questions3Components.push(key_resp_22);
+    
+    for (const thisComponent of MW_questions3Components)
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function MW_questions3RoutineEachFrame() {
+  return async function () {
+    //--- Loop for each frame of Routine 'MW_questions3' ---
+    // get current time
+    t = MW_questions3Clock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *text_30* updates
+    if (t >= 0.0 && text_30.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_30.tStart = t;  // (not accounting for frame time here)
+      text_30.frameNStart = frameN;  // exact frame index
+      
+      text_30.setAutoDraw(true);
+    }
+
+    
+    // *slider_8* updates
+    if (t >= 0.0 && slider_8.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      slider_8.tStart = t;  // (not accounting for frame time here)
+      slider_8.frameNStart = frameN;  // exact frame index
+      
+      slider_8.setAutoDraw(true);
+    }
+
+    
+    // *text_31* updates
+    if ((slider_8.rating) && text_31.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_31.tStart = t;  // (not accounting for frame time here)
+      text_31.frameNStart = frameN;  // exact frame index
+      
+      text_31.setAutoDraw(true);
+    }
+
+    
+    // *key_resp_22* updates
+    if ((slider_8.rating) && key_resp_22.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      key_resp_22.tStart = t;  // (not accounting for frame time here)
+      key_resp_22.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { key_resp_22.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_22.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_22.clearEvents(); });
+    }
+
+    if (key_resp_22.status === PsychoJS.Status.STARTED) {
+      let theseKeys = key_resp_22.getKeys({keyList: ['space'], waitRelease: false});
+      _key_resp_22_allKeys = _key_resp_22_allKeys.concat(theseKeys);
+      if (_key_resp_22_allKeys.length > 0) {
+        key_resp_22.keys = _key_resp_22_allKeys[_key_resp_22_allKeys.length - 1].name;  // just the last key pressed
+        key_resp_22.rt = _key_resp_22_allKeys[_key_resp_22_allKeys.length - 1].rt;
+        // a response ends the routine
+        continueRoutine = false;
+      }
+    }
+    
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    for (const thisComponent of MW_questions3Components)
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+        break;
+      }
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function MW_questions3RoutineEnd(snapshot) {
+  return async function () {
+    //--- Ending Routine 'MW_questions3' ---
+    for (const thisComponent of MW_questions3Components) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    }
+    psychoJS.experiment.addData('slider_8.response', slider_8.getRating());
+    psychoJS.experiment.addData('slider_8.rt', slider_8.getRT());
+    // update the trial handler
+    if (currentLoop instanceof MultiStairHandler) {
+      currentLoop.addResponse(key_resp_22.corr, level);
+    }
+    psychoJS.experiment.addData('key_resp_22.keys', key_resp_22.keys);
+    if (typeof key_resp_22.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('key_resp_22.rt', key_resp_22.rt);
+        routineTimer.reset();
+        }
+    
+    key_resp_22.stop();
+    // the Routine "MW_questions3" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     // Routines running outside a loop should always advance the datafile row
@@ -9885,7 +9791,7 @@ function both_endRoutineEachFrame() {
 
     
     if (text_next_questions.status === PsychoJS.Status.STARTED){ // only update if being drawn
-      text_next_questions.setText('Kérünk, most újra válaszolj a három kérdésre a csúszkákra kattintva, azonban válaszaid csak a mostani feladatra vonakozzanak.\n\nSPACE/Katt\n', false);
+      text_next_questions.setText('Kérünk, most újra válaszolj a három kérdésre a skálákra/gombokra kattintva, azonban válaszaid csak a mostani feladatra vonakozzanak.\n\nSPACE/Katt\n', false);
     }
     
     // *key_resp_11* updates
