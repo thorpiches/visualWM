@@ -75,6 +75,9 @@ flowScheduler.add(MW_questionsRoutineEnd());
 flowScheduler.add(MW_questions1RoutineBegin());
 flowScheduler.add(MW_questions1RoutineEachFrame());
 flowScheduler.add(MW_questions1RoutineEnd());
+flowScheduler.add(MW_questions2RoutineBegin());
+flowScheduler.add(MW_questions2RoutineEachFrame());
+flowScheduler.add(MW_questions2RoutineEnd());
 flowScheduler.add(next_partRoutineBegin());
 flowScheduler.add(next_partRoutineEachFrame());
 flowScheduler.add(next_partRoutineEnd());
@@ -119,171 +122,171 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'resources/nsym45.JPG', 'path': 'resources/nsym45.JPG'},
-    {'name': 'resources/nsym80.JPG', 'path': 'resources/nsym80.JPG'},
-    {'name': 'resources/sym63.JPG', 'path': 'resources/sym63.JPG'},
-    {'name': 'resources/nsym72.JPG', 'path': 'resources/nsym72.JPG'},
-    {'name': 'resources/sym54.JPG', 'path': 'resources/sym54.JPG'},
-    {'name': 'resources/sym45.JPG', 'path': 'resources/sym45.JPG'},
-    {'name': 'resources/sym62.JPG', 'path': 'resources/sym62.JPG'},
-    {'name': 'resources/nsym33.JPG', 'path': 'resources/nsym33.JPG'},
-    {'name': 'resources/nsym13.JPG', 'path': 'resources/nsym13.JPG'},
-    {'name': 'resources/sym20.JPG', 'path': 'resources/sym20.JPG'},
-    {'name': 'resources/nsym17.JPG', 'path': 'resources/nsym17.JPG'},
-    {'name': 'resources/nsym5.JPG', 'path': 'resources/nsym5.JPG'},
-    {'name': 'resources/sym4.JPG', 'path': 'resources/sym4.JPG'},
-    {'name': 'resources/sym72.JPG', 'path': 'resources/sym72.JPG'},
-    {'name': 'resources/nsym44.JPG', 'path': 'resources/nsym44.JPG'},
-    {'name': 'resources/nsym38.JPG', 'path': 'resources/nsym38.JPG'},
-    {'name': 'resources/nsym52.JPG', 'path': 'resources/nsym52.JPG'},
-    {'name': 'resources/nsym27.JPG', 'path': 'resources/nsym27.JPG'},
-    {'name': 'resources/sym39.JPG', 'path': 'resources/sym39.JPG'},
-    {'name': 'resources/nsym43.JPG', 'path': 'resources/nsym43.JPG'},
-    {'name': 'resources/sym67.JPG', 'path': 'resources/sym67.JPG'},
-    {'name': 'resources/nsym53.JPG', 'path': 'resources/nsym53.JPG'},
-    {'name': 'resources/sym58.JPG', 'path': 'resources/sym58.JPG'},
-    {'name': 'resources/sym73.JPG', 'path': 'resources/sym73.JPG'},
-    {'name': 'resources/sym50.JPG', 'path': 'resources/sym50.JPG'},
-    {'name': 'resources/nsym60.JPG', 'path': 'resources/nsym60.JPG'},
-    {'name': 'resources/nsym3.JPG', 'path': 'resources/nsym3.JPG'},
-    {'name': 'resources/sym78.JPG', 'path': 'resources/sym78.JPG'},
-    {'name': 'resources/nsym57.JPG', 'path': 'resources/nsym57.JPG'},
-    {'name': 'resources/sym49.JPG', 'path': 'resources/sym49.JPG'},
-    {'name': 'resources/sym59.JPG', 'path': 'resources/sym59.JPG'},
-    {'name': 'resources/nsym50.JPG', 'path': 'resources/nsym50.JPG'},
-    {'name': 'resources/sym24.JPG', 'path': 'resources/sym24.JPG'},
-    {'name': 'resources/nsym40.JPG', 'path': 'resources/nsym40.JPG'},
-    {'name': 'resources/sym44.JPG', 'path': 'resources/sym44.JPG'},
-    {'name': 'resources/sym51.JPG', 'path': 'resources/sym51.JPG'},
-    {'name': 'resources/nsym18.JPG', 'path': 'resources/nsym18.JPG'},
-    {'name': 'resources/nsym35.JPG', 'path': 'resources/nsym35.JPG'},
-    {'name': 'resources/nsym59.JPG', 'path': 'resources/nsym59.JPG'},
-    {'name': 'resources/sym6.JPG', 'path': 'resources/sym6.JPG'},
-    {'name': 'resources/nsym61.JPG', 'path': 'resources/nsym61.JPG'},
-    {'name': 'resources/sym17.JPG', 'path': 'resources/sym17.JPG'},
-    {'name': 'resources/sym71.JPG', 'path': 'resources/sym71.JPG'},
-    {'name': 'resources/nsym30.JPG', 'path': 'resources/nsym30.JPG'},
-    {'name': 'resources/sym47.JPG', 'path': 'resources/sym47.JPG'},
-    {'name': 'resources/sym40.JPG', 'path': 'resources/sym40.JPG'},
     {'name': 'resources/sym56.JPG', 'path': 'resources/sym56.JPG'},
-    {'name': 'resources/nsym12.JPG', 'path': 'resources/nsym12.JPG'},
-    {'name': 'resources/nsym25.JPG', 'path': 'resources/nsym25.JPG'},
-    {'name': 'resources/nsym19.JPG', 'path': 'resources/nsym19.JPG'},
-    {'name': 'resources/nsym32.JPG', 'path': 'resources/nsym32.JPG'},
-    {'name': 'resources/sym68.JPG', 'path': 'resources/sym68.JPG'},
-    {'name': 'resources/sym1.JPG', 'path': 'resources/sym1.JPG'},
-    {'name': 'resources/nsym56.JPG', 'path': 'resources/nsym56.JPG'},
-    {'name': 'resources/nsym29.JPG', 'path': 'resources/nsym29.JPG'},
-    {'name': 'resources/1green.JPG', 'path': 'resources/1green.JPG'},
-    {'name': 'resources/nsym24.JPG', 'path': 'resources/nsym24.JPG'},
-    {'name': 'resources/sym12.JPG', 'path': 'resources/sym12.JPG'},
-    {'name': 'resources/nsym79.JPG', 'path': 'resources/nsym79.JPG'},
-    {'name': 'resources/example1.JPG', 'path': 'resources/example1.JPG'},
-    {'name': 'resources/nsym23.JPG', 'path': 'resources/nsym23.JPG'},
-    {'name': 'resources/nsym42.JPG', 'path': 'resources/nsym42.JPG'},
-    {'name': 'resources/example2.JPG', 'path': 'resources/example2.JPG'},
-    {'name': 'resources/sym35.JPG', 'path': 'resources/sym35.JPG'},
-    {'name': 'resources/sym3.JPG', 'path': 'resources/sym3.JPG'},
-    {'name': 'resources/nsym4.JPG', 'path': 'resources/nsym4.JPG'},
-    {'name': 'resources/nsym65.JPG', 'path': 'resources/nsym65.JPG'},
-    {'name': 'resources/sym42.JPG', 'path': 'resources/sym42.JPG'},
-    {'name': 'resources/nsym16.JPG', 'path': 'resources/nsym16.JPG'},
-    {'name': 'resources/sym80.JPG', 'path': 'resources/sym80.JPG'},
-    {'name': 'resources/nsym10.JPG', 'path': 'resources/nsym10.JPG'},
-    {'name': 'resources/grid.png', 'path': 'resources/grid.png'},
-    {'name': 'resources/nsym63.JPG', 'path': 'resources/nsym63.JPG'},
-    {'name': 'resources/sym61.JPG', 'path': 'resources/sym61.JPG'},
-    {'name': 'resources/sym69.JPG', 'path': 'resources/sym69.JPG'},
-    {'name': 'resources/sym7.JPG', 'path': 'resources/sym7.JPG'},
-    {'name': 'resources/nsym58.JPG', 'path': 'resources/nsym58.JPG'},
-    {'name': 'resources/sym13.JPG', 'path': 'resources/sym13.JPG'},
-    {'name': 'resources/sym31.JPG', 'path': 'resources/sym31.JPG'},
-    {'name': 'resources/nsym9.JPG', 'path': 'resources/nsym9.JPG'},
-    {'name': 'resources/sym43.JPG', 'path': 'resources/sym43.JPG'},
-    {'name': 'resources/sym23.JPG', 'path': 'resources/sym23.JPG'},
-    {'name': 'resources/nsym37.JPG', 'path': 'resources/nsym37.JPG'},
-    {'name': 'resources/sym48.JPG', 'path': 'resources/sym48.JPG'},
-    {'name': 'resources/nsym66.JPG', 'path': 'resources/nsym66.JPG'},
-    {'name': 'resources/sym53.JPG', 'path': 'resources/sym53.JPG'},
-    {'name': 'resources/sym76.JPG', 'path': 'resources/sym76.JPG'},
-    {'name': 'resources/sym33.JPG', 'path': 'resources/sym33.JPG'},
-    {'name': 'resources/sym10.JPG', 'path': 'resources/sym10.JPG'},
-    {'name': 'resources/nsym8.JPG', 'path': 'resources/nsym8.JPG'},
-    {'name': 'resources/sym46.JPG', 'path': 'resources/sym46.JPG'},
-    {'name': 'resources/sym2.JPG', 'path': 'resources/sym2.JPG'},
     {'name': 'resources/nsym76.JPG', 'path': 'resources/nsym76.JPG'},
-    {'name': 'resources/nsym77.JPG', 'path': 'resources/nsym77.JPG'},
-    {'name': 'resources/sym18.JPG', 'path': 'resources/sym18.JPG'},
-    {'name': 'resources/nsym2.JPG', 'path': 'resources/nsym2.JPG'},
-    {'name': 'resources/nsym64.JPG', 'path': 'resources/nsym64.JPG'},
-    {'name': 'resources/sym27.JPG', 'path': 'resources/sym27.JPG'},
-    {'name': 'resources/sym29.JPG', 'path': 'resources/sym29.JPG'},
-    {'name': 'resources/nsym49.JPG', 'path': 'resources/nsym49.JPG'},
-    {'name': 'resources/sym55.JPG', 'path': 'resources/sym55.JPG'},
-    {'name': 'resources/nsym73.JPG', 'path': 'resources/nsym73.JPG'},
-    {'name': 'resources/nsym48.JPG', 'path': 'resources/nsym48.JPG'},
-    {'name': 'resources/1red.JPG', 'path': 'resources/1red.JPG'},
     {'name': 'resources/sym19.JPG', 'path': 'resources/sym19.JPG'},
-    {'name': 'resources/nsym15.JPG', 'path': 'resources/nsym15.JPG'},
-    {'name': 'resources/sym36.JPG', 'path': 'resources/sym36.JPG'},
-    {'name': 'resources/sym75.JPG', 'path': 'resources/sym75.JPG'},
-    {'name': 'resources/nsym78.JPG', 'path': 'resources/nsym78.JPG'},
-    {'name': 'resources/sym25.JPG', 'path': 'resources/sym25.JPG'},
-    {'name': 'resources/sym37.JPG', 'path': 'resources/sym37.JPG'},
-    {'name': 'resources/sym34.JPG', 'path': 'resources/sym34.JPG'},
-    {'name': 'resources/sym16.JPG', 'path': 'resources/sym16.JPG'},
-    {'name': 'resources/nsym31.JPG', 'path': 'resources/nsym31.JPG'},
-    {'name': 'resources/nsym54.JPG', 'path': 'resources/nsym54.JPG'},
-    {'name': 'resources/sym26.JPG', 'path': 'resources/sym26.JPG'},
-    {'name': 'resources/sym8.JPG', 'path': 'resources/sym8.JPG'},
-    {'name': 'resources/nsym6.JPG', 'path': 'resources/nsym6.JPG'},
-    {'name': 'resources/nsym11.JPG', 'path': 'resources/nsym11.JPG'},
-    {'name': 'resources/nsym74.JPG', 'path': 'resources/nsym74.JPG'},
-    {'name': 'resources/sym28.JPG', 'path': 'resources/sym28.JPG'},
-    {'name': 'resources/nsym71.JPG', 'path': 'resources/nsym71.JPG'},
-    {'name': 'resources/sym41.JPG', 'path': 'resources/sym41.JPG'},
-    {'name': 'resources/nsym36.JPG', 'path': 'resources/nsym36.JPG'},
-    {'name': 'resources/nsym47.JPG', 'path': 'resources/nsym47.JPG'},
-    {'name': 'resources/nsym51.JPG', 'path': 'resources/nsym51.JPG'},
-    {'name': 'resources/sym74.JPG', 'path': 'resources/sym74.JPG'},
-    {'name': 'resources/nsym69.JPG', 'path': 'resources/nsym69.JPG'},
-    {'name': 'resources/sym32.JPG', 'path': 'resources/sym32.JPG'},
-    {'name': 'resources/nsym14.JPG', 'path': 'resources/nsym14.JPG'},
-    {'name': 'resources/sym52.JPG', 'path': 'resources/sym52.JPG'},
-    {'name': 'resources/sym14.JPG', 'path': 'resources/sym14.JPG'},
-    {'name': 'resources/sym21.JPG', 'path': 'resources/sym21.JPG'},
-    {'name': 'resources/sym77.JPG', 'path': 'resources/sym77.JPG'},
-    {'name': 'resources/sym9.JPG', 'path': 'resources/sym9.JPG'},
-    {'name': 'resources/sym60.JPG', 'path': 'resources/sym60.JPG'},
-    {'name': 'resources/nsym46.JPG', 'path': 'resources/nsym46.JPG'},
-    {'name': 'resources/nsym70.JPG', 'path': 'resources/nsym70.JPG'},
-    {'name': 'resources/nsym68.JPG', 'path': 'resources/nsym68.JPG'},
-    {'name': 'resources/sym22.JPG', 'path': 'resources/sym22.JPG'},
-    {'name': 'resources/sym65.JPG', 'path': 'resources/sym65.JPG'},
-    {'name': 'resources/sym11.JPG', 'path': 'resources/sym11.JPG'},
-    {'name': 'resources/nsym62.JPG', 'path': 'resources/nsym62.JPG'},
+    {'name': 'resources/nsym66.JPG', 'path': 'resources/nsym66.JPG'},
+    {'name': 'resources/sym67.JPG', 'path': 'resources/sym67.JPG'},
     {'name': 'resources/nsym21.JPG', 'path': 'resources/nsym21.JPG'},
-    {'name': 'resources/sym5.JPG', 'path': 'resources/sym5.JPG'},
-    {'name': 'resources/nsym26.JPG', 'path': 'resources/nsym26.JPG'},
-    {'name': 'resources/nsym22.JPG', 'path': 'resources/nsym22.JPG'},
-    {'name': 'resources/nsym39.JPG', 'path': 'resources/nsym39.JPG'},
+    {'name': 'resources/sym34.JPG', 'path': 'resources/sym34.JPG'},
+    {'name': 'resources/sym80.JPG', 'path': 'resources/sym80.JPG'},
     {'name': 'resources/nsym20.JPG', 'path': 'resources/nsym20.JPG'},
-    {'name': 'resources/sym30.JPG', 'path': 'resources/sym30.JPG'},
-    {'name': 'resources/sym66.JPG', 'path': 'resources/sym66.JPG'},
-    {'name': 'resources/nsym75.JPG', 'path': 'resources/nsym75.JPG'},
-    {'name': 'resources/sym70.JPG', 'path': 'resources/sym70.JPG'},
-    {'name': 'resources/sym79.JPG', 'path': 'resources/sym79.JPG'},
-    {'name': 'resources/nsym55.JPG', 'path': 'resources/nsym55.JPG'},
-    {'name': 'resources/nsym41.JPG', 'path': 'resources/nsym41.JPG'},
-    {'name': 'resources/nsym34.JPG', 'path': 'resources/nsym34.JPG'},
-    {'name': 'resources/nsym67.JPG', 'path': 'resources/nsym67.JPG'},
-    {'name': 'resources/nsym7.JPG', 'path': 'resources/nsym7.JPG'},
+    {'name': 'resources/sym59.JPG', 'path': 'resources/sym59.JPG'},
+    {'name': 'resources/nsym49.JPG', 'path': 'resources/nsym49.JPG'},
+    {'name': 'resources/sym76.JPG', 'path': 'resources/sym76.JPG'},
+    {'name': 'resources/nsym11.JPG', 'path': 'resources/nsym11.JPG'},
+    {'name': 'resources/nsym15.JPG', 'path': 'resources/nsym15.JPG'},
+    {'name': 'resources/nsym56.JPG', 'path': 'resources/nsym56.JPG'},
+    {'name': 'resources/sym48.JPG', 'path': 'resources/sym48.JPG'},
+    {'name': 'resources/nsym47.JPG', 'path': 'resources/nsym47.JPG'},
+    {'name': 'resources/nsym79.JPG', 'path': 'resources/nsym79.JPG'},
+    {'name': 'resources/nsym8.JPG', 'path': 'resources/nsym8.JPG'},
+    {'name': 'resources/example1.JPG', 'path': 'resources/example1.JPG'},
+    {'name': 'resources/nsym69.JPG', 'path': 'resources/nsym69.JPG'},
+    {'name': 'resources/sym61.JPG', 'path': 'resources/sym61.JPG'},
+    {'name': 'resources/nsym32.JPG', 'path': 'resources/nsym32.JPG'},
+    {'name': 'resources/sym23.JPG', 'path': 'resources/sym23.JPG'},
+    {'name': 'resources/nsym24.JPG', 'path': 'resources/nsym24.JPG'},
+    {'name': 'resources/sym3.JPG', 'path': 'resources/sym3.JPG'},
+    {'name': 'resources/sym73.JPG', 'path': 'resources/sym73.JPG'},
     {'name': 'resources/sym38.JPG', 'path': 'resources/sym38.JPG'},
-    {'name': 'resources/sym64.JPG', 'path': 'resources/sym64.JPG'},
-    {'name': 'resources/nsym1.JPG', 'path': 'resources/nsym1.JPG'},
-    {'name': 'resources/nsym28.JPG', 'path': 'resources/nsym28.JPG'},
+    {'name': 'resources/sym72.JPG', 'path': 'resources/sym72.JPG'},
+    {'name': 'resources/sym6.JPG', 'path': 'resources/sym6.JPG'},
+    {'name': 'resources/nsym30.JPG', 'path': 'resources/nsym30.JPG'},
+    {'name': 'resources/nsym43.JPG', 'path': 'resources/nsym43.JPG'},
+    {'name': 'resources/nsym19.JPG', 'path': 'resources/nsym19.JPG'},
     {'name': 'resources/sym57.JPG', 'path': 'resources/sym57.JPG'},
-    {'name': 'resources/sym15.JPG', 'path': 'resources/sym15.JPG'}
+    {'name': 'resources/sym18.JPG', 'path': 'resources/sym18.JPG'},
+    {'name': 'resources/sym45.JPG', 'path': 'resources/sym45.JPG'},
+    {'name': 'resources/sym28.JPG', 'path': 'resources/sym28.JPG'},
+    {'name': 'resources/sym74.JPG', 'path': 'resources/sym74.JPG'},
+    {'name': 'resources/nsym25.JPG', 'path': 'resources/nsym25.JPG'},
+    {'name': 'resources/sym21.JPG', 'path': 'resources/sym21.JPG'},
+    {'name': 'resources/sym31.JPG', 'path': 'resources/sym31.JPG'},
+    {'name': 'resources/nsym52.JPG', 'path': 'resources/nsym52.JPG'},
+    {'name': 'resources/nsym17.JPG', 'path': 'resources/nsym17.JPG'},
+    {'name': 'resources/nsym39.JPG', 'path': 'resources/nsym39.JPG'},
+    {'name': 'resources/nsym1.JPG', 'path': 'resources/nsym1.JPG'},
+    {'name': 'resources/nsym37.JPG', 'path': 'resources/nsym37.JPG'},
+    {'name': 'resources/nsym28.JPG', 'path': 'resources/nsym28.JPG'},
+    {'name': 'resources/sym75.JPG', 'path': 'resources/sym75.JPG'},
+    {'name': 'resources/sym4.JPG', 'path': 'resources/sym4.JPG'},
+    {'name': 'resources/nsym60.JPG', 'path': 'resources/nsym60.JPG'},
+    {'name': 'resources/sym36.JPG', 'path': 'resources/sym36.JPG'},
+    {'name': 'resources/nsym26.JPG', 'path': 'resources/nsym26.JPG'},
+    {'name': 'resources/nsym62.JPG', 'path': 'resources/nsym62.JPG'},
+    {'name': 'resources/nsym3.JPG', 'path': 'resources/nsym3.JPG'},
+    {'name': 'resources/sym2.JPG', 'path': 'resources/sym2.JPG'},
+    {'name': 'resources/nsym75.JPG', 'path': 'resources/nsym75.JPG'},
+    {'name': 'resources/sym58.JPG', 'path': 'resources/sym58.JPG'},
+    {'name': 'resources/sym49.JPG', 'path': 'resources/sym49.JPG'},
+    {'name': 'resources/nsym64.JPG', 'path': 'resources/nsym64.JPG'},
+    {'name': 'resources/nsym72.JPG', 'path': 'resources/nsym72.JPG'},
+    {'name': 'resources/nsym67.JPG', 'path': 'resources/nsym67.JPG'},
+    {'name': 'resources/nsym58.JPG', 'path': 'resources/nsym58.JPG'},
+    {'name': 'resources/sym10.JPG', 'path': 'resources/sym10.JPG'},
+    {'name': 'resources/sym20.JPG', 'path': 'resources/sym20.JPG'},
+    {'name': 'resources/sym35.JPG', 'path': 'resources/sym35.JPG'},
+    {'name': 'resources/nsym54.JPG', 'path': 'resources/nsym54.JPG'},
+    {'name': 'resources/sym12.JPG', 'path': 'resources/sym12.JPG'},
+    {'name': 'resources/nsym6.JPG', 'path': 'resources/nsym6.JPG'},
+    {'name': 'resources/sym25.JPG', 'path': 'resources/sym25.JPG'},
+    {'name': 'resources/nsym42.JPG', 'path': 'resources/nsym42.JPG'},
+    {'name': 'resources/sym53.JPG', 'path': 'resources/sym53.JPG'},
+    {'name': 'resources/sym16.JPG', 'path': 'resources/sym16.JPG'},
+    {'name': 'resources/sym70.JPG', 'path': 'resources/sym70.JPG'},
+    {'name': 'resources/nsym61.JPG', 'path': 'resources/nsym61.JPG'},
+    {'name': 'resources/sym9.JPG', 'path': 'resources/sym9.JPG'},
+    {'name': 'resources/sym68.JPG', 'path': 'resources/sym68.JPG'},
+    {'name': 'resources/nsym10.JPG', 'path': 'resources/nsym10.JPG'},
+    {'name': 'resources/sym41.JPG', 'path': 'resources/sym41.JPG'},
+    {'name': 'resources/nsym13.JPG', 'path': 'resources/nsym13.JPG'},
+    {'name': 'resources/nsym77.JPG', 'path': 'resources/nsym77.JPG'},
+    {'name': 'resources/nsym65.JPG', 'path': 'resources/nsym65.JPG'},
+    {'name': 'resources/sym69.JPG', 'path': 'resources/sym69.JPG'},
+    {'name': 'resources/sym60.JPG', 'path': 'resources/sym60.JPG'},
+    {'name': 'resources/grid.png', 'path': 'resources/grid.png'},
+    {'name': 'resources/nsym29.JPG', 'path': 'resources/nsym29.JPG'},
+    {'name': 'resources/nsym55.JPG', 'path': 'resources/nsym55.JPG'},
+    {'name': 'resources/sym32.JPG', 'path': 'resources/sym32.JPG'},
+    {'name': 'resources/sym1.JPG', 'path': 'resources/sym1.JPG'},
+    {'name': 'resources/sym22.JPG', 'path': 'resources/sym22.JPG'},
+    {'name': 'resources/sym50.JPG', 'path': 'resources/sym50.JPG'},
+    {'name': 'resources/sym78.JPG', 'path': 'resources/sym78.JPG'},
+    {'name': 'resources/nsym40.JPG', 'path': 'resources/nsym40.JPG'},
+    {'name': 'resources/nsym59.JPG', 'path': 'resources/nsym59.JPG'},
+    {'name': 'resources/sym52.JPG', 'path': 'resources/sym52.JPG'},
+    {'name': 'resources/sym17.JPG', 'path': 'resources/sym17.JPG'},
+    {'name': 'resources/nsym45.JPG', 'path': 'resources/nsym45.JPG'},
+    {'name': 'resources/nsym31.JPG', 'path': 'resources/nsym31.JPG'},
+    {'name': 'resources/nsym22.JPG', 'path': 'resources/nsym22.JPG'},
+    {'name': 'resources/sym63.JPG', 'path': 'resources/sym63.JPG'},
+    {'name': 'resources/nsym63.JPG', 'path': 'resources/nsym63.JPG'},
+    {'name': 'resources/nsym9.JPG', 'path': 'resources/nsym9.JPG'},
+    {'name': 'resources/nsym41.JPG', 'path': 'resources/nsym41.JPG'},
+    {'name': 'resources/sym14.JPG', 'path': 'resources/sym14.JPG'},
+    {'name': 'resources/sym46.JPG', 'path': 'resources/sym46.JPG'},
+    {'name': 'resources/nsym7.JPG', 'path': 'resources/nsym7.JPG'},
+    {'name': 'resources/nsym38.JPG', 'path': 'resources/nsym38.JPG'},
+    {'name': 'resources/nsym73.JPG', 'path': 'resources/nsym73.JPG'},
+    {'name': 'resources/sym5.JPG', 'path': 'resources/sym5.JPG'},
+    {'name': 'resources/sym77.JPG', 'path': 'resources/sym77.JPG'},
+    {'name': 'resources/nsym80.JPG', 'path': 'resources/nsym80.JPG'},
+    {'name': 'resources/sym8.JPG', 'path': 'resources/sym8.JPG'},
+    {'name': 'resources/nsym68.JPG', 'path': 'resources/nsym68.JPG'},
+    {'name': 'resources/nsym18.JPG', 'path': 'resources/nsym18.JPG'},
+    {'name': 'resources/sym44.JPG', 'path': 'resources/sym44.JPG'},
+    {'name': 'resources/nsym5.JPG', 'path': 'resources/nsym5.JPG'},
+    {'name': 'resources/nsym74.JPG', 'path': 'resources/nsym74.JPG'},
+    {'name': 'resources/sym55.JPG', 'path': 'resources/sym55.JPG'},
+    {'name': 'resources/nsym34.JPG', 'path': 'resources/nsym34.JPG'},
+    {'name': 'resources/nsym46.JPG', 'path': 'resources/nsym46.JPG'},
+    {'name': 'resources/nsym48.JPG', 'path': 'resources/nsym48.JPG'},
+    {'name': 'resources/nsym70.JPG', 'path': 'resources/nsym70.JPG'},
+    {'name': 'resources/sym64.JPG', 'path': 'resources/sym64.JPG'},
+    {'name': 'resources/sym33.JPG', 'path': 'resources/sym33.JPG'},
+    {'name': 'resources/sym37.JPG', 'path': 'resources/sym37.JPG'},
+    {'name': 'resources/1green.JPG', 'path': 'resources/1green.JPG'},
+    {'name': 'resources/nsym2.JPG', 'path': 'resources/nsym2.JPG'},
+    {'name': 'resources/nsym12.JPG', 'path': 'resources/nsym12.JPG'},
+    {'name': 'resources/sym65.JPG', 'path': 'resources/sym65.JPG'},
+    {'name': 'resources/sym79.JPG', 'path': 'resources/sym79.JPG'},
+    {'name': 'resources/1red.JPG', 'path': 'resources/1red.JPG'},
+    {'name': 'resources/nsym53.JPG', 'path': 'resources/nsym53.JPG'},
+    {'name': 'resources/sym39.JPG', 'path': 'resources/sym39.JPG'},
+    {'name': 'resources/sym62.JPG', 'path': 'resources/sym62.JPG'},
+    {'name': 'resources/nsym71.JPG', 'path': 'resources/nsym71.JPG'},
+    {'name': 'resources/nsym23.JPG', 'path': 'resources/nsym23.JPG'},
+    {'name': 'resources/sym51.JPG', 'path': 'resources/sym51.JPG'},
+    {'name': 'resources/nsym14.JPG', 'path': 'resources/nsym14.JPG'},
+    {'name': 'resources/nsym50.JPG', 'path': 'resources/nsym50.JPG'},
+    {'name': 'resources/nsym57.JPG', 'path': 'resources/nsym57.JPG'},
+    {'name': 'resources/sym24.JPG', 'path': 'resources/sym24.JPG'},
+    {'name': 'resources/nsym16.JPG', 'path': 'resources/nsym16.JPG'},
+    {'name': 'resources/sym15.JPG', 'path': 'resources/sym15.JPG'},
+    {'name': 'resources/sym42.JPG', 'path': 'resources/sym42.JPG'},
+    {'name': 'resources/sym29.JPG', 'path': 'resources/sym29.JPG'},
+    {'name': 'resources/sym47.JPG', 'path': 'resources/sym47.JPG'},
+    {'name': 'resources/sym26.JPG', 'path': 'resources/sym26.JPG'},
+    {'name': 'resources/nsym35.JPG', 'path': 'resources/nsym35.JPG'},
+    {'name': 'resources/nsym44.JPG', 'path': 'resources/nsym44.JPG'},
+    {'name': 'resources/nsym33.JPG', 'path': 'resources/nsym33.JPG'},
+    {'name': 'resources/nsym27.JPG', 'path': 'resources/nsym27.JPG'},
+    {'name': 'resources/sym40.JPG', 'path': 'resources/sym40.JPG'},
+    {'name': 'resources/sym11.JPG', 'path': 'resources/sym11.JPG'},
+    {'name': 'resources/nsym78.JPG', 'path': 'resources/nsym78.JPG'},
+    {'name': 'resources/sym7.JPG', 'path': 'resources/sym7.JPG'},
+    {'name': 'resources/sym13.JPG', 'path': 'resources/sym13.JPG'},
+    {'name': 'resources/example2.JPG', 'path': 'resources/example2.JPG'},
+    {'name': 'resources/sym71.JPG', 'path': 'resources/sym71.JPG'},
+    {'name': 'resources/sym54.JPG', 'path': 'resources/sym54.JPG'},
+    {'name': 'resources/sym66.JPG', 'path': 'resources/sym66.JPG'},
+    {'name': 'resources/sym43.JPG', 'path': 'resources/sym43.JPG'},
+    {'name': 'resources/nsym4.JPG', 'path': 'resources/nsym4.JPG'},
+    {'name': 'resources/nsym51.JPG', 'path': 'resources/nsym51.JPG'},
+    {'name': 'resources/nsym36.JPG', 'path': 'resources/nsym36.JPG'},
+    {'name': 'resources/sym27.JPG', 'path': 'resources/sym27.JPG'},
+    {'name': 'resources/sym30.JPG', 'path': 'resources/sym30.JPG'}
   ]
 });
 
@@ -429,6 +432,11 @@ var text_27;
 var slider_6;
 var text_28;
 var key_resp_20;
+var MW_questions2Clock;
+var text_20;
+var slider_7;
+var text_29;
+var key_resp_21;
 var next_partClock;
 var text_19;
 var mouse_11;
@@ -1438,6 +1446,45 @@ async function experimentInit() {
   });
   
   key_resp_20 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  
+  // Initialize components for Routine "MW_questions2"
+  MW_questions2Clock = new util.Clock();
+  text_20 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_20',
+    text: '2. Kérjük értékelje a feladat elvégzése során megjelenő gondolatainak hangulatát. \nA feladat végrehajtása során gondolataim:',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0.1], height: 0.04,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -2.0 
+  });
+  
+  slider_7 = new visual.Slider({
+    win: psychoJS.window, name: 'slider_7',
+    startValue: undefined,
+    size: [0.02, 0.7], pos: [0, 0], ori: 0.0, units: 'height',
+    labels: ["1: Teljes m\u00e9rt\u00e9kben pozit\u00edvak voltak", "2: Ink\u00e1bb pozit\u00edvak voltak, mint negat\u00edvak", "3: Legink\u00e1bb semlegesek voltak", "4: Ink\u00e1bb negat\u00edvak voltak, mint pozit\u00edvak", "5: Teljes m\u00e9rt\u00e9kben negat\u00edvak voltak"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5],
+    granularity: 1.0, style: ["RADIO"],
+    color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
+    opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -3, 
+    flip: false,
+  });
+  
+  text_29 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_29',
+    text: 'SPACE',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, (- 0.4)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -2.0 
+  });
+  
+  key_resp_21 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "next_part"
   next_partClock = new util.Clock();
@@ -5994,6 +6041,158 @@ function MW_questions1RoutineEnd(snapshot) {
     
     key_resp_20.stop();
     // the Routine "MW_questions1" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    // Routines running outside a loop should always advance the datafile row
+    if (currentLoop === psychoJS.experiment) {
+      psychoJS.experiment.nextEntry(snapshot);
+    }
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+var _key_resp_21_allKeys;
+var MW_questions2Components;
+function MW_questions2RoutineBegin(snapshot) {
+  return async function () {
+    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
+    
+    //--- Prepare to start Routine 'MW_questions2' ---
+    t = 0;
+    MW_questions2Clock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    slider_7.reset()
+    key_resp_21.keys = undefined;
+    key_resp_21.rt = undefined;
+    _key_resp_21_allKeys = [];
+    // keep track of which components have finished
+    MW_questions2Components = [];
+    MW_questions2Components.push(text_20);
+    MW_questions2Components.push(slider_7);
+    MW_questions2Components.push(text_29);
+    MW_questions2Components.push(key_resp_21);
+    
+    for (const thisComponent of MW_questions2Components)
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function MW_questions2RoutineEachFrame() {
+  return async function () {
+    //--- Loop for each frame of Routine 'MW_questions2' ---
+    // get current time
+    t = MW_questions2Clock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *text_20* updates
+    if (t >= 0.0 && text_20.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_20.tStart = t;  // (not accounting for frame time here)
+      text_20.frameNStart = frameN;  // exact frame index
+      
+      text_20.setAutoDraw(true);
+    }
+
+    
+    // *slider_7* updates
+    if (t >= 0.0 && slider_7.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      slider_7.tStart = t;  // (not accounting for frame time here)
+      slider_7.frameNStart = frameN;  // exact frame index
+      
+      slider_7.setAutoDraw(true);
+    }
+
+    
+    // *text_29* updates
+    if ((slider_7.rating) && text_29.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_29.tStart = t;  // (not accounting for frame time here)
+      text_29.frameNStart = frameN;  // exact frame index
+      
+      text_29.setAutoDraw(true);
+    }
+
+    
+    // *key_resp_21* updates
+    if ((slider_7.rating) && key_resp_21.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      key_resp_21.tStart = t;  // (not accounting for frame time here)
+      key_resp_21.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { key_resp_21.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_21.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_21.clearEvents(); });
+    }
+
+    if (key_resp_21.status === PsychoJS.Status.STARTED) {
+      let theseKeys = key_resp_21.getKeys({keyList: ['space'], waitRelease: false});
+      _key_resp_21_allKeys = _key_resp_21_allKeys.concat(theseKeys);
+      if (_key_resp_21_allKeys.length > 0) {
+        key_resp_21.keys = _key_resp_21_allKeys[_key_resp_21_allKeys.length - 1].name;  // just the last key pressed
+        key_resp_21.rt = _key_resp_21_allKeys[_key_resp_21_allKeys.length - 1].rt;
+        // a response ends the routine
+        continueRoutine = false;
+      }
+    }
+    
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    for (const thisComponent of MW_questions2Components)
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+        break;
+      }
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function MW_questions2RoutineEnd(snapshot) {
+  return async function () {
+    //--- Ending Routine 'MW_questions2' ---
+    for (const thisComponent of MW_questions2Components) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    }
+    psychoJS.experiment.addData('slider_7.response', slider_7.getRating());
+    psychoJS.experiment.addData('slider_7.rt', slider_7.getRT());
+    // update the trial handler
+    if (currentLoop instanceof MultiStairHandler) {
+      currentLoop.addResponse(key_resp_21.corr, level);
+    }
+    psychoJS.experiment.addData('key_resp_21.keys', key_resp_21.keys);
+    if (typeof key_resp_21.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('key_resp_21.rt', key_resp_21.rt);
+        routineTimer.reset();
+        }
+    
+    key_resp_21.stop();
+    // the Routine "MW_questions2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     // Routines running outside a loop should always advance the datafile row
