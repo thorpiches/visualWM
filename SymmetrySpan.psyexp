@@ -85,7 +85,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Most egy emlékezeti feladat fog következni. Piros négyzetek fognak egy négyzetrácsban egymás után megjelenni. Igyekezz a helyes sorrendet megjegyezni!&amp;#10;&amp;#10;&amp;#10;Először lesz egy kis gyakorlás, hogy megismerkedj a feladattal.&amp;#10;&amp;#10;Ha készen állsz, nyomd meg a SPACE billentyűt vagy kattints." valType="str" updates="constant" name="text"/>
+        <Param val="Most egy emlékezeti feladat következik.&amp;#10;&amp;#10;A feladat során egy piros négyzet jelenik majd meg viszonylag rövid időre egy négyzetrács véletlenszerű mezőjében, majd ez néhányszor megismétlődik.&amp;#10;Kérlek, jegyezd meg a megjelenő piros négyzetek pontos helyét a megfelelő sorrendben.&amp;#10;&amp;#10;Space/Kattintás" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -148,7 +148,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Most ebből egy pár gyakorlókör fog következni.&amp;#10;&amp;#10;Minél gyorsabban és pontosabban igyekezz válaszolni.&amp;#10;Összesen két másodperced van, utána a rendszer automatikusan rossz választ rögzít!&amp;#10;&amp;#10;Készítsd az ujjaidat a megfelelő gombokra&amp;#10;Nem Szimmetrikus: BAL gomb&amp;#10;Szimmetrikus: JOBB gomb&amp;#10;&amp;#10;SPACE/Katt" valType="str" updates="constant" name="text"/>
+        <Param val="Most ebből egy pár gyakorlókör fog következni.&amp;#10;&amp;#10;Minél gyorsabban és pontosabban igyekezz válaszolni.&amp;#10;Összesen két másodperced van válaszolni, utána már nem rögzíti válaszodat a rendszer!&amp;#10;&amp;#10;Készítsd az ujjaidat a megfelelő gombokra&amp;#10;Szimmetrikus: JOBB gomb&amp;#10;Nem szimmetrikus: BAL gomb&amp;#10;&amp;#10;SPACE/Katt" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -432,7 +432,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="accuracyPercent = 0&amp;#10;prac_sym_loop_nr = 0&amp;#10;prac_fb = &quot;&quot;&amp;#10;accuracyText = &quot;&quot;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="accuracyPercent = 0;&amp;#10;prac_sym_loop_nr = 0;&amp;#10;prac_fb = &quot;&quot;;&amp;#10;accuracyText = &quot;&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((total_trials === 0)) {&amp;#10;    accuracyPercent = 0;&amp;#10;} else {&amp;#10;    accuracyPercent = ((correct_answers / total_trials) * 100);&amp;#10;}&amp;#10;if ((accuracyPercent &gt;= 85)) {&amp;#10;    text_score.color = &quot;#006400&quot;;&amp;#10;} else {&amp;#10;    text_score.color = &quot;#800000&quot;;&amp;#10;}&amp;#10;accuracyText = (`${accuracyPercent}` + &quot;%&quot;);&amp;#10;if ((prac_sym_loop_nr &lt;= 1)) {&amp;#10;    prac_fb = &quot;A k\u00eds\u00e9rlet sikeres teljes\u00edt\u00e9s\u00e9hez majd legal\u00e1bb 85%-ot kell el\u00e9rned!\n\nHa \u00fajra k\u00edv\u00e1nsz gyakorolni, nyomd meg a BAL vagy a JOBB gombot. \u00d6sszesen háromszor gyakorolhatod ezt a feladatr\u00e9szt.\n\nHA a k\u00f6vetkez\u0151 r\u00e9szre ugran\u00e1l, nyomd meg a SPACE gombot&quot;;&amp;#10;} else {&amp;#10;    prac_fb = &quot;A k\u00eds\u00e9rlet sikeres teljes\u00edt\u00e9s\u00e9hez majd legal\u00e1bb 85%-ot kell el\u00e9rned!\n\n Elfogytak a gyakorl\u00e1si lehet\u0151s\u00e9geid\nTov\u00e1bb: SPACE&quot;;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if ((total_trials === 0)) {&amp;#10;    accuracyPercent = 0;&amp;#10;} else {&amp;#10;    accuracyPercent = ((correct_answers / total_trials) * 100);&amp;#10;}&amp;#10;if ((accuracyPercent &gt;= 85)) {&amp;#10;    text_score.color = &quot;#006400&quot;;&amp;#10;} else {&amp;#10;    text_score.color = &quot;#800000&quot;;&amp;#10;}&amp;#10;accuracyText = (`${accuracyPercent}` + &quot;%&quot;);&amp;#10;if ((prac_sym_loop_nr &lt;= 1)) {&amp;#10;    prac_fb = &quot;A k\u00eds\u00e9rlet sikeres teljes\u00edt\u00e9s\u00e9hez majd legal\u00e1bb 85%-ot kell el\u00e9rned!\n\nHa \u00fajra k\u00edv\u00e1nsz gyakorolni, nyomd meg a BAL vagy a JOBB gombot. \u00d6sszesen háromszor gyakorolhatod ezt a feladatr\u00e9szt.\n\nHa nincs szükséged további a gyakorlásra és a következő részre ugranál, nyomd meg a SPACE billentyűt&quot;;&amp;#10;} else {&amp;#10;    prac_fb = &quot;A k\u00eds\u00e9rlet sikeres teljes\u00edt\u00e9s\u00e9hez majd legal\u00e1bb 85%-ot kell el\u00e9rned!\n\n Elfogytak a gyakorl\u00e1si lehet\u0151s\u00e9geid\nTov\u00e1bb: SPACE&quot;;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="if total_trials == 0:&amp;#10;    accuracyPercent = 0&amp;#10;else:&amp;#10;    accuracyPercent = (correct_answers/ total_trials) * 100&amp;#10;&amp;#10;if accuracyPercent &gt;= 85:&amp;#10;    text_score.color = &quot;#006400&quot;&amp;#10;    &amp;#10;else:&amp;#10;    text_score.color = &quot;#800000&quot;&amp;#10;&amp;#10;accuracyText = &quot;%.1f&quot; %(accuracyPercent) + &quot;%&quot;&amp;#10;&amp;#10;if prac_sym_loop_nr &lt;= 1:&amp;#10;    prac_fb = 'A kísérlet sikeres teljesítéséhez majd legalább 85%-ot kell elérned!\n\nHa újra kívánsz gyakorolni, nyomd meg a BAL vagy a JOBB gombot. Összesen kétszer gyakorolhatod ezt a feladatrészt.\n\nHA a következő részre ugranál, nyomd meg a SPACE gombot'&amp;#10;else:&amp;#10;    prac_fb = 'A kísérlet sikeres teljesítéséhez majd legalább 85%-ot kell elérned!\n\n Elfogytak a gyakorlási lehetőségeid\nTovább: SPACE'&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Both" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
@@ -560,7 +560,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Köszi, hogy részt vettél a kísérletben!&amp;#10;&amp;#10;Amennyiben bármilyen kérdésed, észrevételed van, kérlek jelezd a tájékoztató dokumentumban megosztott elérhetőségek egyikén!&amp;#10;&amp;#10;A befejezéshez nyomd meg a SPACE-t" valType="str" updates="constant" name="text"/>
+        <Param val="Köszi, hogy részt vettél a kísérletben!&amp;#10;&amp;#10;Amennyiben bármilyen kérdésed, észrevételed van, kérlek jelezd a tájékoztató dokumentumban megosztott elérhetőségek egyikén!&amp;#10;&amp;#10;A kutatás utolsó feladata egy zárókérdőív kitöltése, amely maximum 2 percet vesz igénybe.&amp;#10;&amp;#10;A befejezéshez nyomd meg a SPACE-t" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -862,7 +862,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="A piros négyzetek egy 4x4-es négyzetrácsban fognak egymás után megjelenni. Igyekezz megjegyezni a bemutatott négyzetek helyes sorrendjét!&amp;#10;&amp;#10;Ha be lett mutatva az összes négyzet, megjelenik egy üres négyzetrács. &amp;#10;Abban a sorrendben kell kattintanod a négyzetekre, ahogyan szerinted megjelentek. Erre bármennyi időd lesz.&amp;#10;&amp;#10;Ahányas szinten vagy, annyi négyzet fog megjelenni egymás után. Először alacsony szinten fogsz kezdeni, ám ha többször is sikerül adott szinten a helyes sorrendet megadnod, egy idő után szintet lépsz. Próbálj meg minél magasabb szintet elérni!&amp;#10;&amp;#10;Most egy pár gyakorlókör fog következni. &amp;#10;SPACE/Kattintás&amp;#10;" valType="str" updates="constant" name="text"/>
+        <Param val="A piros négyzetek egy 4x4-es négyzetrácsban jelennek majd meg, egymás után. Igyekezz megjegyezni a bemutatott négyzetek helyes sorrendjét!&amp;#10;&amp;#10;Ezután egy üres négyzetrácsban neked meg kell majd jelölnöd a bemutatott négyzetek pontos helyét a megfelelő sorrendben. Ezért kérlek, abban a sorrendben kattints a négyzetrács mezőire, ahogyan szerinted a piros négyzetek megjelentek. Erre bármennyi időd lesz.&amp;#10;&amp;#10;Először alacsony szinten indul a feladat, ám ha többször is sikerül az adott szinten a helyes sorrendet megadnod, egy idő után szintet lépsz. Ilyenkor eggyel több négyzet helyét kell majd megjegyezned! Próbálj meg minél magasabb szintet elérni!&amp;#10;&amp;#10;Most egy pár gyakorlókör fog következni. &amp;#10;SPACE/Kattintás&amp;#10;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -4098,7 +4098,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="1. MW kérdés" valType="str" updates="constant" name="text"/>
+        <Param val="1. A feladat során a figyelmemre leginkább jellemző volt, hogy:" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -4115,7 +4115,7 @@
         <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="1" valType="num" updates="constant" name="granularity"/>
         <Param val="" valType="code" updates="None" name="initVal"/>
-        <Param val="&quot;Egyáltalán nem&quot;, &quot;Teljes mértékben&quot;" valType="list" updates="constant" name="labels"/>
+        <Param val="&quot;1: Gondolataim teljesen elkalandoztak, képtelen voltam a feladatra koncentrálni&quot;, &quot;Végig nagyon fókuszált voltam, csak a feladatra koncentráltam&quot;" valType="list" updates="constant" name="labels"/>
         <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
         <Param val="slider_1" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
@@ -4159,7 +4159,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="2. MW kérdés" valType="str" updates="constant" name="text"/>
+        <Param val="2. A feladat végrehajtása során gondolataim hangulatára ez volt a leginkább jellemző:" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -4176,8 +4176,8 @@
         <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="1" valType="num" updates="constant" name="granularity"/>
         <Param val="" valType="code" updates="None" name="initVal"/>
-        <Param val="&quot;Egyáltalán nem&quot;, &quot;Teljes mértékben&quot;" valType="list" updates="constant" name="labels"/>
-        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="&quot;1: Teljes mértékben pozitív&quot;, &quot;2: Inkább pozitív, mint negatív&quot;, &quot;3: Leginkább semleges&quot;, &quot;4: Inkább negatív, mint semleges&quot;, &quot;5: Teljes mértékben semleges&quot;" valType="list" updates="constant" name="labels"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
         <Param val="slider_2" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -4194,9 +4194,9 @@
         <Param val="True" valType="bool" updates="constant" name="storeRating"/>
         <Param val="True" valType="bool" updates="constant" name="storeRatingTime"/>
         <Param val="()" valType="list" updates="constant" name="styleTweaks"/>
-        <Param val="rating" valType="str" updates="constant" name="styles"/>
+        <Param val="radio" valType="str" updates="constant" name="styles"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)" valType="list" updates="constant" name="ticks"/>
+        <Param val="(1, 2, 3, 4, 5)" valType="list" updates="constant" name="ticks"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </SliderComponent>
       <TextComponent name="text_16">
@@ -4220,7 +4220,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="3. MW kérdés" valType="str" updates="constant" name="text"/>
+        <Param val="3. A feladat végrehajtása során gondolataimnak tartalmára ez volt a leginkább jellemző:" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -4237,8 +4237,8 @@
         <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="1" valType="num" updates="constant" name="granularity"/>
         <Param val="" valType="code" updates="None" name="initVal"/>
-        <Param val="&quot;Egyáltalán nem&quot;, &quot;Teljes mértékben&quot;" valType="list" updates="constant" name="labels"/>
-        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="&quot;Leginkább a jövő még meg nem történt eseményei jutottak eszembe.&quot;, &quot;Leginkább a jelen pillanat, helyzet, járt az eszemben&quot; &quot;Leginkább korábbi események, emlékek jutottak eszembe&quot;" valType="list" updates="constant" name="labels"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
         <Param val="slider_3" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -4255,9 +4255,9 @@
         <Param val="True" valType="bool" updates="constant" name="storeRating"/>
         <Param val="True" valType="bool" updates="constant" name="storeRatingTime"/>
         <Param val="()" valType="list" updates="constant" name="styleTweaks"/>
-        <Param val="rating" valType="str" updates="constant" name="styles"/>
+        <Param val="radio" valType="str" updates="constant" name="styles"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)" valType="list" updates="constant" name="ticks"/>
+        <Param val="(1, 2, 3 )" valType="list" updates="constant" name="ticks"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </SliderComponent>
       <TextComponent name="text_17">
@@ -4326,7 +4326,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Köszönjük!&amp;#10;&amp;#10;A következő feladat hasonló lesz.&amp;#10;&amp;#10;Ugyanígy négyzetek fognak megjelenni, és a feladatod továbbra is minél hosszabb szekvenciákat megjegyezni.&amp;#10;Azonban minden bemutatott négyzet között lesz egy döntési feladat: el kell döntened egy ábráról, hogy függőlegesen szimmetrikus-e.&amp;#10;&amp;#10;Először nézzük meg, hogyan néz ki a döntési feladat.&amp;#10;&amp;#10;SPACE/Katt" valType="str" updates="constant" name="text"/>
+        <Param val="A következő feladat hasonló lesz.&amp;#10;&amp;#10;Ugyanígy négyzetek fognak megjelenni, és a feladatod továbbra is minél hosszabb sorrendet megjegyezni.&amp;#10;Azonban minden bemutatott négyzet között lesz egy döntési feladat is, ahol el kell döntened egy ábráról, hogy szimmetrikus-e függőlegesen.&amp;#10;&amp;#10;Először nézzük meg, hogyan néz ki a döntési feladat.&amp;#10;&amp;#10;SPACE/Katt" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -4389,7 +4389,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Üdvözlünk! Köszönjük, hogy részt veszel kísérletünkön.&amp;#10;Kérünk, amíg tart a kísérlet, ne lépj ki a teljes képernyős módból.&amp;#10;&amp;#10;A következő oldalon három kérdés fog megjelenni.&amp;#10;A feladatok megkezdése előtt kérünk értékeld jelenlegi állapotod az 1-10-ig terjedő skálákon.&amp;#10;&amp;#10;A folytatáshoz nyomd meg a SPACE-t vagy kattints egyet." valType="str" updates="constant" name="text"/>
+        <Param val="Üdvözlünk! Köszönjük, hogy részt veszel kutatásunkban.&amp;#10;&amp;#10;Kérlek, amíg tart a kísérlet, ne lépj ki a teljes képernyős módból.&amp;#10;Kérlek megfelelően nyugodt környezetet és időpontot válassz a feladat elvégzéséhez, hogy ne zavarjon meg közben semmi. A feladatokat megszakítás nélkül, egyetlen részletben végezd el.&amp;#10;&amp;#10;A következő oldalon három, hangulatodra vonatkozó kérdés fog megjelenni. Kérlek válaszolj ezekre az 1-10-ig terjedő skálákon  a szerinted leginkább Rád illő pontszámra kattintva.&amp;#10;&amp;#10;A folytatáshoz nyomd meg a SPACE billentyűt vagy kattints!" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -4431,67 +4431,6 @@
       </KeyboardComponent>
     </Routine>
     <Routine name="PN_aff_questions">
-      <TextComponent name="text_20">
-        <Param val="white" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.04" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="text_20" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0.3)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="1. Jelenlegi éberségemre leginkább jellemző, hogy:" valType="str" updates="constant" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <SliderComponent name="slider">
-        <Param val="White" valType="color" updates="constant" name="borderColor"/>
-        <Param val="LightGray" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="Red" valType="color" updates="constant" name="fillColor"/>
-        <Param val="False" valType="bool" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
-        <Param val="1" valType="num" updates="constant" name="granularity"/>
-        <Param val="" valType="code" updates="None" name="initVal"/>
-        <Param val="&quot;1: Álmos, kába vagyok&quot;, &quot;2: Aktív, nagyon éber vagyok&quot;" valType="list" updates="constant" name="labels"/>
-        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="slider" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0.2)" valType="list" updates="constant" name="pos"/>
-        <Param val="False" valType="bool" updates="constant" name="readOnly"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(1.1, 0.02)" valType="list" updates="constant" name="size"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="condition" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="constant" name="storeHistory"/>
-        <Param val="True" valType="bool" updates="constant" name="storeRating"/>
-        <Param val="True" valType="bool" updates="constant" name="storeRatingTime"/>
-        <Param val="()" valType="list" updates="constant" name="styleTweaks"/>
-        <Param val="rating" valType="str" updates="constant" name="styles"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)" valType="list" updates="constant" name="ticks"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </SliderComponent>
       <TextComponent name="text_21">
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -4513,7 +4452,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="2. Jelenlegi állapotomra leginkább jellemző:" valType="str" updates="constant" name="text"/>
+        <Param val="1. Kérlek értékeld jelenlegi éberségedet 1-10-ig terjedő skálán. &amp;#10;Jelenlegi éberségemre leginkább jellemző, hogy:" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -4530,7 +4469,7 @@
         <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="1" valType="num" updates="constant" name="granularity"/>
         <Param val="" valType="code" updates="None" name="initVal"/>
-        <Param val="&quot;1: Teljesen nyugodt és ellazult&quot;, &quot;2: Nagyon izgatott, feszült&quot;" valType="list" updates="constant" name="labels"/>
+        <Param val="&quot;1: Álmos, kába vagyok&quot;, &quot;10: Nagyon aktív, éber vagyok&quot;" valType="list" updates="constant" name="labels"/>
         <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
         <Param val="slider_4" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
@@ -4553,6 +4492,51 @@
         <Param val="(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)" valType="list" updates="constant" name="ticks"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </SliderComponent>
+      <TextComponent name="text_23">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_23" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, -0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="condition" valType="str" updates="None" name="startType"/>
+        <Param val="slider_4.rating" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="SPACE" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_17">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp_17" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="condition" valType="str" updates="None" name="startType"/>
+        <Param val="slider_4.rating" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="PN_aff_questions2">
       <TextComponent name="text_22">
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -4566,7 +4550,7 @@
         <Param val="text_22" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, -0.1)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0.1)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
@@ -4574,7 +4558,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="3. Jelenleg hangulatomra leginkább jellemző:" valType="str" updates="constant" name="text"/>
+        <Param val="2. Kérlek értékeld jelenlegi állapotodat 1-10-ig terjedő skálán. &amp;#10;Jelenlegi állapotomra leginkább jellemző, hogy:" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -4591,12 +4575,12 @@
         <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="1" valType="num" updates="constant" name="granularity"/>
         <Param val="" valType="code" updates="None" name="initVal"/>
-        <Param val="&quot;1: Lehangolt, szomorú, rosszkedvű&quot;, &quot;10: Jókedvű, feldobott, vidám&quot;" valType="list" updates="constant" name="labels"/>
+        <Param val="&quot;1: Teljesen nyugodt, ellazult vagyok&quot;, &quot;10: Nagyon izgatott, feszült vagyok&quot;" valType="list" updates="constant" name="labels"/>
         <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
         <Param val="slider_5" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, -0.2)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="constant" name="readOnly"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="(1.1, 0.02)" valType="list" updates="constant" name="size"/>
@@ -4614,11 +4598,162 @@
         <Param val="(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)" valType="list" updates="constant" name="ticks"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </SliderComponent>
+      <TextComponent name="text_24">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_24" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, -0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="condition" valType="str" updates="None" name="startType"/>
+        <Param val="slider_5.rating" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="SPACE" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_18">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp_18" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="condition" valType="str" updates="None" name="startType"/>
+        <Param val="slider_5.rating" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="PN_aff_questions3">
+      <TextComponent name="text_25">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.04" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_25" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.1)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="3. Kérlek értékeld jelenlegi hangulatodat 1-10-ig terjedő skálán. &amp;#10;Jelenlegi hangulatomra leginkább jellemző, hogy:" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <SliderComponent name="slider">
+        <Param val="White" valType="color" updates="constant" name="borderColor"/>
+        <Param val="LightGray" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Red" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="1" valType="num" updates="constant" name="granularity"/>
+        <Param val="" valType="code" updates="None" name="initVal"/>
+        <Param val="&quot;1: Lehangolt, szomorú, rosszkedvű vagyok&quot;, &quot;10: Jókedvű, feldobott, vidám vagyok&quot;" valType="list" updates="constant" name="labels"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="slider" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="constant" name="readOnly"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.1, 0.02)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="condition" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeHistory"/>
+        <Param val="True" valType="bool" updates="constant" name="storeRating"/>
+        <Param val="True" valType="bool" updates="constant" name="storeRatingTime"/>
+        <Param val="()" valType="list" updates="constant" name="styleTweaks"/>
+        <Param val="rating" valType="str" updates="constant" name="styles"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)" valType="list" updates="constant" name="ticks"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </SliderComponent>
+      <TextComponent name="text_26">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_26" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, -0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="condition" valType="str" updates="None" name="startType"/>
+        <Param val="slider.rating" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="SPACE" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_19">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp_19" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="condition" valType="str" updates="None" name="startType"/>
+        <Param val="slider.rating" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
     </Routine>
   </Routines>
   <Flow>
     <Routine name="wlc_0"/>
     <Routine name="PN_aff_questions"/>
+    <Routine name="PN_aff_questions2"/>
+    <Routine name="PN_aff_questions3"/>
     <Routine name="wlc"/>
     <Routine name="ins_square_1"/>
     <LoopInitiator loopType="TrialHandler" name="trials_square_2">
