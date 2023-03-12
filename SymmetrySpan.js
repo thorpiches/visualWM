@@ -1310,7 +1310,7 @@ async function experimentInit() {
   text_18 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_18',
-    text: 'Most kérünk a következő oldalakon  válaszolj 3 rövid kérdésre.\nA válaszadáshoz kattints a kérdések alatt megjelenő skálákon arra a helyre/azokra a gombokra, amely szerinted a leginkább jellemző voltak rád a feladat elvégzése közben.\n\nSPACE/Katt',
+    text: 'Most kérünk a következő oldalakon  válaszolj 3 rövid kérdésre.\n\nSPACE/Katt',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, (- 0.15)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
@@ -1343,7 +1343,7 @@ async function experimentInit() {
     win: psychoJS.window, name: 'slider_6',
     startValue: undefined,
     size: [1.1, 0.02], pos: [0, (- 0.2)], ori: 0.0, units: 'height',
-    labels: ["1: Gondolataim elkalandoztak", "10: V\u00e9gig f\u00f3kusz\u00e1lt voltam"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    labels: ["1: Gondolataim teljesen elkalandoztak", "10: V\u00e9gig nagyon f\u00f3kusz\u00e1lt voltam"], fontSize: 0.03, ticks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     granularity: 1.0, style: ["RATING"],
     color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
